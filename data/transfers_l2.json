@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-31T18:47:46",
- "sig": "0840fe8c14138ce309111eeca80cecc0",
+ "updated": "2026-07-31T21:31:18",
+ "sig": "abd5439dac2e3be4b544d60b4bf08717",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -52,6 +52,7 @@
   "REIMS|out|Adama Bojang|R Charleroi SC": "2026-07-31",
   "REIMS|out|Pape Sissoko|SV Ried": "2026-07-31",
   "REIMS|out|Nicolas Pallois|Sans club": "2026-07-31",
+  "FCM|in|Cristian Devenish|Avs FS": "2026-07-31",
   "FCM|in|Idris Mohamed|Le Puy FC": "2026-07-31",
   "FCM|in|Jean Ruiz|Pau FC": "2026-07-31",
   "FCM|in|Florian Miguel|Burgos CF": "2026-07-31",
@@ -746,6 +747,15 @@
    "bg": "#7a1f2b",
    "fg": "#fff",
    "arr": [
+    {
+     "p": "Cristian Devenish",
+     "age": 25,
+     "pos": "DC",
+     "club": "Avs FS",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
     {
      "p": "Idris Mohamed",
      "age": 22,
@@ -2998,7 +3008,7 @@
   ],
   "FCN": [
    {
-    "n": "",
+    "n": "1",
     "p": "Maxime Dupé",
     "pos": "GdB",
     "grp": "GK",
@@ -3006,7 +3016,7 @@
     "val": 0.7
    },
    {
-    "n": "50",
+    "n": "16",
     "p": "Alexis Mirbach",
     "pos": "GdB",
     "grp": "GK",
@@ -3030,19 +3040,19 @@
     "val": 2.5
    },
    {
-    "n": "",
-    "p": "Jean-Kévin Duverne",
-    "pos": "DC",
-    "grp": "DEF",
-    "age": 29,
-    "val": 2.0
-   },
-   {
     "n": "5",
     "p": "Lucas Perrin",
     "pos": "DC",
     "grp": "DEF",
     "age": 27,
+    "val": 2.0
+   },
+   {
+    "n": "93",
+    "p": "Jean-Kévin Duverne",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 29,
     "val": 2.0
    },
    {
@@ -3126,7 +3136,7 @@
     "val": 0.3
    },
    {
-    "n": "",
+    "n": "67",
     "p": "Malang Gomes",
     "pos": "MDC",
     "grp": "MID",
@@ -3150,7 +3160,7 @@
     "val": 5.0
    },
    {
-    "n": "",
+    "n": "23",
     "p": "Wilitty Younoussa",
     "pos": "MC",
     "grp": "MID",
@@ -3158,7 +3168,7 @@
     "val": 0.9
    },
    {
-    "n": "66",
+    "n": "19",
     "p": "Louis Leroux",
     "pos": "MO",
     "grp": "MID",
@@ -3174,7 +3184,7 @@
     "val": 7.0
    },
    {
-    "n": "",
+    "n": "90",
     "p": "Yassine Benhattab",
     "pos": "AiD",
     "grp": "ATT",
@@ -3400,6 +3410,14 @@
     "val": 0.05
    },
    {
+    "n": "7",
+    "p": "Tidiane Diarrassouba",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 17,
+    "val": 0.0
+   },
+   {
     "n": "",
     "p": "Oumar Diakité",
     "pos": "AC",
@@ -3488,6 +3506,14 @@
     "grp": "DEF",
     "age": 23,
     "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Cristian Devenish",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.8
    },
    {
     "n": "",
