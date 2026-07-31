@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-31T21:31:18",
- "sig": "abd5439dac2e3be4b544d60b4bf08717",
+ "updated": "2026-08-01T00:31:29",
+ "sig": "a29f8107921be1d425c24c76b8d31a0a",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -56,6 +56,7 @@
   "FCM|in|Idris Mohamed|Le Puy FC": "2026-07-31",
   "FCM|in|Jean Ruiz|Pau FC": "2026-07-31",
   "FCM|in|Florian Miguel|Burgos CF": "2026-07-31",
+  "FCM|in|Nampalys Mendy|Watford": "2026-08-01",
   "FCM|out|Sadibou Sané|Monaco": "2026-07-31",
   "FCM|out|Idrissa Gueye|Udinese": "2026-07-31",
   "FCM|out|Terry Yegbe|Lech Poznan": "2026-07-31",
@@ -75,6 +76,7 @@
   "MHSC|in|Daryll Benlahlou|Ol. Lyonnais": "2026-07-31",
   "MHSC|out|Modibo Sagnan|C. Rizespor": "2026-07-31",
   "MHSC|out|Alexandre Mendy|Al-Faisaly": "2026-07-31",
+  "MHSC|out|Lucas Mincarelli|Estrela Amadora": "2026-08-01",
   "MHSC|out|Téji Savanier|Sans club": "2026-07-31",
   "MHSC|out|Christopher Jullien|Sans club": "2026-07-31",
   "CF63|in|Arthur Saintorens|Av. Bayonnais": "2026-07-31",
@@ -87,8 +89,9 @@
   "CF63|out|Johan Gastien|Fin de carrière": "2026-07-31",
   "CF63|out|Amine Saïd|Sans club": "2026-07-31",
   "RED|in|Elyaz Zidane|Betis Deportivo": "2026-07-31",
+  "RED|out|Rayane Doucouré|Aubagne Air Bel": "2026-08-01",
+  "RED|out|Hacène Benali|Pau FC": "2026-08-01",
   "RED|out|Quentin Beunardeau|AS Cannes": "2026-07-31",
-  "RED|out|Rayane Doucouré|Sans club": "2026-07-31",
   "RED|out|Vincent Kany|Sans club": "2026-07-31",
   "RAF|in|Mathis Touho|FC Villefranche": "2026-07-31",
   "RAF|in|Damjan Pavlovic|Kauno Zalgiris": "2026-07-31",
@@ -108,6 +111,7 @@
   "PAU|in|Royce Openda|G. Bordeaux": "2026-07-31",
   "PAU|in|Tom Saettel|FR Haguenau": "2026-07-31",
   "PAU|in|Mathys Tourraine|Paris FC": "2026-07-31",
+  "PAU|in|Hacène Benali|Red Star FC": "2026-08-01",
   "PAU|in|Alexis Lefebvre|RFC Liège": "2026-07-31",
   "PAU|in|Abdoulaye Mbaye|Génération Foot": "2026-07-31",
   "PAU|in|Axel Dodote|Saint-Étienne": "2026-07-31",
@@ -782,6 +786,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Nampalys Mendy",
+     "age": 34,
+     "pos": "MDC",
+     "club": "Watford",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-01"
     }
    ],
    "dep": [
@@ -967,6 +980,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Lucas Mincarelli",
+     "age": 22,
+     "pos": "ArG",
+     "club": "Estrela Amadora",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-01"
+    },
+    {
      "p": "Téji Savanier",
      "age": 34,
      "pos": "MO",
@@ -1095,19 +1117,28 @@
    ],
    "dep": [
     {
+     "p": "Rayane Doucouré",
+     "age": 25,
+     "pos": "DC",
+     "club": "Aubagne Air Bel",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-01"
+    },
+    {
+     "p": "Hacène Benali",
+     "age": 26,
+     "pos": "AC",
+     "club": "Pau FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-01"
+    },
+    {
      "p": "Quentin Beunardeau",
      "age": 32,
      "pos": "GdB",
      "club": "AS Cannes",
-     "type": "none",
-     "val": 0.0,
-     "fs": "2026-07-31"
-    },
-    {
-     "p": "Rayane Doucouré",
-     "age": 25,
-     "pos": "DC",
-     "club": "Sans club",
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
@@ -1300,6 +1331,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Hacène Benali",
+     "age": 26,
+     "pos": "AC",
+     "club": "Red Star FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-01"
     },
     {
      "p": "Alexis Lefebvre",
@@ -3564,6 +3604,14 @@
     "val": 5.0
    },
    {
+    "n": "",
+    "p": "Nampalys Mendy",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 34,
+    "val": 0.7
+   },
+   {
     "n": "33",
     "p": "Believe Munongo",
     "pos": "MC",
@@ -3724,14 +3772,6 @@
     "grp": "DEF",
     "age": 27,
     "val": 1.0
-   },
-   {
-    "n": "21",
-    "p": "Lucas Mincarelli",
-    "pos": "ArG",
-    "grp": "DEF",
-    "age": 22,
-    "val": 0.8
    },
    {
     "n": "29",
@@ -4194,14 +4234,6 @@
     "val": 1.0
    },
    {
-    "n": "29",
-    "p": "Hacène Benali",
-    "pos": "AC",
-    "grp": "ATT",
-    "age": 26,
-    "val": 0.35
-   },
-   {
     "n": "21",
     "p": "Abdelsamad Hachem",
     "pos": "AC",
@@ -4556,6 +4588,14 @@
     "grp": "ATT",
     "age": 24,
     "val": 0.1
+   },
+   {
+    "n": "7",
+    "p": "Hacène Benali",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.35
    },
    {
     "n": "9",
