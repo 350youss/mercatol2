@@ -1,0 +1,6338 @@
+{
+ "updated": "2026-07-31T18:27:16",
+ "sig": "0840fe8c14138ce309111eeca80cecc0",
+ "seen": {
+  "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
+  "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
+  "ASSE|in|Sohaib Naïr|EA Guingamp": "2026-07-31",
+  "ASSE|in|Áron Csongvai|AIK": "2026-07-31",
+  "ASSE|in|Mamour Ndiaye|Sarpsborg 08": "2026-07-31",
+  "ASSE|in|Lucas Lavallée|LB Châteauroux": "2026-07-31",
+  "ASSE|out|Beres Owusu|Grazer AK": "2026-07-31",
+  "ASSE|out|Dennis Appiah|SM Caen": "2026-07-31",
+  "ASSE|out|Florian Tardieu|Montpellier": "2026-07-31",
+  "ASSE|out|Enzo Mayilla|USL Dunkerque": "2026-07-31",
+  "ASSE|out|Brice Maubleu|Pau FC": "2026-07-31",
+  "ASSE|out|Karim Cissé|Aubagne Air Bel": "2026-07-31",
+  "ASSE|out|Axel Dodote|Pau FC": "2026-07-31",
+  "FCN|in|Killian Corredor|Darmstadt 98": "2026-07-31",
+  "FCN|in|Lucas Perrin|Sporting Gijón": "2026-07-31",
+  "FCN|in|Mathieu Cafaro|Paris FC": "2026-07-31",
+  "FCN|in|Wilitty Younoussa|Rodez AF": "2026-07-31",
+  "FCN|in|Maxime Dupé|OGC Nice": "2026-07-31",
+  "FCN|out|Matthis Abline|Monaco": "2026-07-31",
+  "FCN|out|Alban Lafont|Amed SK": "2026-07-31",
+  "FCN|out|Chidozie Awaziem|Konyaspor": "2026-07-31",
+  "FCN|out|Anthony Lopes|Angers SCO": "2026-07-31",
+  "FCN|out|Francis Coquelin|Stade Lavallois": "2026-07-31",
+  "FCN|out|Mathieu Acapandié|Hajduk Split": "2026-07-31",
+  "FCN|out|Uros Radakovic|Buriram Utd.": "2026-07-31",
+  "FCN|out|Deiver Machado|Sans club": "2026-07-31",
+  "FCN|out|Patrik Carlgren|Sans club": "2026-07-31",
+  "FCN|out|Youssef El Arabi|Sans club": "2026-07-31",
+  "REIMS|in|Samuel Kotto|La Gantoise": "2026-07-31",
+  "REIMS|in|Tom Ritzy Hülsmann|TSV Hartberg": "2026-07-31",
+  "REIMS|in|Youssef El Kachati|NEC Nijmegen": "2026-07-31",
+  "REIMS|in|John Otomewo|H. Jerusalem": "2026-07-31",
+  "REIMS|in|Edin Omeragic|Neuchâtel Xamax": "2026-07-31",
+  "REIMS|in|Daouda Guindo|Stade Brestois": "2026-07-31",
+  "REIMS|in|Sambou Soumano|FC Lorient": "2026-07-31",
+  "REIMS|in|Alexis Sauvage|Amiens SC": "2026-07-31",
+  "REIMS|in|Armel Zohouri|Iberia 1999": "2026-07-31",
+  "REIMS|in|Aleksandr Guboglo|Montréal": "2026-07-31",
+  "REIMS|out|Patrick Zabi|Paris FC": "2026-07-31",
+  "REIMS|out|Ewen Jaouen|Newcastle": "2026-07-31",
+  "REIMS|out|Cédric Kipré|Ipswich Town": "2026-07-31",
+  "REIMS|out|Thiemoko Diarra|Kasimpasa": "2026-07-31",
+  "REIMS|out|Maxime Busi|Royal Antwerp": "2026-07-31",
+  "REIMS|out|Alexandre Olliero|Grenoble": "2026-07-31",
+  "REIMS|out|Antoine Leautey|WH Three Towns": "2026-07-31",
+  "REIMS|out|Malcolm Jeng|FC Groningen": "2026-07-31",
+  "REIMS|out|Hiroki Sekine|Holstein Kiel": "2026-07-31",
+  "REIMS|out|Adama Bojang|R Charleroi SC": "2026-07-31",
+  "REIMS|out|Pape Sissoko|SV Ried": "2026-07-31",
+  "REIMS|out|Nicolas Pallois|Sans club": "2026-07-31",
+  "FCM|in|Idris Mohamed|Le Puy FC": "2026-07-31",
+  "FCM|in|Jean Ruiz|Pau FC": "2026-07-31",
+  "FCM|in|Florian Miguel|Burgos CF": "2026-07-31",
+  "FCM|out|Sadibou Sané|Monaco": "2026-07-31",
+  "FCM|out|Idrissa Gueye|Udinese": "2026-07-31",
+  "FCM|out|Terry Yegbe|Lech Poznan": "2026-07-31",
+  "FCM|out|Jean-Philippe Gbamin|CSKA Sofia": "2026-07-31",
+  "FCM|out|Giorgi Kvilitaia|Holstein Kiel": "2026-07-31",
+  "FCM|out|Kevin Van Den Kerkhof|R Charleroi SC": "2026-07-31",
+  "FCM|out|Joseph Nduquidi|Farense": "2026-07-31",
+  "FCM|out|Ismaël Guerti|Grazer AK": "2026-07-31",
+  "FCM|out|Yannis Lawson|RFC Seraing": "2026-07-31",
+  "FCM|out|Koffi Kouao|Sans club": "2026-07-31",
+  "FCM|out|Fodé Ballo-Touré|Sans club": "2026-07-31",
+  "FCM|out|Benjamin Stambouli|Sans club": "2026-07-31",
+  "MHSC|in|Mamadou Camara|Stade Lavallois": "2026-07-31",
+  "MHSC|in|Florian Tardieu|Saint-Étienne": "2026-07-31",
+  "MHSC|in|Grégory Ayem|Racing CFF": "2026-07-31",
+  "MHSC|in|Daylam Meddah|Pau FC": "2026-07-31",
+  "MHSC|in|Daryll Benlahlou|Ol. Lyonnais": "2026-07-31",
+  "MHSC|out|Modibo Sagnan|C. Rizespor": "2026-07-31",
+  "MHSC|out|Alexandre Mendy|Al-Faisaly": "2026-07-31",
+  "MHSC|out|Téji Savanier|Sans club": "2026-07-31",
+  "MHSC|out|Christopher Jullien|Sans club": "2026-07-31",
+  "CF63|in|Arthur Saintorens|Av. Bayonnais": "2026-07-31",
+  "CF63|out|İlhan Fakılı|Besiktas": "2026-07-31",
+  "CF63|out|Habib Keïta|Kocaelispor": "2026-07-31",
+  "CF63|out|Abdoul Kader Bamba|FC Granada": "2026-07-31",
+  "CF63|out|Maximiliano Caufriez|Sans club": "2026-07-31",
+  "CF63|out|Henri Saivet|Sans club": "2026-07-31",
+  "CF63|out|Famara Diédhiou|Sans club": "2026-07-31",
+  "CF63|out|Johan Gastien|Fin de carrière": "2026-07-31",
+  "CF63|out|Amine Saïd|Sans club": "2026-07-31",
+  "RED|in|Elyaz Zidane|Betis Deportivo": "2026-07-31",
+  "RED|out|Quentin Beunardeau|AS Cannes": "2026-07-31",
+  "RED|out|Rayane Doucouré|Sans club": "2026-07-31",
+  "RED|out|Vincent Kany|Sans club": "2026-07-31",
+  "RAF|in|Mathis Touho|FC Villefranche": "2026-07-31",
+  "RAF|in|Damjan Pavlovic|Kauno Zalgiris": "2026-07-31",
+  "RAF|in|Antonin Cartillier|FC Rouen 1899": "2026-07-31",
+  "RAF|out|Taïryk Arconte|Millwall": "2026-07-31",
+  "RAF|out|Nolan Galves|West Brom": "2026-07-31",
+  "RAF|out|Alexis Trouillet|Standard Liège": "2026-07-31",
+  "RAF|out|Wilitty Younoussa|FC Nantes": "2026-07-31",
+  "RAF|out|Mohamed Achi|Cherno More": "2026-07-31",
+  "RAF|out|Morgan Corredor|Tarbes Pyrénées": "2026-07-31",
+  "PAU|in|Babacar Leye|FC Villefranche": "2026-07-31",
+  "PAU|in|Jessy Benet|Grenoble": "2026-07-31",
+  "PAU|in|Gaëtan Paquiez|Grenoble": "2026-07-31",
+  "PAU|in|Quentin Daubin|Valenciennes FC": "2026-07-31",
+  "PAU|in|Lorenzo Rajot|SM Caen": "2026-07-31",
+  "PAU|in|Brice Maubleu|Saint-Étienne": "2026-07-31",
+  "PAU|in|Royce Openda|G. Bordeaux": "2026-07-31",
+  "PAU|in|Tom Saettel|FR Haguenau": "2026-07-31",
+  "PAU|in|Mathys Tourraine|Paris FC": "2026-07-31",
+  "PAU|in|Alexis Lefebvre|RFC Liège": "2026-07-31",
+  "PAU|in|Abdoulaye Mbaye|Génération Foot": "2026-07-31",
+  "PAU|in|Axel Dodote|Saint-Étienne": "2026-07-31",
+  "PAU|in|Axel Bamba|Sans club": "2026-07-31",
+  "PAU|out|Rayan Touzghar|Standard Liège": "2026-07-31",
+  "PAU|out|Neil Glossoa|Slavia Prague": "2026-07-31",
+  "PAU|out|Jean Ruiz|FC Metz": "2026-07-31",
+  "PAU|out|Julien Anziani|Manisa FK": "2026-07-31",
+  "PAU|out|Setigui Karamoko|Sepsi OSK": "2026-07-31",
+  "PAU|out|Daylam Meddah|Montpellier": "2026-07-31",
+  "PAU|out|Noah Raveyre|Alverca": "2026-07-31",
+  "PAU|out|Steeve Beusnard|Turan Tovuz": "2026-07-31",
+  "PAU|out|Salif Lebouath|Valenciennes FC": "2026-07-31",
+  "PAU|out|Antonin Bobichon|Sans club": "2026-07-31",
+  "PAU|out|Ousmane Kanté|Fin de carrière": "2026-07-31",
+  "USLD|in|Jordan Morel|US Orléans": "2026-07-31",
+  "USLD|in|Egor Prutsev|Étoile Rouge": "2026-07-31",
+  "USLD|in|Lenny Vallier|Nacional": "2026-07-31",
+  "USLD|in|Adrien Lebeau|Hansa Rostock": "2026-07-31",
+  "USLD|in|Enzo Mayilla|Saint-Étienne": "2026-07-31",
+  "USLD|in|Steven Nzonzi|Stoke City": "2026-07-31",
+  "USLD|in|Maxence Prévot|OH Leuven": "2026-07-31",
+  "USLD|in|Souleymane Keita|US Boulogne": "2026-07-31",
+  "USLD|in|Moha Ramos|CD Marino": "2026-07-31",
+  "USLD|in|Franck Atoen|Samsunspor": "2026-07-31",
+  "USLD|out|Enzo Bardeli|UD Levante": "2026-07-31",
+  "USLD|out|Alec Georgen|FC Lorient": "2026-07-31",
+  "USLD|out|Marco Essimi|Alverca": "2026-07-31",
+  "USLD|out|Abou Kanté|Stade Lavallois": "2026-07-31",
+  "USLD|out|Eddy Sylvestre|FCV Farul": "2026-07-31",
+  "USLD|out|Marcos Lavín|Académico Viseu": "2026-07-31",
+  "USLD|out|Vincent Sasso|Le Havre AC": "2026-07-31",
+  "USLD|out|Felipe Abner|Sans club": "2026-07-31",
+  "USLD|out|Iñigo Eguaras|Sans club": "2026-07-31",
+  "USLD|out|Malick Diop|Sans club": "2026-07-31",
+  "GF38|in|Yohann Magnin|CSKA 1948": "2026-07-31",
+  "GF38|in|Zé Leite|Penafiel": "2026-07-31",
+  "GF38|in|Sakhalou Niakaté|Valenciennes FC": "2026-07-31",
+  "GF38|in|Dillon Hoogewerf|Vitesse": "2026-07-31",
+  "GF38|in|Farouq Limouri|FC Eindhoven": "2026-07-31",
+  "GF38|in|Alexandre Olliero|Stade de Reims": "2026-07-31",
+  "GF38|in|Mael Corboz|Arm. Bielefeld": "2026-07-31",
+  "GF38|out|Mamadou Diop|AJ Auxerre": "2026-07-31",
+  "GF38|out|Jessy Benet|Pau FC": "2026-07-31",
+  "GF38|out|Gaëtan Paquiez|Pau FC": "2026-07-31",
+  "GF38|out|Maxime Pattier|US Saint-Malo": "2026-07-31",
+  "GF38|out|Shaquil Delos|La Louvière": "2026-07-31",
+  "GF38|out|Stone Mambo|FC Noah": "2026-07-31",
+  "GF38|out|Alan Kerouedan|AS Cannes": "2026-07-31",
+  "EAG|in|Teddy Averlant|Amiens SC": "2026-07-31",
+  "EAG|in|Samir Ben Brahim|FC Versailles": "2026-07-31",
+  "EAG|in|Florent Sanchez|US Orléans": "2026-07-31",
+  "EAG|in|Jasser Chamakh|AS Saint-Priest": "2026-07-31",
+  "EAG|in|Tom Ducrocq|SC Bastia": "2026-07-31",
+  "EAG|in|Jeovanni Dianganga|KSC Lokeren": "2026-07-31",
+  "EAG|out|Sohaib Naïr|Saint-Étienne": "2026-07-31",
+  "EAG|out|Kalidou Sidibé|Akhmat Grozny": "2026-07-31",
+  "EAG|out|Amadou Sagna|Kiryat Shmona": "2026-07-31",
+  "EAG|out|Louis Mafouta|Le Mans FC": "2026-07-31",
+  "EAG|out|Eden Gassama|VFC La Roche": "2026-07-31",
+  "EAG|out|Alpha Sissoko|Sans club": "2026-07-31",
+  "EAG|out|Youssef Njoya|Sans club": "2026-07-31",
+  "NANCY|in|Issam Bouaoune|LB Châteauroux": "2026-07-31",
+  "NANCY|in|Kouroufia Kébé|US Orléans": "2026-07-31",
+  "NANCY|in|Mamadou Fofana|FC Aarau": "2026-07-31",
+  "NANCY|in|Logan Ndenbe|Sans club": "2026-07-31",
+  "NANCY|out|Teddy Bouriaud|Stade Lavallois": "2026-07-31",
+  "NANCY|out|Maxence Carlier|Ararat-Armenia": "2026-07-31",
+  "NANCY|out|Jimmy Evans|Uni. Católica": "2026-07-31",
+  "NANCY|out|Cazim Suljic|Amiens SC": "2026-07-31",
+  "NANCY|out|Adrien Julloux|Amiens SC": "2026-07-31",
+  "NANCY|out|Martin Sourzac|Imperia": "2026-07-31",
+  "NANCY|out|Bakari Camara|FC Rouen 1899": "2026-07-31",
+  "NANCY|out|Patrick Ouotro|Vit. Guimarães": "2026-07-31",
+  "NANCY|out|Mattheo Guendez|Paris 13 Atl.": "2026-07-31",
+  "NANCY|out|Youssouf Tandia|SAS Épinal": "2026-07-31",
+  "NANCY|out|Faitout Maouassa|Sans club": "2026-07-31",
+  "NANCY|out|Martin Expérience|Sans club": "2026-07-31",
+  "NANCY|out|Oumar Sidibé|Sans club": "2026-07-31",
+  "NANCY|out|Geoffrey Lembet|Sans club": "2026-07-31",
+  "ANNECY|in|Pascal Mozie|Legia Varsovie": "2026-07-31",
+  "ANNECY|in|Alan Mondesir|Montlouis": "2026-07-31",
+  "ANNECY|in|Esteban Marre|Istres FC": "2026-07-31",
+  "ANNECY|in|Sacha Lima|UF Touraine": "2026-07-31",
+  "ANNECY|in|Emmanuel Louisir|Racing CFF": "2026-07-31",
+  "ANNECY|out|Valentin Jacob|GFA Rumilly Val": "2026-07-31",
+  "ANNECY|out|Aymerick Nedelec|Chambéry SF": "2026-07-31",
+  "ANNECY|out|Abdel Hbouch|US Boulogne": "2026-07-31",
+  "ANNECY|out|Cédric Makutungu|AS Cannes": "2026-07-31",
+  "ANNECY|out|Ranjan Neelakandan|FC Vaduz": "2026-07-31",
+  "ANNECY|out|Vincent Pajot|Fin de carrière": "2026-07-31",
+  "ANNECY|out|Fabrice N'Sakala|Sans club": "2026-07-31",
+  "ANNECY|out|Wael Debbiche|Sans club": "2026-07-31",
+  "LAVAL|in|Francis Coquelin|FC Nantes": "2026-07-31",
+  "LAVAL|in|Teddy Bouriaud|AS Nancy": "2026-07-31",
+  "LAVAL|in|Esteban Mouton|US Orléans": "2026-07-31",
+  "LAVAL|in|Corentin Fatou|US Boulogne": "2026-07-31",
+  "LAVAL|in|Abou Kanté|USL Dunkerque": "2026-07-31",
+  "LAVAL|in|Hermann Esmel|Le Puy FC": "2026-07-31",
+  "LAVAL|in|Chafik Gourichy|Thionville Lus.": "2026-07-31",
+  "LAVAL|in|Aboubacar Lô|Amiens SC": "2026-07-31",
+  "LAVAL|in|Jules Gaudin|R Charleroi SC": "2026-07-31",
+  "LAVAL|out|Mamadou Camara|Montpellier": "2026-07-31",
+  "LAVAL|out|Peter Ouaneh|UTA Arad": "2026-07-31",
+  "LAVAL|out|Titouan Thomas|FC Fleury 91": "2026-07-31",
+  "LAVAL|out|Malik Tchokounté|FC Rouen 1899": "2026-07-31",
+  "LAVAL|out|Enzo Montet|Thionville Lus.": "2026-07-31",
+  "LAVAL|out|Loïs Martins|US Avranches": "2026-07-31",
+  "LAVAL|out|Thibaut Vargas|Sans club": "2026-07-31",
+  "LAVAL|out|William Benard|Sans club": "2026-07-31",
+  "LAVAL|out|Moïse Adilehou|Sans club": "2026-07-31",
+  "LAVAL|out|Yohan Tavares|Sans club": "2026-07-31",
+  "BOUL|in|Aymane Nassiri|Istres FC": "2026-07-31",
+  "BOUL|in|Oscar Lenne|RC Lens Espoir": "2026-07-31",
+  "BOUL|in|Abdel Hbouch|FC Annecy": "2026-07-31",
+  "BOUL|in|Benjamin Bešić|Bourg-en-Bresse": "2026-07-31",
+  "BOUL|in|Théo Brusco|Differdange 03": "2026-07-31",
+  "BOUL|out|Siad Gourville|La Louvière": "2026-07-31",
+  "BOUL|out|Nathan Zohoré|Ferencváros": "2026-07-31",
+  "BOUL|out|Amine El Farissi|MAS Fès": "2026-07-31",
+  "BOUL|out|Corentin Fatou|Stade Lavallois": "2026-07-31",
+  "BOUL|out|Souleymane Keita|USL Dunkerque": "2026-07-31",
+  "BOUL|out|Emmanuel Kouassi|Le Puy FC": "2026-07-31",
+  "BOUL|out|Hervé Touré|OFK Beograd": "2026-07-31",
+  "BOUL|out|Lilian Raillot|US Orléans": "2026-07-31",
+  "BOUL|out|Luka Boiteau|Valenciennes FC": "2026-07-31",
+  "BOUL|out|Exaucé Mpembele Boula|Bourg-en-Bresse": "2026-07-31",
+  "BOUL|out|Christian Kitenge|Sans club": "2026-07-31",
+  "SOCH|in|Victor Lobry|Amiens SC": "2026-07-31",
+  "SOCH|in|Saad Agouzoul|AJ Auxerre": "2026-07-31",
+  "SOCH|in|Landry Nomel|StadeLO": "2026-07-31",
+  "SOCH|in|Mathis Clairicia|VfL Bochum": "2026-07-31",
+  "SOCH|in|Samy Baghdadi|Valenciennes FC": "2026-07-31",
+  "SOCH|in|Ethan Cortes|Sans club": "2026-07-31",
+  "SOCH|out|Aymen Boutoutaou|FCSB": "2026-07-31",
+  "SOCH|out|Elson Mendes|Kasimpasa": "2026-07-31",
+  "SOCH|out|Abderrezzek Saidi|Unionistas CF": "2026-07-31",
+  "SOCH|out|Lamine Touré|FC UNA Strassen": "2026-07-31",
+  "SOCH|out|Aboubacar Sidibé|Paris 13 Atl.": "2026-07-31",
+  "SOCH|out|Enzo-Noël Dodé|Paris 13 Atl.": "2026-07-31",
+  "SOCH|out|Prince Mendy|Sans club": "2026-07-31",
+  "DFCO|in|Moussa Faty|Le Puy FC": "2026-07-31",
+  "DFCO|in|Ismaïl Bouleghcha|Le Puy FC": "2026-07-31",
+  "DFCO|in|Axel Bargain|GOAL FC": "2026-07-31",
+  "DFCO|out|Ismaïl Diallo|Toulouse": "2026-07-31",
+  "DFCO|out|Jules Meyer|CSKA 1948": "2026-07-31",
+  "DFCO|out|Lenny Montfort|Bourg-en-Bresse": "2026-07-31",
+  "DFCO|out|Loris Dupont|Châteaubriant": "2026-07-31",
+  "DFCO|out|Brayan Djadja|G. Bordeaux": "2026-07-31",
+  "DFCO|out|Brayan Djadja|Istres FC": "2026-07-31",
+  "DFCO|out|Fady Khatir|Sans club": "2026-07-31"
+ },
+ "clubs": [
+  {
+   "code": "ASSE",
+   "name": "AS Saint-Étienne",
+   "bg": "#2fac66",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Thierno Ballo",
+     "age": 24,
+     "pos": "AiG",
+     "club": "Wolfsberger AC",
+     "type": "paid",
+     "val": 2.65,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jakob Breum",
+     "age": 22,
+     "pos": "MO",
+     "club": "Go Ahead Eagles",
+     "type": "paid",
+     "val": 2.2,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Sohaib Naïr",
+     "age": 24,
+     "pos": "DC",
+     "club": "EA Guingamp",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Áron Csongvai",
+     "age": 25,
+     "pos": "MDC",
+     "club": "AIK",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mamour Ndiaye",
+     "age": 20,
+     "pos": "GdB",
+     "club": "Sarpsborg 08",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lucas Lavallée",
+     "age": 23,
+     "pos": "GdB",
+     "club": "LB Châteauroux",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Beres Owusu",
+     "age": 22,
+     "pos": "DC",
+     "club": "Grazer AK",
+     "type": "paid",
+     "val": 0.25,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Dennis Appiah",
+     "age": 34,
+     "pos": "ArD",
+     "club": "SM Caen",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Florian Tardieu",
+     "age": 34,
+     "pos": "MC",
+     "club": "Montpellier",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Enzo Mayilla",
+     "age": 20,
+     "pos": "AC",
+     "club": "USL Dunkerque",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Brice Maubleu",
+     "age": 36,
+     "pos": "GdB",
+     "club": "Pau FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Karim Cissé",
+     "age": 21,
+     "pos": "MO",
+     "club": "Aubagne Air Bel",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Axel Dodote",
+     "age": 19,
+     "pos": "DC",
+     "club": "Pau FC",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "FCN",
+   "name": "FC Nantes",
+   "bg": "#fdff00",
+   "fg": "#00843d",
+   "arr": [
+    {
+     "p": "Killian Corredor",
+     "age": 25,
+     "pos": "AC",
+     "club": "Darmstadt 98",
+     "type": "paid",
+     "val": 2.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lucas Perrin",
+     "age": 27,
+     "pos": "DC",
+     "club": "Sporting Gijón",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mathieu Cafaro",
+     "age": 29,
+     "pos": "AiD",
+     "club": "Paris FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Wilitty Younoussa",
+     "age": 24,
+     "pos": "MC",
+     "club": "Rodez AF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maxime Dupé",
+     "age": 33,
+     "pos": "GdB",
+     "club": "OGC Nice",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Matthis Abline",
+     "age": 23,
+     "pos": "AC",
+     "club": "Monaco",
+     "type": "paid",
+     "val": 25.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alban Lafont",
+     "age": 27,
+     "pos": "GdB",
+     "club": "Amed SK",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Chidozie Awaziem",
+     "age": 29,
+     "pos": "DC",
+     "club": "Konyaspor",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Anthony Lopes",
+     "age": 35,
+     "pos": "GdB",
+     "club": "Angers SCO",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Francis Coquelin",
+     "age": 35,
+     "pos": "MDC",
+     "club": "Stade Lavallois",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mathieu Acapandié",
+     "age": 21,
+     "pos": "ArD",
+     "club": "Hajduk Split",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Uros Radakovic",
+     "age": 32,
+     "pos": "DC",
+     "club": "Buriram Utd.",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Deiver Machado",
+     "age": 32,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Patrik Carlgren",
+     "age": 34,
+     "pos": "GdB",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Youssef El Arabi",
+     "age": 39,
+     "pos": "AC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "REIMS",
+   "name": "Stade de Reims",
+   "bg": "#e2001a",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Samuel Kotto",
+     "age": 22,
+     "pos": "DC",
+     "club": "La Gantoise",
+     "type": "paid",
+     "val": 4.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Tom Ritzy Hülsmann",
+     "age": 22,
+     "pos": "GdB",
+     "club": "TSV Hartberg",
+     "type": "paid",
+     "val": 2.5,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Youssef El Kachati",
+     "age": 26,
+     "pos": "AC",
+     "club": "NEC Nijmegen",
+     "type": "paid",
+     "val": 2.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "John Otomewo",
+     "age": 19,
+     "pos": "MDC",
+     "club": "H. Jerusalem",
+     "type": "paid",
+     "val": 1.6,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Edin Omeragic",
+     "age": 24,
+     "pos": "GdB",
+     "club": "Neuchâtel Xamax",
+     "type": "paid",
+     "val": 0.175,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Daouda Guindo",
+     "age": 23,
+     "pos": "ArG",
+     "club": "Stade Brestois",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Sambou Soumano",
+     "age": 25,
+     "pos": "AC",
+     "club": "FC Lorient",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexis Sauvage",
+     "age": 34,
+     "pos": "GdB",
+     "club": "Amiens SC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Armel Zohouri",
+     "age": 25,
+     "pos": "ArD",
+     "club": "Iberia 1999",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Aleksandr Guboglo",
+     "age": 19,
+     "pos": "ArD",
+     "club": "Montréal",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Patrick Zabi",
+     "age": 19,
+     "pos": "MC",
+     "club": "Paris FC",
+     "type": "paid",
+     "val": 25.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ewen Jaouen",
+     "age": 20,
+     "pos": "GdB",
+     "club": "Newcastle",
+     "type": "paid",
+     "val": 21.5,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Cédric Kipré",
+     "age": 29,
+     "pos": "DC",
+     "club": "Ipswich Town",
+     "type": "paid",
+     "val": 4.5,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Thiemoko Diarra",
+     "age": 23,
+     "pos": "AiD",
+     "club": "Kasimpasa",
+     "type": "paid",
+     "val": 1.5,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maxime Busi",
+     "age": 26,
+     "pos": "ArD",
+     "club": "Royal Antwerp",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexandre Olliero",
+     "age": 30,
+     "pos": "GdB",
+     "club": "Grenoble",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Antoine Leautey",
+     "age": 30,
+     "pos": "AiD",
+     "club": "WH Three Towns",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Malcolm Jeng",
+     "age": 21,
+     "pos": "DC",
+     "club": "FC Groningen",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Hiroki Sekine",
+     "age": 23,
+     "pos": "ArD",
+     "club": "Holstein Kiel",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Adama Bojang",
+     "age": 22,
+     "pos": "AC",
+     "club": "R Charleroi SC",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Pape Sissoko",
+     "age": 20,
+     "pos": "AC",
+     "club": "SV Ried",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Nicolas Pallois",
+     "age": 38,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "FCM",
+   "name": "FC Metz",
+   "bg": "#7a1f2b",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Idris Mohamed",
+     "age": 22,
+     "pos": "DC",
+     "club": "Le Puy FC",
+     "type": "paid",
+     "val": 0.3,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jean Ruiz",
+     "age": 28,
+     "pos": "DC",
+     "club": "Pau FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Florian Miguel",
+     "age": 29,
+     "pos": "ArG",
+     "club": "Burgos CF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Sadibou Sané",
+     "age": 22,
+     "pos": "DC",
+     "club": "Monaco",
+     "type": "paid",
+     "val": 7.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Idrissa Gueye",
+     "age": 19,
+     "pos": "AC",
+     "club": "Udinese",
+     "type": "paid",
+     "val": 6.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Terry Yegbe",
+     "age": 25,
+     "pos": "DC",
+     "club": "Lech Poznan",
+     "type": "paid",
+     "val": 3.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jean-Philippe Gbamin",
+     "age": 30,
+     "pos": "DC",
+     "club": "CSKA Sofia",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Giorgi Kvilitaia",
+     "age": 32,
+     "pos": "AC",
+     "club": "Holstein Kiel",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Kevin Van Den Kerkhof",
+     "age": 30,
+     "pos": "ArD",
+     "club": "R Charleroi SC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Joseph Nduquidi",
+     "age": 21,
+     "pos": "MC",
+     "club": "Farense",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ismaël Guerti",
+     "age": 21,
+     "pos": "MO",
+     "club": "Grazer AK",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Yannis Lawson",
+     "age": 21,
+     "pos": "ArG",
+     "club": "RFC Seraing",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Koffi Kouao",
+     "age": 28,
+     "pos": "ArD",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Fodé Ballo-Touré",
+     "age": 29,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Benjamin Stambouli",
+     "age": 35,
+     "pos": "MDC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "MHSC",
+   "name": "Montpellier Hérault SC",
+   "bg": "#004494",
+   "fg": "#ff6600",
+   "arr": [
+    {
+     "p": "Mamadou Camara",
+     "age": 25,
+     "pos": "AC",
+     "club": "Stade Lavallois",
+     "type": "paid",
+     "val": 0.4,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Florian Tardieu",
+     "age": 34,
+     "pos": "MC",
+     "club": "Saint-Étienne",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Grégory Ayem",
+     "age": 20,
+     "pos": "MO",
+     "club": "Racing CFF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Daylam Meddah",
+     "age": 23,
+     "pos": "DC",
+     "club": "Pau FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Daryll Benlahlou",
+     "age": 20,
+     "pos": "AC",
+     "club": "Ol. Lyonnais",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Modibo Sagnan",
+     "age": 27,
+     "pos": "DC",
+     "club": "C. Rizespor",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexandre Mendy",
+     "age": 32,
+     "pos": "AC",
+     "club": "Al-Faisaly",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Téji Savanier",
+     "age": 34,
+     "pos": "MO",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Christopher Jullien",
+     "age": 33,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "CF63",
+   "name": "Clermont Foot 63",
+   "bg": "#0c3c74",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Arthur Saintorens",
+     "age": 21,
+     "pos": "AC",
+     "club": "Av. Bayonnais",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "İlhan Fakılı",
+     "age": 20,
+     "pos": "AiG",
+     "club": "Besiktas",
+     "type": "paid",
+     "val": 2.7,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Habib Keïta",
+     "age": 24,
+     "pos": "MC",
+     "club": "Kocaelispor",
+     "type": "paid",
+     "val": 0.7,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abdoul Kader Bamba",
+     "age": 32,
+     "pos": "AiG",
+     "club": "FC Granada",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maximiliano Caufriez",
+     "age": 29,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Henri Saivet",
+     "age": 35,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Famara Diédhiou",
+     "age": 33,
+     "pos": "AC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Johan Gastien",
+     "age": 38,
+     "pos": "MDC",
+     "club": "Fin de carrière",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Amine Saïd",
+     "age": 23,
+     "pos": "AC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "RED",
+   "name": "Red Star FC",
+   "bg": "#007a3d",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Elyaz Zidane",
+     "age": 20,
+     "pos": "DC",
+     "club": "Betis Deportivo",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Quentin Beunardeau",
+     "age": 32,
+     "pos": "GdB",
+     "club": "AS Cannes",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Rayane Doucouré",
+     "age": 25,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Vincent Kany",
+     "age": 23,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "RAF",
+   "name": "Rodez AF",
+   "bg": "#ba0c2f",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Mathis Touho",
+     "age": 21,
+     "pos": "AiG",
+     "club": "FC Villefranche",
+     "type": "paid",
+     "val": 0.2,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Damjan Pavlovic",
+     "age": 25,
+     "pos": "MDC",
+     "club": "Kauno Zalgiris",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Antonin Cartillier",
+     "age": 22,
+     "pos": "MDC",
+     "club": "FC Rouen 1899",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Taïryk Arconte",
+     "age": 22,
+     "pos": "AC",
+     "club": "Millwall",
+     "type": "paid",
+     "val": 3.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Nolan Galves",
+     "age": 23,
+     "pos": "ArD",
+     "club": "West Brom",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexis Trouillet",
+     "age": 25,
+     "pos": "MC",
+     "club": "Standard Liège",
+     "type": "paid",
+     "val": 0.35,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Wilitty Younoussa",
+     "age": 24,
+     "pos": "MC",
+     "club": "FC Nantes",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mohamed Achi",
+     "age": 24,
+     "pos": "MC",
+     "club": "Cherno More",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Morgan Corredor",
+     "age": 21,
+     "pos": "MC",
+     "club": "Tarbes Pyrénées",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "PAU",
+   "name": "Pau FC",
+   "bg": "#002654",
+   "fg": "#f8b400",
+   "arr": [
+    {
+     "p": "Babacar Leye",
+     "age": 25,
+     "pos": "AC",
+     "club": "FC Villefranche",
+     "type": "paid",
+     "val": 0.2,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jessy Benet",
+     "age": 31,
+     "pos": "MC",
+     "club": "Grenoble",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Gaëtan Paquiez",
+     "age": 32,
+     "pos": "DC",
+     "club": "Grenoble",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Quentin Daubin",
+     "age": 31,
+     "pos": "MC",
+     "club": "Valenciennes FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lorenzo Rajot",
+     "age": 28,
+     "pos": "MC",
+     "club": "SM Caen",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Brice Maubleu",
+     "age": 36,
+     "pos": "GdB",
+     "club": "Saint-Étienne",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Royce Openda",
+     "age": 24,
+     "pos": "AiD",
+     "club": "G. Bordeaux",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Tom Saettel",
+     "age": 21,
+     "pos": "AiG",
+     "club": "FR Haguenau",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mathys Tourraine",
+     "age": 25,
+     "pos": "ArD",
+     "club": "Paris FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexis Lefebvre",
+     "age": 23,
+     "pos": "AiD",
+     "club": "RFC Liège",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abdoulaye Mbaye",
+     "age": 20,
+     "pos": "AC",
+     "club": "Génération Foot",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Axel Dodote",
+     "age": 19,
+     "pos": "DC",
+     "club": "Saint-Étienne",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Axel Bamba",
+     "age": 26,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Rayan Touzghar",
+     "age": 22,
+     "pos": "MC",
+     "club": "Standard Liège",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Neil Glossoa",
+     "age": 21,
+     "pos": "ArD",
+     "club": "Slavia Prague",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jean Ruiz",
+     "age": 28,
+     "pos": "DC",
+     "club": "FC Metz",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Julien Anziani",
+     "age": 27,
+     "pos": "MC",
+     "club": "Manisa FK",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Setigui Karamoko",
+     "age": 26,
+     "pos": "DC",
+     "club": "Sepsi OSK",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Daylam Meddah",
+     "age": 23,
+     "pos": "DC",
+     "club": "Montpellier",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Noah Raveyre",
+     "age": 21,
+     "pos": "GdB",
+     "club": "Alverca",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Steeve Beusnard",
+     "age": 34,
+     "pos": "MC",
+     "club": "Turan Tovuz",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Salif Lebouath",
+     "age": 24,
+     "pos": "ArD",
+     "club": "Valenciennes FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Antonin Bobichon",
+     "age": 30,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ousmane Kanté",
+     "age": 36,
+     "pos": "DC",
+     "club": "Fin de carrière",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "USLD",
+   "name": "USL Dunkerque",
+   "bg": "#001e50",
+   "fg": "#e2001a",
+   "arr": [
+    {
+     "p": "Jordan Morel",
+     "age": 23,
+     "pos": "MC",
+     "club": "US Orléans",
+     "type": "paid",
+     "val": 0.125,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Egor Prutsev",
+     "age": 23,
+     "pos": "MO",
+     "club": "Étoile Rouge",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lenny Vallier",
+     "age": 27,
+     "pos": "ArG",
+     "club": "Nacional",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Adrien Lebeau",
+     "age": 26,
+     "pos": "MO",
+     "club": "Hansa Rostock",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Enzo Mayilla",
+     "age": 20,
+     "pos": "AC",
+     "club": "Saint-Étienne",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Steven Nzonzi",
+     "age": 37,
+     "pos": "MDC",
+     "club": "Stoke City",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maxence Prévot",
+     "age": 29,
+     "pos": "GdB",
+     "club": "OH Leuven",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Souleymane Keita",
+     "age": 20,
+     "pos": "AiG",
+     "club": "US Boulogne",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Moha Ramos",
+     "age": 26,
+     "pos": "GdB",
+     "club": "CD Marino",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Franck Atoen",
+     "age": 19,
+     "pos": "MDC",
+     "club": "Samsunspor",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Enzo Bardeli",
+     "age": 25,
+     "pos": "MC",
+     "club": "UD Levante",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alec Georgen",
+     "age": 27,
+     "pos": "ArD",
+     "club": "FC Lorient",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Marco Essimi",
+     "age": 27,
+     "pos": "AiD",
+     "club": "Alverca",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abou Kanté",
+     "age": 31,
+     "pos": "AC",
+     "club": "Stade Lavallois",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Eddy Sylvestre",
+     "age": 26,
+     "pos": "MO",
+     "club": "FCV Farul",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Marcos Lavín",
+     "age": 29,
+     "pos": "GdB",
+     "club": "Académico Viseu",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Vincent Sasso",
+     "age": 35,
+     "pos": "DC",
+     "club": "Le Havre AC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Felipe Abner",
+     "age": 30,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Iñigo Eguaras",
+     "age": 34,
+     "pos": "MDC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Malick Diop",
+     "age": 20,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "GF38",
+   "name": "Grenoble Foot 38",
+   "bg": "#e2001a",
+   "fg": "#002654",
+   "arr": [
+    {
+     "p": "Yohann Magnin",
+     "age": 29,
+     "pos": "MDC",
+     "club": "CSKA 1948",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Zé Leite",
+     "age": 26,
+     "pos": "AiD",
+     "club": "Penafiel",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Sakhalou Niakaté",
+     "age": 20,
+     "pos": "ArD",
+     "club": "Valenciennes FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Dillon Hoogewerf",
+     "age": 23,
+     "pos": "AiG",
+     "club": "Vitesse",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Farouq Limouri",
+     "age": 23,
+     "pos": "DC",
+     "club": "FC Eindhoven",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alexandre Olliero",
+     "age": 30,
+     "pos": "GdB",
+     "club": "Stade de Reims",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mael Corboz",
+     "age": 31,
+     "pos": "MC",
+     "club": "Arm. Bielefeld",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Mamadou Diop",
+     "age": 26,
+     "pos": "GdB",
+     "club": "AJ Auxerre",
+     "type": "paid",
+     "val": 2.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jessy Benet",
+     "age": 31,
+     "pos": "MC",
+     "club": "Pau FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Gaëtan Paquiez",
+     "age": 32,
+     "pos": "DC",
+     "club": "Pau FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maxime Pattier",
+     "age": 30,
+     "pos": "GdB",
+     "club": "US Saint-Malo",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Shaquil Delos",
+     "age": 27,
+     "pos": "ArD",
+     "club": "La Louvière",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Stone Mambo",
+     "age": 27,
+     "pos": "DC",
+     "club": "FC Noah",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alan Kerouedan",
+     "age": 26,
+     "pos": "AiD",
+     "club": "AS Cannes",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "EAG",
+   "name": "EA Guingamp",
+   "bg": "#e2001a",
+   "fg": "#000",
+   "arr": [
+    {
+     "p": "Teddy Averlant",
+     "age": 26,
+     "pos": "MD",
+     "club": "Amiens SC",
+     "type": "paid",
+     "val": 0.2,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Samir Ben Brahim",
+     "age": 23,
+     "pos": "MD",
+     "club": "FC Versailles",
+     "type": "paid",
+     "val": 0.1,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Florent Sanchez",
+     "age": 23,
+     "pos": "MC",
+     "club": "US Orléans",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jasser Chamakh",
+     "age": 22,
+     "pos": "MG",
+     "club": "AS Saint-Priest",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Tom Ducrocq",
+     "age": 26,
+     "pos": "MDC",
+     "club": "SC Bastia",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jeovanni Dianganga",
+     "age": 26,
+     "pos": "DC",
+     "club": "KSC Lokeren",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Sohaib Naïr",
+     "age": 24,
+     "pos": "DC",
+     "club": "Saint-Étienne",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Kalidou Sidibé",
+     "age": 27,
+     "pos": "MDC",
+     "club": "Akhmat Grozny",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Amadou Sagna",
+     "age": 27,
+     "pos": "AiD",
+     "club": "Kiryat Shmona",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Louis Mafouta",
+     "age": 32,
+     "pos": "AC",
+     "club": "Le Mans FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Eden Gassama",
+     "age": 20,
+     "pos": "DC",
+     "club": "VFC La Roche",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alpha Sissoko",
+     "age": 29,
+     "pos": "ArD",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Youssef Njoya",
+     "age": 22,
+     "pos": "AiG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "NANCY",
+   "name": "AS Nancy-Lorraine",
+   "bg": "#d0021b",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Issam Bouaoune",
+     "age": 23,
+     "pos": "MC",
+     "club": "LB Châteauroux",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Kouroufia Kébé",
+     "age": 20,
+     "pos": "MDC",
+     "club": "US Orléans",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mamadou Fofana",
+     "age": 25,
+     "pos": "MC",
+     "club": "FC Aarau",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Logan Ndenbe",
+     "age": 26,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Teddy Bouriaud",
+     "age": 29,
+     "pos": "MDC",
+     "club": "Stade Lavallois",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Maxence Carlier",
+     "age": 29,
+     "pos": "MDC",
+     "club": "Ararat-Armenia",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jimmy Evans",
+     "age": 27,
+     "pos": "AiD",
+     "club": "Uni. Católica",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Cazim Suljic",
+     "age": 29,
+     "pos": "MC",
+     "club": "Amiens SC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Adrien Julloux",
+     "age": 29,
+     "pos": "DC",
+     "club": "Amiens SC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Martin Sourzac",
+     "age": 34,
+     "pos": "GdB",
+     "club": "Imperia",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Bakari Camara",
+     "age": 32,
+     "pos": "MDC",
+     "club": "FC Rouen 1899",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Patrick Ouotro",
+     "age": 20,
+     "pos": "AC",
+     "club": "Vit. Guimarães",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mattheo Guendez",
+     "age": 20,
+     "pos": "AiG",
+     "club": "Paris 13 Atl.",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Youssouf Tandia",
+     "age": 20,
+     "pos": "MO",
+     "club": "SAS Épinal",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Faitout Maouassa",
+     "age": 27,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Martin Expérience",
+     "age": 27,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Oumar Sidibé",
+     "age": 25,
+     "pos": "AiD",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Geoffrey Lembet",
+     "age": 37,
+     "pos": "GdB",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "ANNECY",
+   "name": "FC Annecy",
+   "bg": "#cc0000",
+   "fg": "#fff",
+   "arr": [
+    {
+     "p": "Pascal Mozie",
+     "age": 18,
+     "pos": "MDC",
+     "club": "Legia Varsovie",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Alan Mondesir",
+     "age": 22,
+     "pos": "AiG",
+     "club": "Montlouis",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Esteban Marre",
+     "age": 22,
+     "pos": "ArD",
+     "club": "Istres FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Sacha Lima",
+     "age": 21,
+     "pos": "DC",
+     "club": "UF Touraine",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Emmanuel Louisir",
+     "age": 20,
+     "pos": "DC",
+     "club": "Racing CFF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Valentin Jacob",
+     "age": 32,
+     "pos": "MO",
+     "club": "GFA Rumilly Val",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Aymerick Nedelec",
+     "age": 19,
+     "pos": "GdB",
+     "club": "Chambéry SF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abdel Hbouch",
+     "age": 27,
+     "pos": "MO",
+     "club": "US Boulogne",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Cédric Makutungu",
+     "age": 28,
+     "pos": "ArG",
+     "club": "AS Cannes",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ranjan Neelakandan",
+     "age": 21,
+     "pos": "AC",
+     "club": "FC Vaduz",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Vincent Pajot",
+     "age": 35,
+     "pos": "MDC",
+     "club": "Fin de carrière",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Fabrice N'Sakala",
+     "age": 35,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Wael Debbiche",
+     "age": 21,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "LAVAL",
+   "name": "Stade Lavallois",
+   "bg": "#002f6c",
+   "fg": "#000",
+   "arr": [
+    {
+     "p": "Francis Coquelin",
+     "age": 35,
+     "pos": "MDC",
+     "club": "FC Nantes",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Teddy Bouriaud",
+     "age": 29,
+     "pos": "MDC",
+     "club": "AS Nancy",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Esteban Mouton",
+     "age": 22,
+     "pos": "ArD",
+     "club": "US Orléans",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Corentin Fatou",
+     "age": 27,
+     "pos": "AC",
+     "club": "US Boulogne",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abou Kanté",
+     "age": 31,
+     "pos": "AC",
+     "club": "USL Dunkerque",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Hermann Esmel",
+     "age": 26,
+     "pos": "MDC",
+     "club": "Le Puy FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Chafik Gourichy",
+     "age": 25,
+     "pos": "MO",
+     "club": "Thionville Lus.",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Aboubacar Lô",
+     "age": 26,
+     "pos": "DC",
+     "club": "Amiens SC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jules Gaudin",
+     "age": 26,
+     "pos": "ArG",
+     "club": "R Charleroi SC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Mamadou Camara",
+     "age": 25,
+     "pos": "AC",
+     "club": "Montpellier",
+     "type": "paid",
+     "val": 0.4,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Peter Ouaneh",
+     "age": 28,
+     "pos": "DC",
+     "club": "UTA Arad",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Titouan Thomas",
+     "age": 24,
+     "pos": "MC",
+     "club": "FC Fleury 91",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Malik Tchokounté",
+     "age": 37,
+     "pos": "AC",
+     "club": "FC Rouen 1899",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Enzo Montet",
+     "age": 23,
+     "pos": "MDC",
+     "club": "Thionville Lus.",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Loïs Martins",
+     "age": 22,
+     "pos": "MC",
+     "club": "US Avranches",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Thibaut Vargas",
+     "age": 26,
+     "pos": "ArD",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "William Benard",
+     "age": 23,
+     "pos": "MC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Moïse Adilehou",
+     "age": 30,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Yohan Tavares",
+     "age": 38,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "BOUL",
+   "name": "US Boulogne",
+   "bg": "#002458",
+   "fg": "#e2001a",
+   "arr": [
+    {
+     "p": "Aymane Nassiri",
+     "age": 21,
+     "pos": "AiD",
+     "club": "Istres FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Oscar Lenne",
+     "age": 19,
+     "pos": "ArG",
+     "club": "RC Lens Espoir",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abdel Hbouch",
+     "age": 27,
+     "pos": "MO",
+     "club": "FC Annecy",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Benjamin Bešić",
+     "age": 24,
+     "pos": "AC",
+     "club": "Bourg-en-Bresse",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Théo Brusco",
+     "age": 26,
+     "pos": "DC",
+     "club": "Differdange 03",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Siad Gourville",
+     "age": 26,
+     "pos": "DC",
+     "club": "La Louvière",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Nathan Zohoré",
+     "age": 25,
+     "pos": "DC",
+     "club": "Ferencváros",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Amine El Farissi",
+     "age": 27,
+     "pos": "MO",
+     "club": "MAS Fès",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Corentin Fatou",
+     "age": 27,
+     "pos": "AC",
+     "club": "Stade Lavallois",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Souleymane Keita",
+     "age": 20,
+     "pos": "AiG",
+     "club": "USL Dunkerque",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Emmanuel Kouassi",
+     "age": 23,
+     "pos": "ArD",
+     "club": "Le Puy FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Hervé Touré",
+     "age": 26,
+     "pos": "MDC",
+     "club": "OFK Beograd",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lilian Raillot",
+     "age": 22,
+     "pos": "MDC",
+     "club": "US Orléans",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Luka Boiteau",
+     "age": 20,
+     "pos": "MO",
+     "club": "Valenciennes FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Exaucé Mpembele Boula",
+     "age": 24,
+     "pos": "AiG",
+     "club": "Bourg-en-Bresse",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Christian Kitenge",
+     "age": 24,
+     "pos": "AiD",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "SOCH",
+   "name": "FC Sochaux-Montbéliard",
+   "bg": "#ffd100",
+   "fg": "#002f6c",
+   "arr": [
+    {
+     "p": "Victor Lobry",
+     "age": 31,
+     "pos": "MO",
+     "club": "Amiens SC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Saad Agouzoul",
+     "age": 28,
+     "pos": "DC",
+     "club": "AJ Auxerre",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Landry Nomel",
+     "age": 28,
+     "pos": "AiG",
+     "club": "StadeLO",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Mathis Clairicia",
+     "age": 23,
+     "pos": "AC",
+     "club": "VfL Bochum",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Samy Baghdadi",
+     "age": 28,
+     "pos": "DA",
+     "club": "Valenciennes FC",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ethan Cortes",
+     "age": 19,
+     "pos": "AC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Aymen Boutoutaou",
+     "age": 25,
+     "pos": "AiD",
+     "club": "FCSB",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Elson Mendes",
+     "age": 20,
+     "pos": "MDC",
+     "club": "Kasimpasa",
+     "type": "paid",
+     "val": 0.9,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Abderrezzek Saidi",
+     "age": 20,
+     "pos": "ArD",
+     "club": "Unionistas CF",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lamine Touré",
+     "age": 23,
+     "pos": "DC",
+     "club": "FC UNA Strassen",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Aboubacar Sidibé",
+     "age": 20,
+     "pos": "AC",
+     "club": "Paris 13 Atl.",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Enzo-Noël Dodé",
+     "age": 19,
+     "pos": "ArG",
+     "club": "Paris 13 Atl.",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Prince Mendy",
+     "age": 31,
+     "pos": "DC",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "code": "DFCO",
+   "name": "Dijon FCO",
+   "bg": "#ffffff",
+   "fg": "#e2001a",
+   "arr": [
+    {
+     "p": "Moussa Faty",
+     "age": 25,
+     "pos": "ArG",
+     "club": "Le Puy FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Ismaïl Bouleghcha",
+     "age": 23,
+     "pos": "ArD",
+     "club": "Le Puy FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Axel Bargain",
+     "age": 20,
+     "pos": "DC",
+     "club": "GOAL FC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ],
+   "dep": [
+    {
+     "p": "Ismaïl Diallo",
+     "age": 22,
+     "pos": "ArD",
+     "club": "Toulouse",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Jules Meyer",
+     "age": 25,
+     "pos": "MO",
+     "club": "CSKA 1948",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Lenny Montfort",
+     "age": 24,
+     "pos": "GdB",
+     "club": "Bourg-en-Bresse",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Loris Dupont",
+     "age": 20,
+     "pos": "MC",
+     "club": "Châteaubriant",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Brayan Djadja",
+     "age": 19,
+     "pos": "DC",
+     "club": "G. Bordeaux",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Brayan Djadja",
+     "age": 19,
+     "pos": "DC",
+     "club": "Istres FC",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
+     "p": "Fady Khatir",
+     "age": 29,
+     "pos": "ArG",
+     "club": "Sans club",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    }
+   ]
+  }
+ ],
+ "squads": {
+  "ASSE": [
+   {
+    "n": "30",
+    "p": "Gautier Larsonneur",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 3.0
+   },
+   {
+    "n": "1",
+    "p": "Mamour Ndiaye",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 20,
+    "val": 1.2
+   },
+   {
+    "n": "",
+    "p": "Lucas Lavallée",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "15",
+    "p": "Chico Lamba",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 3.5
+   },
+   {
+    "n": "3",
+    "p": "Mickaël Nadé",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 27,
+    "val": 3.0
+   },
+   {
+    "n": "18",
+    "p": "Sohaib Naïr",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 2.0
+   },
+   {
+    "n": "26",
+    "p": "Julien Le Cardinal",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 1.8
+   },
+   {
+    "n": "6",
+    "p": "Maxime Bernauer",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 1.2
+   },
+   {
+    "n": "11",
+    "p": "Ben Old",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 23,
+    "val": 1.8
+   },
+   {
+    "n": "19",
+    "p": "Ebenezer Annan",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 23,
+    "val": 1.8
+   },
+   {
+    "n": "34",
+    "p": "Lassana Traoré",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.1
+   },
+   {
+    "n": "39",
+    "p": "Kévin Pedro",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 7.0
+   },
+   {
+    "n": "13",
+    "p": "João Ferreira",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 25,
+    "val": 2.0
+   },
+   {
+    "n": "2",
+    "p": "Strahinja Stojkovic",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.7
+   },
+   {
+    "n": "",
+    "p": "Pierre Ekwah",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 24,
+    "val": 2.0
+   },
+   {
+    "n": "5",
+    "p": "Mahmoud Jaber",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 1.8
+   },
+   {
+    "n": "",
+    "p": "Áron Csongvai",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 25,
+    "val": 1.7
+   },
+   {
+    "n": "29",
+    "p": "Aïmen Moueffek",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 25,
+    "val": 2.0
+   },
+   {
+    "n": "35",
+    "p": "Luan Gadegbeku",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.8
+   },
+   {
+    "n": "36",
+    "p": "Paul Eymard",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 18,
+    "val": 0.5
+   },
+   {
+    "n": "20",
+    "p": "Augustine Boakye",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 25,
+    "val": 6.0
+   },
+   {
+    "n": "10",
+    "p": "Jakob Breum",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 22,
+    "val": 5.0
+   },
+   {
+    "n": "28",
+    "p": "Igor Miladinovic",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 23,
+    "val": 2.5
+   },
+   {
+    "n": "31",
+    "p": "Nadir El Jamali",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.8
+   },
+   {
+    "n": "22",
+    "p": "Zuriko Davitashvili",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 25,
+    "val": 12.0
+   },
+   {
+    "n": "8",
+    "p": "Thierno Ballo",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 24,
+    "val": 6.0
+   },
+   {
+    "n": "7",
+    "p": "Irvin Cardona",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 28,
+    "val": 2.5
+   },
+   {
+    "n": "9",
+    "p": "Lucas Stassin",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 15.0
+   },
+   {
+    "n": "25",
+    "p": "Djylian N'Guessan",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 17,
+    "val": 4.0
+   },
+   {
+    "n": "17",
+    "p": "Joshua Duffus",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 2.5
+   },
+   {
+    "n": "49",
+    "p": "Marten-Chris Paalberg",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 17,
+    "val": 0.7
+   }
+  ],
+  "FCN": [
+   {
+    "n": "",
+    "p": "Maxime Dupé",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 33,
+    "val": 0.7
+   },
+   {
+    "n": "50",
+    "p": "Alexis Mirbach",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 21,
+    "val": 0.05
+   },
+   {
+    "n": "78",
+    "p": "Tylel Tati",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 18,
+    "val": 25.0
+   },
+   {
+    "n": "2",
+    "p": "Ali Youssif",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 2.5
+   },
+   {
+    "n": "",
+    "p": "Jean-Kévin Duverne",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 29,
+    "val": 2.0
+   },
+   {
+    "n": "5",
+    "p": "Lucas Perrin",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 27,
+    "val": 2.0
+   },
+   {
+    "n": "72",
+    "p": "Sékou Doucouré",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.15
+   },
+   {
+    "n": "",
+    "p": "Louka Gautier",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "98",
+    "p": "Kelvin Amian",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 28,
+    "val": 2.0
+   },
+   {
+    "n": "18",
+    "p": "Fabien Centonze",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 30,
+    "val": 1.0
+   },
+   {
+    "n": "24",
+    "p": "Frédéric Guilbert",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 31,
+    "val": 0.8
+   },
+   {
+    "n": "65",
+    "p": "Hugo Lamy",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "8",
+    "p": "Johann Lepenant",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 23,
+    "val": 7.0
+   },
+   {
+    "n": "28",
+    "p": "Ibrahima Sissoko",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 28,
+    "val": 2.0
+   },
+   {
+    "n": "52",
+    "p": "Bahmed Deuff",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 20,
+    "val": 1.2
+   },
+   {
+    "n": "",
+    "p": "Lamine Diack",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.3
+   },
+   {
+    "n": "",
+    "p": "Malang Gomes",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.07
+   },
+   {
+    "n": "69",
+    "p": "Sacha Ziani",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "17",
+    "p": "Dehmaine Tabibou",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 5.0
+   },
+   {
+    "n": "",
+    "p": "Wilitty Younoussa",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.9
+   },
+   {
+    "n": "66",
+    "p": "Louis Leroux",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 20,
+    "val": 10.0
+   },
+   {
+    "n": "11",
+    "p": "Herba Guirassy",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 19,
+    "val": 7.0
+   },
+   {
+    "n": "",
+    "p": "Yassine Benhattab",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 23,
+    "val": 2.0
+   },
+   {
+    "n": "20",
+    "p": "Mathieu Cafaro",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 29,
+    "val": 1.5
+   },
+   {
+    "n": "47",
+    "p": "Moustapha Dabo",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 18,
+    "val": 0.3
+   },
+   {
+    "n": "31",
+    "p": "Mostafa Mohamed",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 28,
+    "val": 3.5
+   },
+   {
+    "n": "12",
+    "p": "Killian Corredor",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 2.8
+   },
+   {
+    "n": "37",
+    "p": "Ignatius Ganago",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 27,
+    "val": 2.0
+   }
+  ],
+  "REIMS": [
+   {
+    "n": "1",
+    "p": "Tom Ritzy Hülsmann",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 22,
+    "val": 1.5
+   },
+   {
+    "n": "12",
+    "p": "Edin Omeragic",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 24,
+    "val": 0.4
+   },
+   {
+    "n": "",
+    "p": "Alexis Sauvage",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 34,
+    "val": 0.1
+   },
+   {
+    "n": "94",
+    "p": "Soumaïla Sylla",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 22,
+    "val": 0.07
+   },
+   {
+    "n": "",
+    "p": "Samuel Kotto",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 4.0
+   },
+   {
+    "n": "2",
+    "p": "Joseph Okumu",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 29,
+    "val": 3.0
+   },
+   {
+    "n": "28",
+    "p": "Elie N'Tamon",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 2.0
+   },
+   {
+    "n": "",
+    "p": "Daouda Guindo",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 23,
+    "val": 4.5
+   },
+   {
+    "n": "18",
+    "p": "Sergio Akieme",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 28,
+    "val": 4.0
+   },
+   {
+    "n": "20",
+    "p": "Armel Zohouri",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.5
+   },
+   {
+    "n": "",
+    "p": "Aleksandr Guboglo",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.35
+   },
+   {
+    "n": "24",
+    "p": "Mory Gbane",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 25,
+    "val": 4.0
+   },
+   {
+    "n": "",
+    "p": "John Otomewo",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 19,
+    "val": 2.0
+   },
+   {
+    "n": "6",
+    "p": "Théo Leoni",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 26,
+    "val": 4.0
+   },
+   {
+    "n": "8",
+    "p": "Yaya Fofana",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 1.5
+   },
+   {
+    "n": "30",
+    "p": "John Patrick",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.8
+   },
+   {
+    "n": "",
+    "p": "Yohan Demoncy",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 30,
+    "val": 0.4
+   },
+   {
+    "n": "87",
+    "p": "Martial Tia",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 19,
+    "val": 7.0
+   },
+   {
+    "n": "",
+    "p": "Reda Khadra",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 25,
+    "val": 1.2
+   },
+   {
+    "n": "17",
+    "p": "Keito Nakamura",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 26,
+    "val": 12.0
+   },
+   {
+    "n": "9",
+    "p": "Mohamed Daramy",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 24,
+    "val": 2.5
+   },
+   {
+    "n": "73",
+    "p": "Ike Orazi",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 19,
+    "val": 0.05
+   },
+   {
+    "n": "",
+    "p": "Oumar Diakité",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 5.0
+   },
+   {
+    "n": "99",
+    "p": "Sambou Soumano",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 3.5
+   },
+   {
+    "n": "85",
+    "p": "Hafiz Umar Ibrahim",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 3.0
+   },
+   {
+    "n": "",
+    "p": "Jordan",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 30,
+    "val": 1.5
+   },
+   {
+    "n": "",
+    "p": "Amine Salama",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 26,
+    "val": 1.0
+   },
+   {
+    "n": "",
+    "p": "Youssef El Kachati",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.65
+   }
+  ],
+  "FCM": [
+   {
+    "n": "1",
+    "p": "Jonathan Fischer",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 24,
+    "val": 2.0
+   },
+   {
+    "n": "61",
+    "p": "Pape Sy",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 0.6
+   },
+   {
+    "n": "40",
+    "p": "Ousmane Ba",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 24,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Jean Ruiz",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 1.2
+   },
+   {
+    "n": "4",
+    "p": "Michel Mboula",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Idris Mohamed",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.35
+   },
+   {
+    "n": "",
+    "p": "Florian Miguel",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 29,
+    "val": 1.0
+   },
+   {
+    "n": "70",
+    "p": "Bouna Sarr",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 34,
+    "val": 0.35
+   },
+   {
+    "n": "2",
+    "p": "Maxime Colin",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 34,
+    "val": 0.25
+   },
+   {
+    "n": "25",
+    "p": "Cléo Mélières",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.2
+   },
+   {
+    "n": "12",
+    "p": "Alpha Touré",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 20,
+    "val": 5.0
+   },
+   {
+    "n": "33",
+    "p": "Believe Munongo",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 16,
+    "val": 10.0
+   },
+   {
+    "n": "20",
+    "p": "Jessy Deminguet",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 28,
+    "val": 2.0
+   },
+   {
+    "n": "",
+    "p": "Giorgi Abuashvili",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 23,
+    "val": 1.0
+   },
+   {
+    "n": "",
+    "p": "Morgan Bokele",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Édouard Soumah-Abbad",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.5
+   },
+   {
+    "n": "38",
+    "p": "Hamza Kadamani",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 16,
+    "val": 0.1
+   },
+   {
+    "n": "10",
+    "p": "Gauthier Hein",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 29,
+    "val": 5.0
+   },
+   {
+    "n": "22",
+    "p": "Nathan Mbala",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 18,
+    "val": 4.5
+   },
+   {
+    "n": "30",
+    "p": "Habib Diallo",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 31,
+    "val": 4.0
+   },
+   {
+    "n": "",
+    "p": "Pape Moussa Fall",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 3.5
+   },
+   {
+    "n": "",
+    "p": "Ibou Sané",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.9
+   },
+   {
+    "n": "17",
+    "p": "Joseph Mangondo",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.05
+   }
+  ],
+  "MHSC": [
+   {
+    "n": "31",
+    "p": "Simon Ngapandouetnbu",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 23,
+    "val": 2.5
+   },
+   {
+    "n": "50",
+    "p": "Viktor Dzodic",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 19,
+    "val": 0.15
+   },
+   {
+    "n": "1",
+    "p": "Mathieu Michel",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 34,
+    "val": 0.1
+   },
+   {
+    "n": "60",
+    "p": "Kevin Kamdem",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "23",
+    "p": "Yaël Mouanga",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 2.0
+   },
+   {
+    "n": "27",
+    "p": "Daylam Meddah",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 1.5
+   },
+   {
+    "n": "15",
+    "p": "Julien Laporte",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 32,
+    "val": 0.8
+   },
+   {
+    "n": "17",
+    "p": "Théo Sainte-Luce",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 27,
+    "val": 1.0
+   },
+   {
+    "n": "21",
+    "p": "Lucas Mincarelli",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.8
+   },
+   {
+    "n": "29",
+    "p": "Enzo Tchato",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 23,
+    "val": 2.5
+   },
+   {
+    "n": "3",
+    "p": "Naoufel El Hannach",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 19,
+    "val": 1.5
+   },
+   {
+    "n": "25",
+    "p": "Wilfried Ndollo",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.05
+   },
+   {
+    "n": "77",
+    "p": "Everson Jr",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 1.2
+   },
+   {
+    "n": "44",
+    "p": "Théo Chennahi",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 2.5
+   },
+   {
+    "n": "10",
+    "p": "Khalil Fayad",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 1.5
+   },
+   {
+    "n": "5",
+    "p": "Florian Tardieu",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 34,
+    "val": 0.4
+   },
+   {
+    "n": "20",
+    "p": "Nabil Homssa",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.1
+   },
+   {
+    "n": "90",
+    "p": "Grégory Ayem",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "8",
+    "p": "Yanis Issoufou",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 19,
+    "val": 1.0
+   },
+   {
+    "n": "18",
+    "p": "Nicolas Pays",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 23,
+    "val": 2.0
+   },
+   {
+    "n": "22",
+    "p": "Axel Guéguin",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.25
+   },
+   {
+    "n": "11",
+    "p": "Mamadou Camara",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 1.2
+   },
+   {
+    "n": "24",
+    "p": "Junior Ndiaye",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.4
+   },
+   {
+    "n": "23",
+    "p": "Daryll Benlahlou",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.0
+   }
+  ],
+  "CF63": [
+   {
+    "n": "30",
+    "p": "Théo Guivarch",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 30,
+    "val": 0.5
+   },
+   {
+    "n": "16",
+    "p": "Massamba N'Diaye",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 24,
+    "val": 0.2
+   },
+   {
+    "n": "28",
+    "p": "Ivan M'Bahia",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 2.5
+   },
+   {
+    "n": "",
+    "p": "Andy Pelmard",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 2.0
+   },
+   {
+    "n": "21",
+    "p": "Yoann Salmier",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 33,
+    "val": 0.6
+   },
+   {
+    "n": "45",
+    "p": "Matys Donavin",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.03
+   },
+   {
+    "n": "38",
+    "p": "El Hadj Koné",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Vital Nsimba",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 33,
+    "val": 0.3
+   },
+   {
+    "n": "97",
+    "p": "Kenji-Van Boto",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 30,
+    "val": 0.25
+   },
+   {
+    "n": "",
+    "p": "Cheick Oumar Konaté",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 1.2
+   },
+   {
+    "n": "93",
+    "p": "Ibrahim Coulibaly",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 1.0
+   },
+   {
+    "n": "13",
+    "p": "Julien Astic",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.25
+   },
+   {
+    "n": "2",
+    "p": "Abdellah Baallal",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 1.8
+   },
+   {
+    "n": "44",
+    "p": "Allan Ackra",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.6
+   },
+   {
+    "n": "8",
+    "p": "Yuliwes Bellache",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.07
+   },
+   {
+    "n": "11",
+    "p": "Maïdine Douane",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.5
+   },
+   {
+    "n": "77",
+    "p": "Enzo Cantero",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 21,
+    "val": 1.0
+   },
+   {
+    "n": "17",
+    "p": "Ousmane Diop",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.25
+   },
+   {
+    "n": "",
+    "p": "Mohamed-Amine Bouchenna",
+    "pos": "DA",
+    "grp": "MID",
+    "age": 20,
+    "val": 0.25
+   },
+   {
+    "n": "23",
+    "p": "Adrien Hunou",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 32,
+    "val": 0.25
+   },
+   {
+    "n": "",
+    "p": "Arthur Saintorens",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "90",
+    "p": "Christ Okou",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.0
+   }
+  ],
+  "RED": [
+   {
+    "n": "16",
+    "p": "Gaëtan Poussin",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 27,
+    "val": 1.2
+   },
+   {
+    "n": "40",
+    "p": "Mouez Hassen",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 31,
+    "val": 0.2
+   },
+   {
+    "n": "1",
+    "p": "Yanis Benchaouch",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 20,
+    "val": 0.07
+   },
+   {
+    "n": "20",
+    "p": "Dylan Durivaux",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 1.5
+   },
+   {
+    "n": "27",
+    "p": "Bradley Danger",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.8
+   },
+   {
+    "n": "5",
+    "p": "Josué Escartin",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "24",
+    "p": "Pierre Lemonnier",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 33,
+    "val": 0.3
+   },
+   {
+    "n": "",
+    "p": "Elyaz Zidane",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.2
+   },
+   {
+    "n": "3",
+    "p": "Matthieu Huard",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.5
+   },
+   {
+    "n": "11",
+    "p": "Kemo Cissé",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 29,
+    "val": 0.5
+   },
+   {
+    "n": "2",
+    "p": "Théo Magnin",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.9
+   },
+   {
+    "n": "4",
+    "p": "Balthazar Pierret",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 1.5
+   },
+   {
+    "n": "19",
+    "p": "Islamdine Halifa",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.4
+   },
+   {
+    "n": "98",
+    "p": "Ryad Hachem",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 28,
+    "val": 1.0
+   },
+   {
+    "n": "",
+    "p": "Samuel Renel",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.35
+   },
+   {
+    "n": "10",
+    "p": "Saîf-Eddine Khaoui",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.6
+   },
+   {
+    "n": "25",
+    "p": "Guillaume Trani",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 28,
+    "val": 0.2
+   },
+   {
+    "n": "7",
+    "p": "Damien Durand",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 30,
+    "val": 0.8
+   },
+   {
+    "n": "23",
+    "p": "Jovany Ikanga",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 1.2
+   },
+   {
+    "n": "91",
+    "p": "Kévin Cabral",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 27,
+    "val": 1.0
+   },
+   {
+    "n": "29",
+    "p": "Hacène Benali",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.35
+   },
+   {
+    "n": "21",
+    "p": "Abdelsamad Hachem",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.3
+   }
+  ],
+  "RAF": [
+   {
+    "n": "1",
+    "p": "Quentin Braat",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 1.2
+   },
+   {
+    "n": "16",
+    "p": "Lucas Margueron",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 25,
+    "val": 0.15
+   },
+   {
+    "n": "30",
+    "p": "Enzo Crombez",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 23,
+    "val": 0.0
+   },
+   {
+    "n": "3",
+    "p": "Raphaël Lipinski",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 1.5
+   },
+   {
+    "n": "4",
+    "p": "Mathis Magnin",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 1.5
+   },
+   {
+    "n": "24",
+    "p": "Loni Laurent",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.8
+   },
+   {
+    "n": "5",
+    "p": "Clément Jolibois",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.4
+   },
+   {
+    "n": "21",
+    "p": "Dylan Vangi",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "15",
+    "p": "Evan's Jean-Lambert",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 27,
+    "val": 1.0
+   },
+   {
+    "n": "",
+    "p": "Cheick Doumbia",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.07
+   },
+   {
+    "n": "6",
+    "p": "Jordan Mendes",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 2.0
+   },
+   {
+    "n": "26",
+    "p": "Samy Benchamma",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.6
+   },
+   {
+    "n": "8",
+    "p": "Damjan Pavlovic",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.35
+   },
+   {
+    "n": "29",
+    "p": "Antonin Cartillier",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.3
+   },
+   {
+    "n": "22",
+    "p": "Octave Joly",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.6
+   },
+   {
+    "n": "34",
+    "p": "Yanis Dahalani",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "20",
+    "p": "Ryan Ponti",
+    "pos": "MG",
+    "grp": "MID",
+    "age": 28,
+    "val": 0.25
+   },
+   {
+    "n": "13",
+    "p": "Corentin Issanchou",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.07
+   },
+   {
+    "n": "11",
+    "p": "Mathis Touho",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.4
+   },
+   {
+    "n": "18",
+    "p": "Ibrahima Baldé",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 23,
+    "val": 2.0
+   },
+   {
+    "n": "9",
+    "p": "Kenny Nagera",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.6
+   },
+   {
+    "n": "10",
+    "p": "Mehdi Baaloudj",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 0.25
+   },
+   {
+    "n": "19",
+    "p": "Hermann Tebily",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.1
+   }
+  ],
+  "PAU": [
+   {
+    "n": "30",
+    "p": "Esteban Salles",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 32,
+    "val": 0.2
+   },
+   {
+    "n": "",
+    "p": "Brice Maubleu",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 36,
+    "val": 0.15
+   },
+   {
+    "n": "88",
+    "p": "Axel Bamba",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 27,
+    "val": 0.5
+   },
+   {
+    "n": "23",
+    "p": "Anthony Briançon",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 31,
+    "val": 0.35
+   },
+   {
+    "n": "29",
+    "p": "Gaëtan Paquiez",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 32,
+    "val": 0.35
+   },
+   {
+    "n": "22",
+    "p": "Rony Mimb Baheng",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.3
+   },
+   {
+    "n": "",
+    "p": "Axel Dodote",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "3",
+    "p": "Joseph Kalulu",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 21,
+    "val": 2.0
+   },
+   {
+    "n": "8",
+    "p": "Souleymane Basse",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.25
+   },
+   {
+    "n": "2",
+    "p": "Tom Pouilly",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 23,
+    "val": 1.2
+   },
+   {
+    "n": "",
+    "p": "Mathys Tourraine",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.6
+   },
+   {
+    "n": "",
+    "p": "Jessy Benet",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 1.0
+   },
+   {
+    "n": "6",
+    "p": "Cheikh Fall",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.35
+   },
+   {
+    "n": "5",
+    "p": "Lorenzo Rajot",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 28,
+    "val": 0.25
+   },
+   {
+    "n": "25",
+    "p": "Quentin Daubin",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.25
+   },
+   {
+    "n": "90",
+    "p": "Kyllian Gasnier",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.15
+   },
+   {
+    "n": "",
+    "p": "Tom Saettel",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "10",
+    "p": "Giovani Versini",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 22,
+    "val": 5.0
+   },
+   {
+    "n": "11",
+    "p": "Alexis Lefebvre",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "14",
+    "p": "Royce Openda",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.1
+   },
+   {
+    "n": "9",
+    "p": "Babacar Leye",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 0.35
+   },
+   {
+    "n": "",
+    "p": "Abdoulaye Mbaye",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.0
+   }
+  ],
+  "USLD": [
+   {
+    "n": "16",
+    "p": "Maxence Prévot",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 0.3
+   },
+   {
+    "n": "73",
+    "p": "Moha Ramos",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 26,
+    "val": 0.0
+   },
+   {
+    "n": "36",
+    "p": "Mouhamed Sissokho",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "22",
+    "p": "Victor Mayela",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 2.0
+   },
+   {
+    "n": "4",
+    "p": "Bram Lagae",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.6
+   },
+   {
+    "n": "26",
+    "p": "Opa Sangante",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 35,
+    "val": 0.2
+   },
+   {
+    "n": "14",
+    "p": "Lenny Vallier",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 27,
+    "val": 0.5
+   },
+   {
+    "n": "42",
+    "p": "Maedine Makhloufi",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.25
+   },
+   {
+    "n": "27",
+    "p": "Allan Linguet",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.6
+   },
+   {
+    "n": "24",
+    "p": "Lenny Dziki Loussilaho",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Steven Nzonzi",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 37,
+    "val": 0.3
+   },
+   {
+    "n": "6",
+    "p": "Théna Massock",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 18,
+    "val": 0.2
+   },
+   {
+    "n": "25",
+    "p": "Franck Atoen",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "8",
+    "p": "Antoine Sekongo",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 4.0
+   },
+   {
+    "n": "28",
+    "p": "Jordan Morel",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.6
+   },
+   {
+    "n": "29",
+    "p": "Marco Decherf",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.05
+   },
+   {
+    "n": "11",
+    "p": "Egor Prutsev",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 23,
+    "val": 1.5
+   },
+   {
+    "n": "10",
+    "p": "Adrien Lebeau",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 27,
+    "val": 0.35
+   },
+   {
+    "n": "7",
+    "p": "Alex Daho",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.25
+   },
+   {
+    "n": "19",
+    "p": "Souleymane Keita",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.15
+   },
+   {
+    "n": "57",
+    "p": "Zaid Seha",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 19,
+    "val": 0.2
+   },
+   {
+    "n": "9",
+    "p": "Thomas Robinet",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 29,
+    "val": 0.8
+   },
+   {
+    "n": "",
+    "p": "Enzo Mayilla",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.35
+   },
+   {
+    "n": "17",
+    "p": "Pape Malick Dieng",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.0
+   }
+  ],
+  "GF38": [
+   {
+    "n": "",
+    "p": "Alexandre Olliero",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 30,
+    "val": 0.1
+   },
+   {
+    "n": "16",
+    "p": "Bobby Allain",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 34,
+    "val": 0.1
+   },
+   {
+    "n": "24",
+    "p": "Loris Mouyokolo",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 1.2
+   },
+   {
+    "n": "5",
+    "p": "Clément Vidal",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 1.0
+   },
+   {
+    "n": "3",
+    "p": "Farouq Limouri",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "21",
+    "p": "Allan Tchaptchet",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.3
+   },
+   {
+    "n": "",
+    "p": "Efe Sarıkaya",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.25
+   },
+   {
+    "n": "27",
+    "p": "Matthéo Xantippe",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 24,
+    "val": 1.2
+   },
+   {
+    "n": "26",
+    "p": "Mathieu Mion",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.3
+   },
+   {
+    "n": "48",
+    "p": "Sakhalou Niakaté",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.4
+   },
+   {
+    "n": "22",
+    "p": "Ange Loïc N'Gatta",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Yohann Magnin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 29,
+    "val": 1.0
+   },
+   {
+    "n": "30",
+    "p": "Samba Diba",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.4
+   },
+   {
+    "n": "6",
+    "p": "Lucas Bernadou",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.5
+   },
+   {
+    "n": "14",
+    "p": "Mael Corboz",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.45
+   },
+   {
+    "n": "10",
+    "p": "Baptiste Mouazan",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.4
+   },
+   {
+    "n": "23",
+    "p": "Dillon Hoogewerf",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.38
+   },
+   {
+    "n": "19",
+    "p": "Nesta Zahui",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.7
+   },
+   {
+    "n": "",
+    "p": "Zé Leite",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.6
+   },
+   {
+    "n": "11",
+    "p": "Mamady Bangré",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 25,
+    "val": 0.35
+   },
+   {
+    "n": "9",
+    "p": "Arthur Lallias",
+    "pos": "DA",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.35
+   },
+   {
+    "n": "7",
+    "p": "Yadaly Diaby",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 1.2
+   },
+   {
+    "n": "2",
+    "p": "Moussa Djitté",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.4
+   },
+   {
+    "n": "20",
+    "p": "Evans Maurin",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 0.3
+   },
+   {
+    "n": "12",
+    "p": "Ugo Bonnet",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 32,
+    "val": 0.2
+   },
+   {
+    "n": "37",
+    "p": "Mohamed Bechikh",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.1
+   }
+  ],
+  "EAG": [
+   {
+    "n": "16",
+    "p": "Adrián Ortolá",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 32,
+    "val": 0.3
+   },
+   {
+    "n": "1",
+    "p": "Teddy Bartouche-Selbonne",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 0.25
+   },
+   {
+    "n": "40",
+    "p": "Noah Marec",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "7",
+    "p": "Donatien Gomis",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 31,
+    "val": 0.6
+   },
+   {
+    "n": "36",
+    "p": "Albin Demouchy",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.6
+   },
+   {
+    "n": "",
+    "p": "Jeovanni Dianganga",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.25
+   },
+   {
+    "n": "38",
+    "p": "Idriss Planeix",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "29",
+    "p": "Akim Abdallah",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.6
+   },
+   {
+    "n": "",
+    "p": "Vimoj Muntu Wa Mungu",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "2",
+    "p": "Erwin Koffi",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 31,
+    "val": 0.4
+   },
+   {
+    "n": "3",
+    "p": "Jérémie Matumona",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.3
+   },
+   {
+    "n": "4",
+    "p": "Dylan Louiserre",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Tom Ducrocq",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.8
+   },
+   {
+    "n": "39",
+    "p": "Tanguy Ahile",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.4
+   },
+   {
+    "n": "",
+    "p": "Florent Sanchez",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.8
+   },
+   {
+    "n": "6",
+    "p": "Darly N'Landu",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.25
+   },
+   {
+    "n": "",
+    "p": "Joël Matondo",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "11",
+    "p": "Teddy Averlant",
+    "pos": "MD",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.8
+   },
+   {
+    "n": "",
+    "p": "Samir Ben Brahim",
+    "pos": "MD",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.4
+   },
+   {
+    "n": "",
+    "p": "Jasser Chamakh",
+    "pos": "MG",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "10",
+    "p": "Amine Hemia",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 28,
+    "val": 1.8
+   },
+   {
+    "n": "24",
+    "p": "Gautier Ott",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.5
+   },
+   {
+    "n": "19",
+    "p": "Amadou Samoura",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.4
+   },
+   {
+    "n": "27",
+    "p": "Stanislas Kielt",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.7
+   }
+  ],
+  "NANCY": [
+   {
+    "n": "1",
+    "p": "Enzo Basilio",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 31,
+    "val": 0.5
+   },
+   {
+    "n": "60",
+    "p": "Kenzo Noël",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 20,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Yanis Kouini",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "4",
+    "p": "Nehemiah Fernandez",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 1.0
+   },
+   {
+    "n": "21",
+    "p": "Elydjah Mendy",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.8
+   },
+   {
+    "n": "77",
+    "p": "Yannis Nahounou",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.4
+   },
+   {
+    "n": "14",
+    "p": "Nicolas Saint-Ruf",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 33,
+    "val": 0.2
+   },
+   {
+    "n": "2",
+    "p": "Héliohdino Tavares",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "22",
+    "p": "Logan Ndenbe",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 26,
+    "val": 1.0
+   },
+   {
+    "n": "44",
+    "p": "Enzo Tacafred",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 21,
+    "val": 1.5
+   },
+   {
+    "n": "25",
+    "p": "Jérémy Gélin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 29,
+    "val": 0.8
+   },
+   {
+    "n": "19",
+    "p": "Kouroufia Kébé",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 20,
+    "val": 0.5
+   },
+   {
+    "n": "18",
+    "p": "Hugo Barbier",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.2
+   },
+   {
+    "n": "17",
+    "p": "Mamadou Fofana",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.3
+   },
+   {
+    "n": "28",
+    "p": "Issam Bouaoune",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "45",
+    "p": "Chafik El Hansar",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.05
+   },
+   {
+    "n": "",
+    "p": "Joël-Emmanuel Coulibaly",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "24",
+    "p": "Yanis Delaveau",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "8",
+    "p": "Walid Bouabdeli",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.7
+   },
+   {
+    "n": "7",
+    "p": "Zakaria Fdaouch",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 29,
+    "val": 0.6
+   },
+   {
+    "n": "20",
+    "p": "Brandon Bokangu",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 26,
+    "val": 0.5
+   },
+   {
+    "n": "",
+    "p": "Sidi Cissé",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.15
+   },
+   {
+    "n": "9",
+    "p": "Ilyes Housni",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.7
+   },
+   {
+    "n": "26",
+    "p": "Zakaria Ztouti",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 19,
+    "val": 0.25
+   },
+   {
+    "n": "10",
+    "p": "Adrian Dabasse",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 33,
+    "val": 0.2
+   }
+  ],
+  "ANNECY": [
+   {
+    "n": "1",
+    "p": "Florian Escales",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 30,
+    "val": 0.5
+   },
+   {
+    "n": "16",
+    "p": "Thomas Callens",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 27,
+    "val": 0.15
+   },
+   {
+    "n": "30",
+    "p": "Matéo Gonzalez",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "18",
+    "p": "Axel Drouhin",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 1.2
+   },
+   {
+    "n": "27",
+    "p": "Julien Kouadio",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 1.0
+   },
+   {
+    "n": "41",
+    "p": "Thibault Delphis",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.6
+   },
+   {
+    "n": "6",
+    "p": "François Lajugie",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 30,
+    "val": 0.4
+   },
+   {
+    "n": "23",
+    "p": "Mattéo Veillon",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.3
+   },
+   {
+    "n": "34",
+    "p": "Esteban Riou",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Emmanuel Louisir",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Sacha Lima",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Esteban Marre",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Pascal Mozie",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 18,
+    "val": 0.6
+   },
+   {
+    "n": "5",
+    "p": "Ahmed Kashi",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 37,
+    "val": 0.1
+   },
+   {
+    "n": "25",
+    "p": "Paul Venot",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 24,
+    "val": 0.6
+   },
+   {
+    "n": "29",
+    "p": "Alexis Casadei",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.4
+   },
+   {
+    "n": "",
+    "p": "Mohamed Koné",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "24",
+    "p": "Nolan Ferro",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "22",
+    "p": "Clément Billemaz",
+    "pos": "MG",
+    "grp": "MID",
+    "age": 27,
+    "val": 1.0
+   },
+   {
+    "n": "19",
+    "p": "Kilyan Jusseron-Veniere",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Kadan Young",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.2
+   },
+   {
+    "n": "",
+    "p": "Alan Mondesir",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "28",
+    "p": "Antoine Larose",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 33,
+    "val": 0.25
+   },
+   {
+    "n": "80",
+    "p": "Moïse Sahi Dion",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.9
+   },
+   {
+    "n": "71",
+    "p": "Ben Hamed Touré",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.6
+   },
+   {
+    "n": "",
+    "p": "Zépiqueno Redmond",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.5
+   },
+   {
+    "n": "9",
+    "p": "Thibault Rambaud",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 29,
+    "val": 0.5
+   },
+   {
+    "n": "",
+    "p": "Adam Yahi",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.0
+   }
+  ],
+  "LAVAL": [
+   {
+    "n": "30",
+    "p": "Mamadou Samassa",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 36,
+    "val": 0.15
+   },
+   {
+    "n": "1",
+    "p": "Maxime Hautbois",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 35,
+    "val": 0.07
+   },
+   {
+    "n": "24",
+    "p": "Sidi Bane",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.9
+   },
+   {
+    "n": "3",
+    "p": "William Bianda",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.7
+   },
+   {
+    "n": "18",
+    "p": "Aboubacar Lô",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.7
+   },
+   {
+    "n": "12",
+    "p": "Mattéo Commaret",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.5
+   },
+   {
+    "n": "22",
+    "p": "Jules Gaudin",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.5
+   },
+   {
+    "n": "35",
+    "p": "Layousse Samb",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.3
+   },
+   {
+    "n": "23",
+    "p": "Esteban Mouton",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.5
+   },
+   {
+    "n": "6",
+    "p": "Sam Sanna",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 27,
+    "val": 0.8
+   },
+   {
+    "n": "13",
+    "p": "Francis Coquelin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 35,
+    "val": 0.7
+   },
+   {
+    "n": "8",
+    "p": "Teddy Bouriaud",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 29,
+    "val": 0.5
+   },
+   {
+    "n": "26",
+    "p": "Hermann Esmel",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.25
+   },
+   {
+    "n": "14",
+    "p": "Cyril Mandouki",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 34,
+    "val": 0.15
+   },
+   {
+    "n": "28",
+    "p": "Julien Maggiotti",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 30,
+    "val": 0.3
+   },
+   {
+    "n": "10",
+    "p": "Malik Sellouki",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.9
+   },
+   {
+    "n": "",
+    "p": "Chafik Gourichy",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 25,
+    "val": 0.0
+   },
+   {
+    "n": "20",
+    "p": "Ethan Clavreul",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.4
+   },
+   {
+    "n": "11",
+    "p": "Trévis Dago",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.35
+   },
+   {
+    "n": "17",
+    "p": "Corentin Fatou",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 27,
+    "val": 0.35
+   },
+   {
+    "n": "31",
+    "p": "Mathys Houdayer",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.3
+   },
+   {
+    "n": "28",
+    "p": "Abou Kanté",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 31,
+    "val": 0.25
+   },
+   {
+    "n": "",
+    "p": "Noa Mupemba",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.2
+   },
+   {
+    "n": "27",
+    "p": "Aymeric Faurand-Tournaire",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.1
+   }
+  ],
+  "BOUL": [
+   {
+    "n": "99",
+    "p": "Blondy Nna Noukeu",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 25,
+    "val": 0.7
+   },
+   {
+    "n": "30",
+    "p": "Azamat Uriev",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 22,
+    "val": 0.25
+   },
+   {
+    "n": "16",
+    "p": "Ibrahim Koné",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 36,
+    "val": 0.05
+   },
+   {
+    "n": "1",
+    "p": "Xavier Lenogue",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 29,
+    "val": 0.0
+   },
+   {
+    "n": "15",
+    "p": "Adrien Pinot",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 25,
+    "val": 0.5
+   },
+   {
+    "n": "20",
+    "p": "Théo Brusco",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.25
+   },
+   {
+    "n": "4",
+    "p": "Jonathan Kapenga",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "25",
+    "p": "Antoine Kerriou",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "12",
+    "p": "Julien Boyer",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.6
+   },
+   {
+    "n": "24",
+    "p": "Louis Siliadin",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.07
+   },
+   {
+    "n": "26",
+    "p": "Oscar Lenne",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 19,
+    "val": 0.0
+   },
+   {
+    "n": "97",
+    "p": "Zoran Moco",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.4
+   },
+   {
+    "n": "18",
+    "p": "Demba Thiam",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 36,
+    "val": 0.1
+   },
+   {
+    "n": "19",
+    "p": "Nolan Binet",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 22,
+    "val": 1.2
+   },
+   {
+    "n": "14",
+    "p": "Joffrey Bultel",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.4
+   },
+   {
+    "n": "90",
+    "p": "Jonas Martin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 36,
+    "val": 0.25
+   },
+   {
+    "n": "22",
+    "p": "Sonny Duflos",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.25
+   },
+   {
+    "n": "21",
+    "p": "Aurélien Platret",
+    "pos": "MD",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.5
+   },
+   {
+    "n": "28",
+    "p": "Sohan Paillard",
+    "pos": "MD",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.03
+   },
+   {
+    "n": "10",
+    "p": "Abdel Hbouch",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 27,
+    "val": 0.4
+   },
+   {
+    "n": "17",
+    "p": "Noah Fatar",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.6
+   },
+   {
+    "n": "7",
+    "p": "Aymane Nassiri",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.0
+   },
+   {
+    "n": "9",
+    "p": "Martin Lecolier",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.5
+   },
+   {
+    "n": "31",
+    "p": "Benjamin Bešić",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 24,
+    "val": 0.35
+   },
+   {
+    "n": "91",
+    "p": "Zanga Koné",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.07
+   }
+  ],
+  "SOCH": [
+   {
+    "n": "30",
+    "p": "Alexandre Pierre",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 25,
+    "val": 0.7
+   },
+   {
+    "n": "1",
+    "p": "Mehdi Jeannin",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 35,
+    "val": 0.07
+   },
+   {
+    "n": "4",
+    "p": "Arthur Vitelli",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.5
+   },
+   {
+    "n": "",
+    "p": "Saad Agouzoul",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 28,
+    "val": 0.3
+   },
+   {
+    "n": "3",
+    "p": "Dalangunypole Gomis",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.3
+   },
+   {
+    "n": "14",
+    "p": "Mathieu Peybernes",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 35,
+    "val": 0.15
+   },
+   {
+    "n": "24",
+    "p": "Dylan Tavares",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 29,
+    "val": 0.25
+   },
+   {
+    "n": "26",
+    "p": "Élie N'Gatta",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.8
+   },
+   {
+    "n": "17",
+    "p": "Bendjaloud Youssouf",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 32,
+    "val": 0.2
+   },
+   {
+    "n": "23",
+    "p": "Julien Masson",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 28,
+    "val": 0.4
+   },
+   {
+    "n": "8",
+    "p": "Honoré Bayanginisa",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.2
+   },
+   {
+    "n": "15",
+    "p": "Jonathan Mexique",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.25
+   },
+   {
+    "n": "19",
+    "p": "Victor Lobry",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.35
+   },
+   {
+    "n": "7",
+    "p": "Benjamin Gomel",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 28,
+    "val": 0.6
+   },
+   {
+    "n": "77",
+    "p": "Landry Nomel",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 28,
+    "val": 0.25
+   },
+   {
+    "n": "10",
+    "p": "Boubacar Fofana",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 27,
+    "val": 0.15
+   },
+   {
+    "n": "11",
+    "p": "Julien Vetro",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.15
+   },
+   {
+    "n": "5",
+    "p": "Samy Baghdadi",
+    "pos": "DA",
+    "grp": "MID",
+    "age": 29,
+    "val": 0.35
+   },
+   {
+    "n": "9",
+    "p": "Kapit Djoco",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 30,
+    "val": 0.4
+   },
+   {
+    "n": "91",
+    "p": "Mathis Clairicia",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.4
+   },
+   {
+    "n": "",
+    "p": "Marie-Gaël Mukanya",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.0
+   },
+   {
+    "n": "29",
+    "p": "Ethan Cortes",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 19,
+    "val": 0.0
+   }
+  ],
+  "DFCO": [
+   {
+    "n": "16",
+    "p": "Paul Delecroix",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 37,
+    "val": 0.1
+   },
+   {
+    "n": "6",
+    "p": "Waly Diouf",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 29,
+    "val": 0.4
+   },
+   {
+    "n": "23",
+    "p": "Lenny Lacroix",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.25
+   },
+   {
+    "n": "5",
+    "p": "Quentin Bernard",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 37,
+    "val": 0.1
+   },
+   {
+    "n": "",
+    "p": "Anass Benyahya",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 22,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Axel Bargain",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.0
+   },
+   {
+    "n": "",
+    "p": "Moussa Faty",
+    "pos": "ArG",
+    "grp": "DEF",
+    "age": 26,
+    "val": 0.3
+   },
+   {
+    "n": "",
+    "p": "Ismaïl Bouleghcha",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "19",
+    "p": "César Obongo",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.15
+   },
+   {
+    "n": "8",
+    "p": "Paul Bellon",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.4
+   },
+   {
+    "n": "18",
+    "p": "Brandon Ndezi",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 26,
+    "val": 0.5
+   },
+   {
+    "n": "7",
+    "p": "Ben-Chayeel Hamada",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 23,
+    "val": 0.3
+   },
+   {
+    "n": "21",
+    "p": "Samy Chouchane",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 22,
+    "val": 0.3
+   },
+   {
+    "n": "14",
+    "p": "Jordan Marié",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 34,
+    "val": 0.15
+   },
+   {
+    "n": "20",
+    "p": "Hugo Vargas-Ríos",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 31,
+    "val": 0.15
+   },
+   {
+    "n": "17",
+    "p": "Adel Lembezat",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 27,
+    "val": 0.4
+   },
+   {
+    "n": "4",
+    "p": "Michaël Barreto",
+    "pos": "MO",
+    "grp": "MID",
+    "age": 35,
+    "val": 0.15
+   },
+   {
+    "n": "",
+    "p": "Abdelmajid Djae",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.1
+   },
+   {
+    "n": "33",
+    "p": "Florian Rombogouera",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.03
+   },
+   {
+    "n": "9",
+    "p": "Yanis Barka",
+    "pos": "DA",
+    "grp": "MID",
+    "age": 28,
+    "val": 0.4
+   },
+   {
+    "n": "22",
+    "p": "Julien Domingues",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 30,
+    "val": 0.4
+   },
+   {
+    "n": "29",
+    "p": "Alexis Ntamack",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 22,
+    "val": 0.3
+   },
+   {
+    "n": "11",
+    "p": "Julio Tavarès",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 37,
+    "val": 0.07
+   }
+  ]
+ }
+}

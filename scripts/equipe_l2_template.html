@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Effectif & Compo · Ligue 2 2026/27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a;--s1:#111113;--s2:#161618;--s3:#1c1c1f;
+  --in:#34c77b;--accent:#4a8cff;--gold:#c9a84c;--out:#ff4d6d;
+  --txt:#f0f0f0;--sub:#9a9a9a;--muted:#5a5a5a;--faint:#3a3a3a;--line:rgba(255,255,255,.08);
+  --gk:#f0a93b;--def:#4a8cff;--mid:#34c77b;--att:#ff6b6b;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;min-height:100vh;}
+a{color:inherit;text-decoration:none;}
+.bleed-bar{height:5px;background:linear-gradient(90deg,#34c77b,#4a8cff,#ff4d6d,#34c77b);background-size:200% 100%;animation:bar 9s linear infinite;}
+@keyframes bar{to{background-position:200% 0;}}
+.hidden{display:none !important;}
+
+.crest{position:relative;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;font-family:'Tanker',sans-serif;letter-spacing:0;}
+.crest.has-logo{background-color:transparent !important;color:transparent !important;background-size:contain !important;background-position:center !important;background-repeat:no-repeat !important;}
+
+.top{display:flex;align-items:center;gap:14px;padding:13px 28px;border-bottom:1px solid var(--line);flex-wrap:nowrap;}
+.top h1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:38vw;}
+.top select{max-width:220px;}
+.top .back{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);border:1px solid var(--line);padding:8px 13px;border-radius:8px;transition:all .15s;}
+.top .back:hover{border-color:var(--accent);color:#fff;}
+.top .crest{width:40px;height:40px;border-radius:10px;font-size:14px;}
+.top h1{font-family:'Tanker',sans-serif;font-size:24px;text-transform:uppercase;line-height:1;}
+.top .sel{margin-left:auto;display:flex;gap:10px;align-items:center;}
+select,input{background:var(--s1);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-family:inherit;font-size:13px;font-weight:600;}
+select{cursor:pointer;}
+.hint{font-size:12px;color:var(--muted);}
+
+.layout{display:grid;grid-template-columns:340px 1fr;gap:16px;padding:14px 24px 16px;max-width:1440px;margin:0 auto;align-items:start;}
+
+/* MOBILE TABS (masqués en desktop) */
+.mobile-tabs{display:none;}
+
+/* SQUAD PANEL */
+.squad{background:var(--s1);border:1px solid var(--line);border-radius:14px;overflow-y:auto;overflow-x:hidden;
+  max-height:calc(100vh - 112px);scrollbar-width:thin;scrollbar-color:var(--line) transparent;}
+.squad-h{position:sticky;top:0;z-index:2;background:var(--s1);padding:11px 16px;font-family:'Tanker',sans-serif;font-size:15px;text-transform:uppercase;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;}
+.squad-h .n{font-family:'Inter';font-size:11px;color:var(--sub);font-weight:700;}
+.sect-h{padding:11px 16px 6px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:6px;}
+.sect-h.arr{color:var(--in);}.sect-h.dep{color:var(--out);}
+.mini-btn{font-size:11px;font-weight:800;color:var(--in);background:rgba(52,199,123,.12);border:1px solid rgba(52,199,123,.3);border-radius:7px;padding:4px 9px;cursor:pointer;font-family:inherit;}
+.mini-btn:hover{background:rgba(52,199,123,.22);}
+.grp-lab{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px 4px;display:flex;align-items:center;gap:7px;color:var(--sub);}
+.grp-lab .pt{width:9px;height:9px;border-radius:2px;display:inline-block;}
+.gk .pt{background:var(--gk);}.df .pt{background:var(--def);}.md .pt{background:var(--mid);}.at .pt{background:var(--att);}
+.pl{display:flex;align-items:center;gap:8px;padding:5px 14px;cursor:grab;transition:background .12s;user-select:none;}
+.pl:hover{background:var(--s2);}
+.pl.used{opacity:.32;}
+.pl.sel{background:rgba(201,168,76,.15);box-shadow:inset 3px 0 0 var(--gold);}
+.pl .num{width:22px;text-align:center;font-weight:800;font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums;}
+.pl .pos{width:32px;text-align:center;font-size:8.5px;font-weight:800;padding:3px 0;border-radius:4px;color:#0a0a0a;}
+.pos.gk{background:var(--gk);}.pos.def{background:var(--def);}.pos.mid{background:var(--mid);}.pos.att{background:var(--att);}
+.pl .nm{flex:1;min-width:0;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.pl .nm .ag{color:var(--muted);font-weight:600;font-size:10.5px;margin-left:4px;}
+.pl .val{font-size:11px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;}
+.pl .act{width:22px;height:22px;border-radius:6px;border:1px solid var(--line);background:var(--s2);color:var(--sub);font-size:13px;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.pl .act.out:hover{border-color:var(--out);color:var(--out);}
+.pl .act.rm:hover{border-color:var(--out);color:var(--out);}
+.pl .fee{font-size:11px;font-weight:800;}
+.fee.paid{color:#fff;}.fee.loan{color:var(--accent);}
+.empty-s{padding:8px 16px 12px;font-size:11.5px;color:var(--muted);font-style:italic;}
+
+.feerow{display:flex;gap:10px;align-items:center;}
+.feerow input[type=number]{flex:1;}
+.feerow label{font-size:12px;color:var(--sub);display:flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap;}
+
+/* RIGHT */
+.right{display:flex;flex-direction:column;gap:16px;}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.fbtn{background:var(--s1);border:1px solid var(--line);color:var(--sub);font-weight:800;font-size:12px;padding:8px 13px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:inherit;}
+.fbtn:hover{border-color:var(--accent);color:#fff;}
+.fbtn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.controls .share{margin-left:auto;background:var(--in);border-color:var(--in);color:#04160c;}
+.controls .share:hover{background:#2bb06c;border-color:#2bb06c;color:#04160c;}
+.controls .share[disabled]{opacity:.6;cursor:default;}
+.controls .reset{color:var(--out);border-color:rgba(255,77,109,.3);}
+.controls .reset:hover{background:var(--out);color:#fff;border-color:var(--out);}
+
+.pitch-wrap{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;justify-content:center;}
+.pitch{position:relative;width:100%;max-width:376px;height:auto;aspect-ratio:68/92;border-radius:10px;overflow:hidden;touch-action:pan-y;
+  background:repeating-linear-gradient(0deg,#1a7a43 0 10%,#178040 10% 20%);border:2px solid rgba(255,255,255,.15);}
+.pitch .lines::before{content:'';position:absolute;left:5%;right:5%;top:50%;height:2px;background:rgba(255,255,255,.25);}
+.pitch .lines::after{content:'';position:absolute;left:34%;right:34%;top:calc(50% - 46px);height:92px;border:2px solid rgba(255,255,255,.22);border-radius:50%;}
+.box{position:absolute;left:26%;right:26%;height:14%;border:2px solid rgba(255,255,255,.22);}
+.box.top{top:0;border-top:0;}.box.bot{bottom:0;border-bottom:0;}
+
+/* le slot est ancré par le CENTRE DU TITULAIRE (translateY fixe, pas -50%) :
+   le remplaçant/étiquette qui suit en dessous ne décale donc jamais l'ancrage. */
+.slot{position:absolute;transform:translate(-50%,-22px);width:72px;text-align:center;}
+.disc{width:44px;height:44px;margin:0 auto;border-radius:50%;border:2px dashed rgba(255,255,255,.5);
+  background:rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:800;color:rgba(255,255,255,.8);cursor:pointer;transition:border-color .12s,box-shadow .12s;}
+.slot.filled .starter .disc{border-style:solid;border-color:#fff;background:var(--club,#111);color:#fff;
+  font-size:14px;font-family:'Inter',sans-serif;font-weight:800;cursor:grab;touch-action:none;}
+.slot.dragging .disc{cursor:grabbing;}
+.seat.active .disc,.seat.active .subbox{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.4);}
+.seat.dragover .disc,.seat.dragover .subbox{border-color:var(--in);box-shadow:0 0 0 3px rgba(52,199,123,.5);}
+.lab{font-size:8.5px;font-weight:800;color:rgba(255,255,255,.9);margin-top:1px;text-transform:uppercase;letter-spacing:.03em;text-shadow:0 1px 2px rgba(0,0,0,.7);}
+.who{font-size:10px;font-weight:700;color:#fff;line-height:1;text-shadow:0 1px 3px rgba(0,0,0,.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/* remplaçant : simple rectangle avec le nom, sous le titulaire */
+.sub{margin-top:2px;}
+.subbox{min-width:60px;max-width:78px;padding:2px 5px;border-radius:5px;font-size:8.5px;font-weight:700;
+  border:1.5px dashed rgba(255,255,255,.25);background:rgba(0,0,0,.18);color:rgba(255,255,255,.35);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;text-transform:uppercase;letter-spacing:.02em;}
+.sub.filled .subbox{border-style:solid;border-color:var(--line);background:var(--s2);color:var(--txt);
+  cursor:pointer;text-transform:none;}
+
+/* MODAL */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:flex-start;justify-content:center;
+  padding:8vh 16px 16px;overflow-y:auto;z-index:100;}
+.modal-box{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:22px;width:340px;max-width:92vw;
+  max-height:84vh;overflow-y:auto;}
+.modal-t{font-family:'Tanker',sans-serif;font-size:18px;margin-bottom:6px;}
+.modal-sub{font-size:12px;color:var(--sub);margin-bottom:16px;}
+.modal .feerow{margin-bottom:18px;}
+.modal-btns{display:flex;gap:10px;}
+.modal-btns button{flex:1;padding:10px;border-radius:9px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit;border:1px solid var(--line);}
+.modal-btns .ok{background:var(--in);border-color:var(--in);color:#04160c;}
+.modal-btns .cancel{background:var(--s2);color:var(--sub);}
+
+/* SELECTION BANNER */
+.pitch-hint{font-size:12px;color:var(--muted);padding:9px 12px;border-radius:8px;background:transparent;transition:all .15s;line-height:1.4;}
+.pitch-hint.active-sel{background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;}
+
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;padding:14px;}
+  .top{padding:10px 14px;flex-wrap:wrap;}
+  .top h1{max-width:55vw;}
+  .top .sel{margin-left:0;width:100%;order:5;}
+  .mobile-tabs{display:flex;gap:8px;margin-bottom:4px;}
+  .mtab{flex:1;background:var(--s1);border:1px solid var(--line);color:var(--sub);font-weight:800;font-size:12px;
+    letter-spacing:.08em;text-transform:uppercase;padding:11px;border-radius:9px;cursor:pointer;font-family:inherit;transition:all .15s;}
+  .mtab.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .layout.tab-squad .right{display:none;}
+  .layout.tab-pitch .squad{display:none;}
+  .squad{max-height:none;}
+  .subbox{font-size:9.5px;padding:4px 6px;}
+}
+</style>
+<style>/*__LOGOCSS__*/</style>
+</head>
+<body>
+<div class="bleed-bar"></div>
+<div class="top">
+  <a class="back" href="index.html">‹ Mercato</a>
+  <span id="topcrestbox"></span>
+  <h1 id="topname"></h1>
+  <div class="sel"><label class="hint" for="clubsel">Équipe</label><select id="clubsel"></select></div>
+</div>
+
+<div class="layout tab-squad" id="layout">
+  <div class="mobile-tabs">
+    <button class="mtab active" data-tab="squad">Effectif</button>
+    <button class="mtab" data-tab="pitch">Terrain</button>
+  </div>
+  <div class="squad">
+    <div class="squad-h"><span>Effectif</span><span class="n" id="squadCount"></span></div>
+    <div id="squadList"></div>
+
+    <div class="sect-h arr"><span>Arrivées</span><button class="mini-btn" id="addRecruit">+ Ajouter</button></div>
+    <div id="recruitList"></div>
+
+    <div class="sect-h dep"><span>Départs</span></div>
+    <div id="departList"></div>
+  </div>
+
+  <div class="right">
+    <div class="controls" id="formations"></div>
+    <div class="pitch-hint">Clique un poste vide puis un joueur (ou glisse-le depuis la liste) pour le placer. Clique un joueur déjà placé pour le retirer. Glisse un titulaire sur le terrain pour ajuster sa position.</div>
+    <div class="pitch-wrap">
+      <div class="pitch" id="pitch">
+        <div class="lines"></div><div class="box top"></div><div class="box bot"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal hidden" id="modal"><div class="modal-box">
+  <div class="modal-t" id="modalT"></div>
+  <div class="modal-sub" id="modalSub"></div>
+  <div class="feerow">
+    <input id="mFee" type="number" placeholder="Montant (M€)" min="0" step="0.5">
+    <label><input type="checkbox" id="mLoan"> Prêt</label>
+  </div>
+  <div class="modal-btns"><button class="cancel" id="mCancel">Annuler</button><button class="ok" id="mOk">Valider</button></div>
+</div></div>
+
+<div class="modal hidden" id="recruitModal"><div class="modal-box">
+  <div class="modal-t">Ajouter une recrue</div>
+  <div class="modal-sub">Un joueur qui n'est pas encore dans l'effectif</div>
+  <input id="rName" placeholder="Nom du joueur" maxlength="40" style="width:100%;margin-bottom:10px;">
+  <select id="rPos" style="width:100%;margin-bottom:14px;">
+    <optgroup label="Gardien">
+      <option value="GdB">Gardien de but</option>
+    </optgroup>
+    <optgroup label="Défenseurs">
+      <option value="ArD">Arrière droit</option>
+      <option value="ArG">Arrière gauche</option>
+      <option value="DC">Défenseur central</option>
+    </optgroup>
+    <optgroup label="Milieux">
+      <option value="MDC">Milieu défensif</option>
+      <option value="MC" selected>Milieu central</option>
+      <option value="MO">Milieu offensif</option>
+      <option value="MD">Milieu droit</option>
+      <option value="MG">Milieu gauche</option>
+    </optgroup>
+    <optgroup label="Attaquants">
+      <option value="AiD">Ailier droit</option>
+      <option value="AiG">Ailier gauche</option>
+      <option value="AC">Avant-centre</option>
+      <option value="SA">Second attaquant</option>
+    </optgroup>
+  </select>
+  <div class="feerow">
+    <input id="rFee" type="number" placeholder="Montant (M€)" min="0" step="0.5">
+    <label><input type="checkbox" id="rLoan"> Prêt</label>
+  </div>
+  <div class="modal-btns"><button class="cancel" id="rCancel">Annuler</button><button class="ok" id="rOk">Ajouter</button></div>
+</div></div>
+
+<script>
+const SQUADS=/*__SQUADS__*/{};
+const CLUBMETA=/*__CLUBMETA__*/{};
+const LOGO_CODES=/*__LOGOCODES__*/[];
+const ORDER=/*__ORDER__*/[];
+
+const FORMATIONS={
+ "4-3-3":[["GB",50,82],["DG",15,58],["DC",38,60],["DC",62,60],["DD",85,58],["MC",28,46],["MC",50,50],["MC",72,46],["AIG",18,22],["BU",50,14],["AID",82,22]],
+ "4-4-2":[["GB",50,82],["DG",15,58],["DC",38,60],["DC",62,60],["DD",85,58],["MG",15,44],["MC",38,46],["MC",62,46],["MD",85,44],["BU",38,18],["BU",62,18]],
+ "4-2-3-1":[["GB",50,82],["DG",15,58],["DC",38,60],["DC",62,60],["DD",85,58],["MDC",35,52],["MDC",65,52],["MG",18,32],["MO",50,28],["MD",82,32],["BU",50,12]],
+ "3-5-2":[["GB",50,82],["DC",28,58],["DC",50,60],["DC",72,58],["MG",8,46],["MC",32,44],["MO",50,50],["MC",68,44],["MD",92,46],["BU",38,16],["BU",62,16]],
+ "3-4-3":[["GB",50,82],["DC",28,58],["DC",50,60],["DC",72,58],["MG",12,48],["MC",35,50],["MC",65,50],["MD",88,48],["AIG",20,20],["BU",50,12],["AID",80,20]]
+};
+const GRPCLS={GK:'gk',DEF:'def',MID:'mid',ATT:'att'};
+const GRPLAB={GK:'Gardiens',DEF:'Défenseurs',MID:'Milieux',ATT:'Attaquants'};
+// poste précis (recrue) -> groupe (GK/DEF/MID/ATT), même convention que les joueurs scrapés
+const POS_GRP={GdB:'GK',ArD:'DEF',ArG:'DEF',DC:'DEF',MDC:'MID',MC:'MID',MO:'MID',MD:'MID',MG:'MID',AiD:'ATT',AiG:'ATT',AC:'ATT',SA:'ATT'};
+
+let club=null, formation="4-3-3";
+let slots=[];              // {role,x,y,starter,sub}
+let recruits=[];           // {id,p,pos,grp,type,val}
+let departures={};         // key -> {type,val}
+let active=null;           // {kind:'player',k} | {kind:'seat',i,seat}
+let recId=1;
+
+function money(v,type){if(type==='loan')return 'Prêt';if(!v)return '—';if(v<1)return Math.round(v*1000)+' K€';const s=Number.isInteger(v)?v:(Math.round(v*10)/10).toString().replace('.',',');return s+' M€';}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+function crest(code,cls){const has=LOGO_CODES.indexOf(code)>=0;const m=CLUBMETA[code]||{};
+  const st=has?'':`background:${m.bg};color:${m.fg}`;
+  return `<span class="crest ${cls||''}${has?' has-logo l-'+code:''}" style="${st}">${esc(code).slice(0,4)}</span>`;}
+function short(name){const p=name.trim().split(' ');return p.length>1?p[p.length-1]:name;}
+function pkey(pl){return (pl.n||'')+'|'+pl.p;}
+
+function pool(){ // joueurs dispo à placer : effectif (hors départs) + recrues
+  const sq=(SQUADS[club]||[]).filter(p=>!departures[pkey(p)]);
+  return sq.concat(recruits);
+}
+function getPlayer(k){
+  if(k&&k.indexOf('REC:')===0)return recruits.find(r=>('REC:'+r.id)===k);
+  return (SQUADS[club]||[]).find(p=>pkey(p)===k);
+}
+function keyOf(p){return p.id!=null?'REC:'+p.id:pkey(p);}
+function placedKeys(){const s=new Set();slots.forEach(sl=>{if(sl.starter)s.add(sl.starter);if(sl.sub)s.add(sl.sub);});return s;}
+function isPlaced(k){return placedKeys().has(k);}
+
+function initClubSelect(){
+  const sel=document.getElementById('clubsel');
+  sel.innerHTML=ORDER.map(c=>`<option value="${c}">${esc(CLUBMETA[c].name)}</option>`).join('');
+  sel.onchange=()=>loadClub(sel.value);
+}
+
+/* ---------- onglets mobiles (Effectif / Terrain) ---------- */
+function isMobile(){return window.matchMedia('(max-width:900px)').matches;}
+function setMobileTab(t){
+  document.querySelectorAll('.mtab').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));
+  document.getElementById('layout').classList.toggle('tab-squad',t==='squad');
+  document.getElementById('layout').classList.toggle('tab-pitch',t==='pitch');
+}
+document.querySelectorAll('.mtab').forEach(b=>b.onclick=()=>setMobileTab(b.dataset.tab));
+
+function updateHint(){
+  const el=document.querySelector('.pitch-hint');
+  if(active&&active.kind==='player'){
+    const p=getPlayer(active.k);
+    el.innerHTML=`Sélection : <b>${esc(p?p.p:'')}</b> — clique un poste sur le terrain pour le placer.`;
+    el.classList.add('active-sel');
+  } else if(active&&active.kind==='seat'){
+    el.innerHTML=`Poste sélectionné (<b>${esc(slots[active.i].role)}</b>) — clique un joueur dans l'effectif pour le placer ici.`;
+    el.classList.add('active-sel');
+  } else {
+    el.innerHTML=`Clique un poste vide puis un joueur (ou glisse-le depuis la liste) pour le placer. Clique un joueur déjà placé pour le retirer. Glisse un titulaire sur le terrain pour ajuster sa position.`;
+    el.classList.remove('active-sel');
+  }
+}
+function setFormation(f,keep){
+  const prevStarters=keep&&slots.length?slots.map(s=>s.starter):[];
+  const prevSubs=keep&&slots.length?slots.map(s=>s.sub):[];
+  formation=f;
+  slots=FORMATIONS[f].map(([role,x,y],idx)=>({role,x,y,starter:prevStarters[idx]||null,sub:prevSubs[idx]||null}));
+}
+function loadClub(code){
+  club=code; recruits=[]; departures={}; active=null; recId=1;
+  setFormation(formation,false);
+  const m=CLUBMETA[code];
+  document.documentElement.style.setProperty('--club',m.bg);
+  document.getElementById('topcrestbox').innerHTML=crest(code);
+  document.getElementById('topname').textContent=m.name;
+  document.getElementById('clubsel').value=code;
+  document.title=m.name+' · Effectif & Compo';
+  history.replaceState(null,'','?c='+code);
+  document.getElementById('recruitModal').classList.add('hidden');
+  setMobileTab('squad');
+  renderFormations(); renderAll();
+  preloadShareAssets();   // prépare logo + polices à l'avance (voir plus bas)
+}
+function renderFormations(){
+  document.getElementById('formations').innerHTML=
+    Object.keys(FORMATIONS).map(f=>`<button class="fbtn${f===formation?' active':''}" data-f="${f}">${f}</button>`).join('')
+    +`<button class="fbtn share" id="shareBtn">⇧ Partager</button>`
+    +`<button class="fbtn reset" id="resetBtn">Réinitialiser</button>`;
+  document.querySelectorAll('.fbtn[data-f]').forEach(b=>b.onclick=()=>{setFormation(b.dataset.f,true);active=null;renderFormations();renderAll();});
+  document.getElementById('resetBtn').onclick=()=>{setFormation(formation,false);active=null;renderAll();};
+  document.getElementById('shareBtn').onclick=shareImage;
+}
+
+/* ---------- image de partage (canvas) ---------- */
+function loadImage(src){
+  return new Promise((resolve,reject)=>{
+    const img=new Image();
+    img.onload=()=>resolve(img);
+    img.onerror=reject;
+    img.src=src;
+  });
+}
+function getCrestDataUri(){
+  const el=document.querySelector('#topcrestbox .crest');
+  if(!el)return null;
+  const bg=getComputedStyle(el).backgroundImage;
+  const m=/url\(["']?(.+?)["']?\)/.exec(bg);
+  return (m&&m[1]!=='none')?m[1]:null;
+}
+
+/* Préchargement (logo + polices) déclenché à chaque changement de club,
+   pour que shareImage() n'ait (quasi) plus rien à attendre au moment du clic :
+   Safari exige que navigator.share() suive le clic sans délai notable. */
+let shareFontsWarmed=false;
+let currentCrestImgPromise=Promise.resolve(null);
+function warmShareFonts(){
+  if(shareFontsWarmed)return;
+  shareFontsWarmed=true;
+  Promise.all([
+    document.fonts.load('400 46px Tanker'),
+    document.fonts.load('800 22px Inter'),
+    document.fonts.load('700 22px Inter'),
+  ]).catch(()=>{});
+}
+function preloadShareAssets(){
+  warmShareFonts();
+  const dataUri=getCrestDataUri();
+  currentCrestImgPromise=dataUri?loadImage(dataUri).catch(()=>null):Promise.resolve(null);
+}
+function roundRect(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+function fitText(ctx,text,x,y,maxW,size,family,weight){
+  weight=weight||'400';let s=size;
+  ctx.font=`${weight} ${s}px ${family}, sans-serif`;
+  while(ctx.measureText(text).width>maxW && s>16){s-=2;ctx.font=`${weight} ${s}px ${family}, sans-serif`;}
+  ctx.fillText(text,x,y);
+}
+function drawPitch(ctx,x,y,w,h){
+  const stripes=10;
+  for(let i=0;i<stripes;i++){
+    ctx.fillStyle=i%2===0?'#1a7a43':'#178040';
+    ctx.fillRect(x,y+(h/stripes)*i,w,h/stripes+1);
+  }
+  ctx.strokeStyle='rgba(255,255,255,.85)';ctx.lineWidth=3;
+  ctx.strokeRect(x,y,w,h);
+  ctx.beginPath();ctx.moveTo(x,y+h/2);ctx.lineTo(x+w,y+h/2);ctx.stroke();
+  ctx.beginPath();ctx.arc(x+w/2,y+h/2,w*0.135,0,Math.PI*2);ctx.stroke();
+  const boxW=w*0.48,boxH=h*0.14;
+  ctx.strokeRect(x+(w-boxW)/2,y,boxW,boxH);
+  ctx.strokeRect(x+(w-boxW)/2,y+h-boxH,boxW,boxH);
+}
+async function shareOrDownload(blob,filename,text){
+  const file=new File([blob],filename,{type:'image/png'});
+  if(navigator.canShare && navigator.canShare({files:[file]})){
+    try{
+      await navigator.share({files:[file],title:text,text});
+      return;                              // partagé avec succès
+    }catch(err){
+      if(err && err.name==='AbortError')return;   // l'utilisateur a annulé -> ne rien faire
+      // sinon (pas supporté / échec) -> on tombe sur le téléchargement classique ci-dessous
+    }
+  }
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;a.download=filename;
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),4000);
+}
+async function shareImage(){
+  const btn=document.getElementById('shareBtn');
+  const original=btn.textContent;
+  btn.disabled=true;btn.textContent='Génération…';
+  try{
+    // polices déjà préchargées (preloadShareAssets) -> on n'attend que si vraiment nécessaire, et borné
+    if(document.fonts.status!=='loaded'){
+      await Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,120))]);
+    }
+    const crestImg=await currentCrestImgPromise;   // déjà résolu dans l'immense majorité des cas
+
+    const W=1080,H=1350;
+    const canvas=document.createElement('canvas');
+    canvas.width=W;canvas.height=H;
+    const ctx=canvas.getContext('2d');
+    const m=CLUBMETA[club];
+
+    ctx.fillStyle='#0a0a0a';ctx.fillRect(0,0,W,H);
+    const grad=ctx.createLinearGradient(0,0,W,0);
+    grad.addColorStop(0,'#34c77b');grad.addColorStop(.4,'#4a8cff');grad.addColorStop(.7,'#ff4d6d');grad.addColorStop(1,'#34c77b');
+    ctx.fillStyle=grad;ctx.fillRect(0,0,W,10);
+
+    const crestSize=104,crestX=56,crestY=56;
+    function drawMonogram(){
+      roundRect(ctx,crestX,crestY,crestSize,crestSize,22);
+      ctx.fillStyle=m.bg;ctx.fill();
+      ctx.fillStyle=m.fg;ctx.font='400 34px Tanker, sans-serif';
+      ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillText(club.slice(0,4),crestX+crestSize/2,crestY+crestSize/2+2);
+    }
+    if(crestImg){
+      roundRect(ctx,crestX,crestY,crestSize,crestSize,22);
+      ctx.fillStyle='#fff';ctx.fill();
+      ctx.save();roundRect(ctx,crestX,crestY,crestSize,crestSize,22);ctx.clip();
+      const pad=8;
+      ctx.drawImage(crestImg,crestX+pad,crestY+pad,crestSize-pad*2,crestSize-pad*2);
+      ctx.restore();
+    } else drawMonogram();
+
+    ctx.textAlign='left';ctx.textBaseline='alphabetic';
+    ctx.fillStyle='#fff';
+    fitText(ctx,m.name.toUpperCase(),crestX+crestSize+24,crestY+46,W-crestX-crestSize-24-190,46,'Tanker','400');
+    ctx.fillStyle='#9a9a9a';
+    ctx.font='700 20px Inter, sans-serif';
+    ctx.fillText('COMPOSITION · LIGUE 2 2026/27',crestX+crestSize+24,crestY+crestSize-6);
+
+    const chipW=150,chipH=42,chipX=W-56-chipW,chipY=crestY+(crestSize-chipH)/2;
+    roundRect(ctx,chipX,chipY,chipW,chipH,10);
+    ctx.fillStyle='#4a8cff';ctx.fill();
+    ctx.fillStyle='#fff';ctx.font='800 22px Inter, sans-serif';
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(formation,chipX+chipW/2,chipY+chipH/2+1);
+
+    const pitchX=56,pitchY=200,pitchW=W-112,pitchH=860;
+    drawPitch(ctx,pitchX,pitchY,pitchW,pitchH);
+
+    slots.forEach(sl=>{
+      const cx=pitchX+(sl.x/100)*pitchW, cy=pitchY+(sl.y/100)*pitchH;
+      const p=sl.starter?getPlayer(sl.starter):null;
+      const r=46;
+      if(p){
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+        ctx.fillStyle=m.bg;ctx.fill();
+        ctx.lineWidth=4;ctx.strokeStyle='#fff';ctx.stroke();
+        ctx.fillStyle='#fff';ctx.font='800 34px Inter, sans-serif';
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(p.n||short(p.p).slice(0,3).toUpperCase(),cx,cy+2);
+        ctx.font='700 22px Inter, sans-serif';ctx.lineJoin='round';
+        ctx.lineWidth=4;ctx.strokeStyle='rgba(0,0,0,.9)';
+        ctx.strokeText(short(p.p),cx,cy+r+30);
+        ctx.fillStyle='#fff';
+        ctx.fillText(short(p.p),cx,cy+r+30);
+      } else {
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+        ctx.setLineDash([6,6]);ctx.lineWidth=3;ctx.strokeStyle='rgba(255,255,255,.45)';ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='800 20px Inter, sans-serif';
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(sl.role,cx,cy);
+      }
+    });
+
+    const subs=slots.filter(s=>s.sub).map(s=>getPlayer(s.sub)).filter(Boolean);
+    let subY=pitchY+pitchH+56;
+    ctx.textAlign='left';ctx.textBaseline='alphabetic';
+    ctx.fillStyle='#9a9a9a';ctx.font='800 20px Inter, sans-serif';
+    ctx.fillText('REMPLAÇANTS',56,subY);
+    subY+=24;
+    if(subs.length){
+      let cx2=56;const chipHh=40,chipGap=10;
+      ctx.font='700 22px Inter, sans-serif';ctx.textBaseline='middle';
+      subs.forEach(p=>{
+        const label=short(p.p);
+        const cw=ctx.measureText(label).width+34;
+        if(cx2+cw>W-56){cx2=56;subY+=chipHh+10;}
+        roundRect(ctx,cx2,subY,cw,chipHh,20);
+        ctx.fillStyle='#161618';ctx.fill();
+        ctx.strokeStyle='rgba(255,255,255,.14)';ctx.lineWidth=1;ctx.stroke();
+        ctx.fillStyle='#fff';
+        ctx.fillText(label,cx2+17,subY+chipHh/2+1);
+        cx2+=cw+chipGap;
+      });
+    } else {
+      ctx.font='italic 20px Inter, sans-serif';ctx.fillStyle='#5a5a5a';
+      ctx.fillText('Aucun remplaçant placé',56,subY+20);
+    }
+
+    ctx.textAlign='center';ctx.textBaseline='alphabetic';
+    ctx.fillStyle='#5a5a5a';ctx.font='700 20px Inter, sans-serif';
+    ctx.fillText('350 · Mercato Ligue 2',W/2,H-30);
+
+    const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));
+    const filename=`compo-${club}-${formation}.png`.toLowerCase();
+    await shareOrDownload(blob,filename,`Ma compo ${m.name}`);
+  } finally {
+    btn.disabled=false;btn.textContent=original;
+  }
+}
+
+/* ---------- actions ---------- */
+function clickPlayer(k){
+  if(isPlaced(k))return;
+  if(active&&active.kind==='seat'){
+    assignSeat(active.i,active.seat,k);active=null;
+    if(isMobile())setMobileTab('pitch');           // montre le résultat sur le terrain
+  }
+  else if(active&&active.kind==='player'&&active.k===k){active=null;}
+  else {
+    active={kind:'player',k};
+    if(isMobile())setMobileTab('pitch');           // choisir où le placer
+  }
+  renderAll();
+}
+function seatClick(i,seat){
+  const cur=slots[i][seat];
+  if(cur){ slots[i][seat]=null; active=null; renderAll(); return; }   // vider
+  if(active&&active.kind==='player'){
+    assignSeat(i,seat,active.k);active=null;
+    if(isMobile())setMobileTab('squad');           // enchaîne avec le joueur suivant
+  }
+  else if(active&&active.kind==='seat'&&active.i===i&&active.seat===seat){active=null;}
+  else active={kind:'seat',i,seat};
+  renderAll();
+}
+function assignSeat(i,seat,k){
+  slots.forEach(sl=>{if(sl.starter===k)sl.starter=null;if(sl.sub===k)sl.sub=null;});
+  slots[i][seat]=k;
+}
+function addRecruit(){
+  const name=document.getElementById('rName').value.trim();
+  if(!name){document.getElementById('rName').focus();return;}
+  const pos=document.getElementById('rPos').value;
+  const grp=POS_GRP[pos]||'MID';
+  const loan=document.getElementById('rLoan').checked;
+  const val=parseFloat(document.getElementById('rFee').value)||0;
+  recruits.push({id:recId++,p:name,pos,grp,type:loan?'loan':'paid',val:loan?0:val});
+  document.getElementById('rName').value='';document.getElementById('rFee').value='';document.getElementById('rLoan').checked=false;
+  document.getElementById('recruitModal').classList.add('hidden');
+  renderAll();
+}
+function removeRecruit(id){
+  const k='REC:'+id;
+  slots.forEach(sl=>{if(sl.starter===k)sl.starter=null;if(sl.sub===k)sl.sub=null;});
+  recruits=recruits.filter(r=>r.id!==id);
+  renderAll();
+}
+function undoDepart(k){delete departures[k];renderAll();}
+
+/* modal départ */
+let modalCb=null;
+function openModal(title,sub,cb){
+  modalCb=cb;
+  document.getElementById('modalT').textContent=title;
+  document.getElementById('modalSub').textContent=sub||'';
+  document.getElementById('mFee').value='';document.getElementById('mLoan').checked=false;
+  document.getElementById('modal').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('mFee').focus(),0);
+}
+function closeModal(){document.getElementById('modal').classList.add('hidden');modalCb=null;}
+document.getElementById('mCancel').onclick=closeModal;
+document.getElementById('mOk').onclick=()=>{
+  const loan=document.getElementById('mLoan').checked;
+  const val=parseFloat(document.getElementById('mFee').value)||0;
+  if(modalCb)modalCb({type:loan?'loan':'paid',val:loan?0:val});
+  closeModal();
+};
+function departPlayer(k){
+  const p=getPlayer(k); if(!p)return;
+  openModal('Faire partir '+short(p.p),'Montant de la vente ou prêt',fee=>{
+    departures[k]=fee;
+    slots.forEach(sl=>{if(sl.starter===k)sl.starter=null;if(sl.sub===k)sl.sub=null;});
+    renderAll();
+  });
+}
+
+/* ---------- rendu ---------- */
+function renderAll(){renderSquad();renderRecruits();renderDeparts();renderPitch();updateHint();}
+
+function renderSquad(){
+  const sq=(SQUADS[club]||[]).filter(p=>!departures[pkey(p)]);
+  const pset=placedKeys();
+  let html='';
+  ['GK','DEF','MID','ATT'].forEach(g=>{
+    const list=sq.filter(p=>p.grp===g); if(!list.length)return;
+    const gl={GK:'gk',DEF:'df',MID:'md',ATT:'at'}[g];
+    html+=`<div class="grp"><div class="grp-lab ${gl}"><span class="pt"></span>${GRPLAB[g]}</div>`;
+    list.forEach(p=>{const k=pkey(p),used=pset.has(k),sel=active&&active.kind==='player'&&active.k===k;
+      html+=`<div class="pl${used?' used':''}${sel?' sel':''}" draggable="${!used}" data-k="${esc(k)}">
+        <span class="num">${esc(p.n||'–')}</span>
+        <span class="pos ${GRPCLS[p.grp]}">${esc(p.pos)}</span>
+        <span class="nm">${esc(p.p)}<span class="ag">${p.age||''}</span></span>
+        <span class="val">${money(p.val,'paid')}</span>
+        <span class="act out" data-out="${esc(k)}" title="Faire partir">→</span></div>`;});
+    html+='</div>';
+  });
+  document.getElementById('squadList').innerHTML=html;
+  const total=sq.length,used=sq.filter(p=>pset.has(pkey(p))).length;
+  document.getElementById('squadCount').textContent=`${used}/${total} placés`;
+  document.querySelectorAll('#squadList .pl').forEach(el=>{
+    const k=el.dataset.k;
+    el.addEventListener('dragstart',e=>e.dataTransfer.setData('text/plain',k));
+    el.onclick=e=>{if(e.target.classList.contains('act'))return;clickPlayer(k);};
+  });
+  document.querySelectorAll('#squadList .act.out').forEach(el=>el.onclick=e=>{e.stopPropagation();departPlayer(el.dataset.out);});
+}
+function renderRecruits(){
+  const pset=placedKeys();
+  document.getElementById('recruitList').innerHTML= recruits.length? recruits.map(r=>{
+    const k='REC:'+r.id,used=pset.has(k),sel=active&&active.kind==='player'&&active.k===k;
+    return `<div class="pl${used?' used':''}${sel?' sel':''}" draggable="${!used}" data-k="${k}">
+      <span class="num">+</span>
+      <span class="pos ${GRPCLS[r.grp]}">${esc(r.pos)}</span>
+      <span class="nm">${esc(r.p)}</span>
+      <span class="fee ${r.type}">${money(r.val,r.type)}</span>
+      <span class="act rm" data-rm="${r.id}" title="Retirer">✕</span></div>`;}).join('')
+    : '<div class="empty-s">Aucune recrue ajoutée.</div>';
+  document.querySelectorAll('#recruitList .pl').forEach(el=>{
+    const k=el.dataset.k;
+    el.addEventListener('dragstart',e=>e.dataTransfer.setData('text/plain',k));
+    el.onclick=e=>{if(e.target.classList.contains('act'))return;clickPlayer(k);};
+  });
+  document.querySelectorAll('#recruitList .act.rm').forEach(el=>el.onclick=e=>{e.stopPropagation();removeRecruit(+el.dataset.rm);});
+}
+function renderDeparts(){
+  const keys=Object.keys(departures);
+  document.getElementById('departList').innerHTML= keys.length? keys.map(k=>{
+    const p=getPlayer(k)||{p:k.split('|')[1]||k,pos:''};const f=departures[k];
+    return `<div class="pl">
+      <span class="num">–</span>
+      <span class="pos ${GRPCLS[p.grp]||'mid'}">${esc(p.pos||'')}</span>
+      <span class="nm">${esc(p.p)}</span>
+      <span class="fee ${f.type}">${money(f.val,f.type)}</span>
+      <span class="act rm" data-undo="${esc(k)}" title="Annuler">↩</span></div>`;}).join('')
+    : '<div class="empty-s">Aucun départ.</div>';
+  document.querySelectorAll('#departList .act.rm').forEach(el=>el.onclick=()=>undoDepart(el.dataset.undo));
+}
+
+function discContent(k){const p=k?getPlayer(k):null;return p?esc(p.n||short(p.p).slice(0,3)):'';}
+function renderPitch(){
+  const pitch=document.getElementById('pitch');
+  pitch.querySelectorAll('.slot').forEach(s=>s.remove());
+  slots.forEach((sl,i)=>{
+    const div=document.createElement('div');
+    div.className='slot'+(sl.starter?' filled':'');
+    div.dataset.i=i;
+    div.style.left=sl.x+'%';div.style.top=sl.y+'%';
+    const stP=sl.starter?getPlayer(sl.starter):null, sbP=sl.sub?getPlayer(sl.sub):null;
+    const stActive=active&&active.kind==='seat'&&active.i===i&&active.seat==='starter';
+    const sbActive=active&&active.kind==='seat'&&active.i===i&&active.seat==='sub';
+    div.innerHTML=
+      `<div class="seat starter${stActive?' active':''}" data-seat="starter">
+         <div class="disc">${stP?discContent(sl.starter):sl.role}</div>
+         <div class="lab">${sl.role}</div>${stP?`<div class="who">${esc(short(stP.p))}</div>`:''}
+       </div>
+       <div class="sub seat${sbP?' filled':''}${sbActive?' active':''}" data-seat="sub">
+         <div class="subbox">${sbP?esc(short(sbP.p)):'Remp.'}</div>
+       </div>`;
+    wireSlot(div,i);
+    pitch.appendChild(div);
+  });
+}
+function wireSlot(div,i){
+  div.querySelectorAll('.seat').forEach(seatEl=>{
+    const seat=seatEl.dataset.seat;
+    const filled=!!slots[i][seat];
+    // native DnD : recevoir un joueur venant de l'effectif / des recrues (remplace l'occupant éventuel)
+    seatEl.addEventListener('dragover',e=>{e.preventDefault();seatEl.classList.add('dragover');});
+    seatEl.addEventListener('dragleave',()=>seatEl.classList.remove('dragover'));
+    seatEl.addEventListener('drop',e=>{e.preventDefault();seatEl.classList.remove('dragover');
+      const k=e.dataTransfer.getData('text/plain');if(k){assignSeat(i,seat,k);active=null;renderAll();}});
+    const target=seatEl.querySelector(seat==='starter'?'.disc':'.subbox');
+    if(!filled){
+      // poste vide : clic = placer le joueur sélectionné dans la liste
+      target.addEventListener('click',()=>seatClick(i,seat));
+    } else if(seat==='starter'){
+      // titulaire placé : clic = le retirer ; glisser = repositionner sur le terrain (jamais changer de poste)
+      target.addEventListener('pointerdown',e=>startStarterDrag(e,div,i));
+    } else {
+      // remplaçant placé : pas de position propre, seul le clic a un sens (le retirer)
+      target.addEventListener('click',()=>{slots[i].sub=null;active=null;renderAll();});
+    }
+  });
+}
+
+function startStarterDrag(e,div,i){
+  e.preventDefault();
+  active=null;
+  const pitch=document.getElementById('pitch');const rect=pitch.getBoundingClientRect();
+  const sx=e.clientX,sy=e.clientY;let moved=false;
+  function move(ev){
+    if(!moved&&Math.hypot(ev.clientX-sx,ev.clientY-sy)<6)return;
+    moved=true;div.classList.add('dragging');
+    slots[i].x=Math.max(5,Math.min(95,((ev.clientX-rect.left)/rect.width)*100));
+    slots[i].y=Math.max(6,Math.min(95,((ev.clientY-rect.top)/rect.height)*100));
+    div.style.left=slots[i].x+'%';div.style.top=slots[i].y+'%';
+  }
+  function up(){
+    document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);
+    if(!moved){ slots[i].starter=null; renderAll(); return; }   // simple clic -> retirer le titulaire
+    renderAll();   // sinon : position déjà mise à jour en direct pendant le glisser
+  }
+  document.addEventListener('pointermove',move);document.addEventListener('pointerup',up);
+}
+
+/* boutons formulaire recrue */
+document.getElementById('addRecruit').onclick=()=>{
+  document.getElementById('recruitModal').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('rName').focus(),50);
+};
+document.getElementById('rOk').onclick=addRecruit;
+document.getElementById('rCancel').onclick=()=>document.getElementById('recruitModal').classList.add('hidden');
+document.getElementById('rName').addEventListener('keydown',e=>{if(e.key==='Enter')addRecruit();});
+
+initClubSelect();
+const start=(new URLSearchParams(location.search).get('c')||'').toUpperCase();
+loadClub(ORDER.includes(start)?start:ORDER[0]);
+</script>
+</body>
+</html>

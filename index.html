@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercato Ligue 2 · 2026/27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a; --s1:#111113; --s2:#161618; --s3:#1c1c1f;
+  --in:#34c77b; --out:#ff4d6d; --accent:#4a8cff; --gold:#c9a84c; --loan:#4a8cff;
+  --txt:#f0f0f0; --sub:#9a9a9a; --muted:#5a5a5a; --faint:#3a3a3a;
+  --line:rgba(255,255,255,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{min-height:100vh;}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;overflow-x:hidden;}
+body::before{
+  content:'';position:fixed;inset:-50%;pointer-events:none;z-index:0;opacity:.02;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='72'%3E%3Ctext x='4' y='44' font-family='Inter,Arial' font-size='28' font-weight='800' fill='%23fff'%3E350%3C/text%3E%3C/svg%3E");
+  background-size:150px 90px;transform:rotate(-22deg);width:200%;height:200%;
+}
+.bleed-bar{height:6px;background:linear-gradient(90deg,#34c77b 0%,#4a8cff 40%,#ff4d6d 70%,#34c77b 100%);background-size:200% 100%;animation:bar 9s linear infinite;position:relative;z-index:5;}
+@keyframes bar{to{background-position:200% 0;}}
+.wrap{position:relative;z-index:10;max-width:1240px;margin:0 auto;padding:0 40px;}
+
+header{padding-top:40px;}
+.kicker{font-weight:700;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);}
+.hero{display:flex;align-items:flex-end;gap:18px;margin-top:10px;flex-wrap:wrap;}
+.hero h1{font-family:'Tanker',sans-serif;font-weight:400;font-size:88px;line-height:.82;letter-spacing:.01em;color:#fff;text-transform:uppercase;}
+.hero .l1{font-family:'Tanker',sans-serif;font-size:34px;line-height:1;color:var(--accent);text-transform:uppercase;padding-bottom:6px;}
+.hero .season{font-weight:800;font-size:15px;color:var(--sub);padding-bottom:9px;letter-spacing:.05em;}
+.note{margin-top:16px;font-size:13px;color:var(--sub);max-width:680px;line-height:1.5;}
+.note b{color:var(--txt);}
+.upd{margin-top:8px;font-size:11.5px;color:var(--muted);}
+.upd b{color:var(--in);}
+
+/* CREST (logo + repli monogramme) */
+.crest{position:relative;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;
+  font-family:'Tanker',sans-serif;letter-spacing:0;}
+.crest.has-logo{background-color:transparent !important;color:transparent !important;
+  background-size:contain !important;background-position:center !important;background-repeat:no-repeat !important;}
+
+/* DERNIÈRES ARRIVÉES */
+.latest{margin-top:30px;}
+.latest-h{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.latest-h .t{font-family:'Tanker',sans-serif;font-size:20px;color:#fff;text-transform:uppercase;}
+.latest-h .badge{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--in);
+  background:rgba(52,199,123,.12);border:1px solid rgba(52,199,123,.3);padding:4px 9px;border-radius:20px;}
+.latest-h .pulse{width:8px;height:8px;border-radius:50%;background:var(--in);box-shadow:0 0 0 0 rgba(52,199,123,.6);animation:pulse 1.8s infinite;}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(52,199,123,0)}100%{box-shadow:0 0 0 0 rgba(52,199,123,0)}}
+.carousel{position:relative;}
+.latest-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);gap:12px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none;}
+.latest-grid::-webkit-scrollbar{display:none;}
+.navbtn{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:38px;height:38px;border-radius:50%;
+  background:rgba(20,20,22,.92);border:1px solid var(--line);color:var(--txt);font-size:22px;line-height:1;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;
+  box-shadow:0 4px 14px rgba(0,0,0,.5);}
+.navbtn:hover{border-color:var(--in);color:var(--in);background:#000;}
+.navbtn.prev{left:-6px;} .navbtn.next{right:-6px;}
+.navbtn[disabled]{opacity:0;pointer-events:none;}
+.carousel:not(:hover) .navbtn{opacity:.55;}
+.carousel:hover .navbtn{opacity:1;}
+.lcard{background:linear-gradient(160deg,var(--s2),var(--s1));border:1px solid var(--line);border-left:3px solid var(--in);
+  border-radius:12px;padding:13px 15px;min-width:210px;position:relative;}
+.lcard .lc-top{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+.lcard .crest{width:22px;height:22px;border-radius:5px;font-size:9px;}
+.lcard .lc-club{font-size:11px;font-weight:700;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lcard .lc-when{margin-left:auto;font-size:9.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--in);white-space:nowrap;}
+.lcard .lc-name{font-size:16px;font-weight:800;color:#fff;line-height:1.15;}
+.lcard .lc-meta{display:flex;align-items:center;gap:8px;margin-top:9px;}
+.lcard .lc-from{font-size:11px;color:var(--muted);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lcard .lc-fee{font-family:'Tanker',sans-serif;font-size:17px;}
+.lc-fee.paid{color:#fff;} .lc-fee.loan{color:var(--loan);} .lc-fee.free{color:var(--sub);} .lc-fee.none{color:var(--faint);}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px;}
+.stat{background:var(--s1);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
+.stat .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;}
+.stat .val{font-family:'Tanker',sans-serif;font-size:32px;margin-top:6px;line-height:1;}
+.stat .sub{font-size:11px;color:var(--sub);margin-top:5px;}
+.stat.arr{border-top:3px solid var(--in);} .stat.arr .val{color:var(--in);}
+.stat.dep{border-top:3px solid var(--out);} .stat.dep .val{color:var(--out);}
+.stat.net{border-top:3px solid var(--gold);} .stat.net .val{color:var(--gold);}
+.stat.cnt{border-top:3px solid var(--accent);} .stat.cnt .val{color:#fff;}
+
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-size:12px;color:var(--sub);align-items:center;}
+.legend span{display:inline-flex;align-items:center;gap:6px;}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+
+.jump{position:sticky;top:0;z-index:40;background:rgba(10,10,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-top:30px;padding:11px 0;}
+.jump-wrap{position:relative;max-width:1240px;margin:0 auto;padding:0 40px;}
+.jump-inner{display:flex;gap:7px;overflow-x:auto;padding:0 4px;scrollbar-width:none;}
+.jump-inner::-webkit-scrollbar{display:none;}
+.jump .navbtn{width:32px;height:32px;font-size:19px;}
+.jump .navbtn.prev{left:4px;} .jump .navbtn.next{right:4px;}
+.chip{flex-shrink:0;display:flex;align-items:center;gap:7px;background:var(--s1);border:1px solid var(--line);border-radius:20px;padding:5px 12px 5px 5px;cursor:pointer;transition:all .15s;color:var(--sub);text-decoration:none;}
+.chip:hover{border-color:var(--accent);color:#fff;}
+.chip .crest{width:24px;height:24px;border-radius:7px;font-size:10px;}
+.chip .cn{font-size:12px;font-weight:700;white-space:nowrap;}
+
+main{padding:8px 40px 80px;position:relative;z-index:10;max-width:1240px;margin:0 auto;}
+.club{margin-top:38px;scroll-margin-top:64px;}
+.club-head{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.club-link{display:flex;align-items:center;gap:14px;text-decoration:none;transition:opacity .15s;}
+.club-link:hover{opacity:.82;}
+.club-link:hover .club-name{color:var(--accent);}
+.squad-btn{margin-left:auto;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--sub);background:var(--s1);border:1px solid var(--line);border-radius:8px;padding:8px 13px;
+  text-decoration:none;transition:all .15s;white-space:nowrap;}
+.squad-btn:hover{border-color:var(--accent);color:#fff;}
+.club-bal{margin-left:16px;text-align:right;}
+.club-head .crest{width:44px;height:44px;font-size:16px;border-radius:11px;}
+.club-name{font-family:'Tanker',sans-serif;font-size:26px;color:#fff;line-height:1;text-transform:uppercase;letter-spacing:.01em;}
+.club-bal .bl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;}
+.club-bal .bv{font-family:'Tanker',sans-serif;font-size:24px;line-height:1;}
+.bv.pos{color:var(--in);} .bv.neg{color:var(--out);} .bv.zero{color:var(--sub);}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.col{background:var(--s1);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.col-head{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;}
+.col.in .col-head{background:linear-gradient(90deg,rgba(52,199,123,.16),transparent);color:var(--in);border-bottom:1px solid rgba(52,199,123,.25);}
+.col.out .col-head{background:linear-gradient(90deg,rgba(255,77,109,.16),transparent);color:var(--out);border-bottom:1px solid rgba(255,77,109,.25);}
+.col-head .meta{font-size:11px;letter-spacing:.04em;color:var(--sub);font-weight:600;text-transform:none;}
+.col-head .meta b{color:var(--txt);}
+
+.row{display:flex;align-items:center;gap:10px;padding:9px 16px;border-bottom:1px solid rgba(255,255,255,.04);}
+.row:last-child{border-bottom:0;}
+.row:hover{background:var(--s2);}
+.pos{flex-shrink:0;width:34px;text-align:center;font-size:9px;font-weight:800;letter-spacing:.02em;padding:3px 0;border-radius:4px;color:#0a0a0a;}
+.p-gk{background:#8a8f98;} .p-def{background:#4a8cff;} .p-mid{background:#34c77b;} .p-att{background:#ff8a3d;}
+.who{flex:1;min-width:0;}
+.who .nm{font-size:13.5px;font-weight:700;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.who .nm .age{color:var(--muted);font-weight:600;font-size:11px;margin-left:5px;}
+.who .cl{font-size:11.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px;}
+.who .cl .arrow{color:var(--faint);margin-right:4px;}
+.fee{flex-shrink:0;text-align:right;font-weight:800;font-size:13px;font-variant-numeric:tabular-nums;}
+.fee.paid{color:#fff;} .fee.free{color:var(--sub);font-weight:600;} .fee.loan{color:var(--loan);font-weight:700;} .fee.none{color:var(--faint);font-weight:600;}
+.empty{padding:16px;font-size:12px;color:var(--muted);text-align:center;font-style:italic;}
+
+footer{max-width:1240px;margin:0 auto;padding:0 40px 60px;color:var(--muted);font-size:11.5px;line-height:1.6;position:relative;z-index:10;}
+footer a{color:var(--sub);}
+
+@media(max-width:820px){
+  .wrap,footer,main,.jump-inner{padding-left:16px;padding-right:16px;}
+  .hero h1{font-size:54px;} .hero .l1{font-size:24px;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .cols{grid-template-columns:1fr;gap:10px;}
+  .club-name{font-size:21px;}
+  .fee{font-size:12px;}
+
+  /* Dernières arrivées : grille 2 lignes x 2 colonnes -> 4 cartes visibles, compactes */
+  .latest-grid{grid-auto-flow:column;grid-template-rows:repeat(2,1fr);grid-auto-columns:minmax(148px,1fr);gap:9px;}
+  .lcard{padding:9px 10px;min-width:148px;}
+  .lcard .lc-top{margin-bottom:6px;gap:6px;}
+  .lcard .crest{width:18px;height:18px;font-size:8px;}
+  .lcard .lc-club{font-size:9.5px;}
+  .lcard .lc-when{font-size:8px;}
+  .lcard .lc-name{font-size:13px;line-height:1.1;}
+  .lcard .lc-meta{margin-top:6px;gap:5px;}
+  .lcard .lc-from{font-size:9.5px;}
+  .lcard .lc-fee{font-size:13px;}
+  .navbtn{width:30px;height:30px;font-size:18px;}
+}
+@media(max-width:440px){.hero h1{font-size:42px;}.stat .val{font-size:26px;}.who .nm{font-size:12.5px;}}
+</style>
+<style></style>
+</head>
+<body>
+<div class="bleed-bar"></div>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">Récap des transferts · Fenêtre estivale</div>
+    <div class="hero">
+      <h1>Mercato</h1><span class="l1">Ligue 2</span><span class="season">2026 / 2027</span>
+    </div>
+    <section class="latest" id="latest"></section>
+    <div class="legend">
+      <span><i class="dot" style="background:#fff"></i> Transfert sec</span>
+      <span><i class="dot" style="background:var(--loan)"></i> Prêt</span>
+      <span><i class="dot" style="background:var(--sub)"></i> Libre / fin de contrat</span>
+      <span style="margin-left:auto"><i class="dot p-gk" style="border-radius:2px"></i>GB <i class="dot p-def" style="border-radius:2px"></i>Déf <i class="dot p-mid" style="border-radius:2px"></i>Mil <i class="dot p-att" style="border-radius:2px"></i>Att</span>
+    </div>
+  </header>
+</div>
+
+<nav class="jump"><div class="jump-wrap">
+  <button class="navbtn prev" id="jprev" aria-label="Précédent">‹</button>
+  <div class="jump-inner" id="jump"></div>
+  <button class="navbtn next" id="jnext" aria-label="Suivant">›</button>
+</div></nav>
+<main id="clubs"></main>
+
+<footer>
+  Récap visuel — <b>350</b>. Montants indicatifs. Retours de prêt et promus B (sans transfert) retirés.
+  <div class="upd">Dernière actualisation : <b>31/07/2026 à 18h27</b></div>
+</footer>
+
+<script>
+const CLUBS=[{"code": "ASSE", "name": "AS Saint-Étienne", "bg": "#2fac66", "fg": "#fff", "arr": [{"p": "Thierno Ballo", "age": 24, "pos": "AiG", "club": "Wolfsberger AC", "type": "paid", "val": 2.65, "fs": "2026-07-31"}, {"p": "Jakob Breum", "age": 22, "pos": "MO", "club": "Go Ahead Eagles", "type": "paid", "val": 2.2, "fs": "2026-07-31"}, {"p": "Sohaib Naïr", "age": 24, "pos": "DC", "club": "EA Guingamp", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Áron Csongvai", "age": 25, "pos": "MDC", "club": "AIK", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Mamour Ndiaye", "age": 20, "pos": "GdB", "club": "Sarpsborg 08", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Lucas Lavallée", "age": 23, "pos": "GdB", "club": "LB Châteauroux", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Beres Owusu", "age": 22, "pos": "DC", "club": "Grazer AK", "type": "paid", "val": 0.25, "fs": "2026-07-31"}, {"p": "Dennis Appiah", "age": 34, "pos": "ArD", "club": "SM Caen", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Florian Tardieu", "age": 34, "pos": "MC", "club": "Montpellier", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Enzo Mayilla", "age": 20, "pos": "AC", "club": "USL Dunkerque", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Brice Maubleu", "age": 36, "pos": "GdB", "club": "Pau FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Karim Cissé", "age": 21, "pos": "MO", "club": "Aubagne Air Bel", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Axel Dodote", "age": 19, "pos": "DC", "club": "Pau FC", "type": "loan", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "FCN", "name": "FC Nantes", "bg": "#fdff00", "fg": "#00843d", "arr": [{"p": "Killian Corredor", "age": 25, "pos": "AC", "club": "Darmstadt 98", "type": "paid", "val": 2.0, "fs": "2026-07-31"}, {"p": "Lucas Perrin", "age": 27, "pos": "DC", "club": "Sporting Gijón", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mathieu Cafaro", "age": 29, "pos": "AiD", "club": "Paris FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Wilitty Younoussa", "age": 24, "pos": "MC", "club": "Rodez AF", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Maxime Dupé", "age": 33, "pos": "GdB", "club": "OGC Nice", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Matthis Abline", "age": 23, "pos": "AC", "club": "Monaco", "type": "paid", "val": 25.0, "fs": "2026-07-31"}, {"p": "Alban Lafont", "age": 27, "pos": "GdB", "club": "Amed SK", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Chidozie Awaziem", "age": 29, "pos": "DC", "club": "Konyaspor", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Anthony Lopes", "age": 35, "pos": "GdB", "club": "Angers SCO", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Francis Coquelin", "age": 35, "pos": "MDC", "club": "Stade Lavallois", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mathieu Acapandié", "age": 21, "pos": "ArD", "club": "Hajduk Split", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Uros Radakovic", "age": 32, "pos": "DC", "club": "Buriram Utd.", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Deiver Machado", "age": 32, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Patrik Carlgren", "age": 34, "pos": "GdB", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Youssef El Arabi", "age": 39, "pos": "AC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "REIMS", "name": "Stade de Reims", "bg": "#e2001a", "fg": "#fff", "arr": [{"p": "Samuel Kotto", "age": 22, "pos": "DC", "club": "La Gantoise", "type": "paid", "val": 4.0, "fs": "2026-07-31"}, {"p": "Tom Ritzy Hülsmann", "age": 22, "pos": "GdB", "club": "TSV Hartberg", "type": "paid", "val": 2.5, "fs": "2026-07-31"}, {"p": "Youssef El Kachati", "age": 26, "pos": "AC", "club": "NEC Nijmegen", "type": "paid", "val": 2.0, "fs": "2026-07-31"}, {"p": "John Otomewo", "age": 19, "pos": "MDC", "club": "H. Jerusalem", "type": "paid", "val": 1.6, "fs": "2026-07-31"}, {"p": "Edin Omeragic", "age": 24, "pos": "GdB", "club": "Neuchâtel Xamax", "type": "paid", "val": 0.175, "fs": "2026-07-31"}, {"p": "Daouda Guindo", "age": 23, "pos": "ArG", "club": "Stade Brestois", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Sambou Soumano", "age": 25, "pos": "AC", "club": "FC Lorient", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alexis Sauvage", "age": 34, "pos": "GdB", "club": "Amiens SC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Armel Zohouri", "age": 25, "pos": "ArD", "club": "Iberia 1999", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Aleksandr Guboglo", "age": 19, "pos": "ArD", "club": "Montréal", "type": "loan", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Patrick Zabi", "age": 19, "pos": "MC", "club": "Paris FC", "type": "paid", "val": 25.0, "fs": "2026-07-31"}, {"p": "Ewen Jaouen", "age": 20, "pos": "GdB", "club": "Newcastle", "type": "paid", "val": 21.5, "fs": "2026-07-31"}, {"p": "Cédric Kipré", "age": 29, "pos": "DC", "club": "Ipswich Town", "type": "paid", "val": 4.5, "fs": "2026-07-31"}, {"p": "Thiemoko Diarra", "age": 23, "pos": "AiD", "club": "Kasimpasa", "type": "paid", "val": 1.5, "fs": "2026-07-31"}, {"p": "Maxime Busi", "age": 26, "pos": "ArD", "club": "Royal Antwerp", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alexandre Olliero", "age": 30, "pos": "GdB", "club": "Grenoble", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Antoine Leautey", "age": 30, "pos": "AiD", "club": "WH Three Towns", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Malcolm Jeng", "age": 21, "pos": "DC", "club": "FC Groningen", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Hiroki Sekine", "age": 23, "pos": "ArD", "club": "Holstein Kiel", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Adama Bojang", "age": 22, "pos": "AC", "club": "R Charleroi SC", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Pape Sissoko", "age": 20, "pos": "AC", "club": "SV Ried", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Nicolas Pallois", "age": 38, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "FCM", "name": "FC Metz", "bg": "#7a1f2b", "fg": "#fff", "arr": [{"p": "Idris Mohamed", "age": 22, "pos": "DC", "club": "Le Puy FC", "type": "paid", "val": 0.3, "fs": "2026-07-31"}, {"p": "Jean Ruiz", "age": 28, "pos": "DC", "club": "Pau FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Florian Miguel", "age": 29, "pos": "ArG", "club": "Burgos CF", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Sadibou Sané", "age": 22, "pos": "DC", "club": "Monaco", "type": "paid", "val": 7.0, "fs": "2026-07-31"}, {"p": "Idrissa Gueye", "age": 19, "pos": "AC", "club": "Udinese", "type": "paid", "val": 6.0, "fs": "2026-07-31"}, {"p": "Terry Yegbe", "age": 25, "pos": "DC", "club": "Lech Poznan", "type": "paid", "val": 3.0, "fs": "2026-07-31"}, {"p": "Jean-Philippe Gbamin", "age": 30, "pos": "DC", "club": "CSKA Sofia", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Giorgi Kvilitaia", "age": 32, "pos": "AC", "club": "Holstein Kiel", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Kevin Van Den Kerkhof", "age": 30, "pos": "ArD", "club": "R Charleroi SC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Joseph Nduquidi", "age": 21, "pos": "MC", "club": "Farense", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Ismaël Guerti", "age": 21, "pos": "MO", "club": "Grazer AK", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Yannis Lawson", "age": 21, "pos": "ArG", "club": "RFC Seraing", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Koffi Kouao", "age": 28, "pos": "ArD", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Fodé Ballo-Touré", "age": 29, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Benjamin Stambouli", "age": 35, "pos": "MDC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "MHSC", "name": "Montpellier Hérault SC", "bg": "#004494", "fg": "#ff6600", "arr": [{"p": "Mamadou Camara", "age": 25, "pos": "AC", "club": "Stade Lavallois", "type": "paid", "val": 0.4, "fs": "2026-07-31"}, {"p": "Florian Tardieu", "age": 34, "pos": "MC", "club": "Saint-Étienne", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Grégory Ayem", "age": 20, "pos": "MO", "club": "Racing CFF", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Daylam Meddah", "age": 23, "pos": "DC", "club": "Pau FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Daryll Benlahlou", "age": 20, "pos": "AC", "club": "Ol. Lyonnais", "type": "loan", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Modibo Sagnan", "age": 27, "pos": "DC", "club": "C. Rizespor", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Alexandre Mendy", "age": 32, "pos": "AC", "club": "Al-Faisaly", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Téji Savanier", "age": 34, "pos": "MO", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Christopher Jullien", "age": 33, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "CF63", "name": "Clermont Foot 63", "bg": "#0c3c74", "fg": "#fff", "arr": [{"p": "Arthur Saintorens", "age": 21, "pos": "AC", "club": "Av. Bayonnais", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "İlhan Fakılı", "age": 20, "pos": "AiG", "club": "Besiktas", "type": "paid", "val": 2.7, "fs": "2026-07-31"}, {"p": "Habib Keïta", "age": 24, "pos": "MC", "club": "Kocaelispor", "type": "paid", "val": 0.7, "fs": "2026-07-31"}, {"p": "Abdoul Kader Bamba", "age": 32, "pos": "AiG", "club": "FC Granada", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Maximiliano Caufriez", "age": 29, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Henri Saivet", "age": 35, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Famara Diédhiou", "age": 33, "pos": "AC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Johan Gastien", "age": 38, "pos": "MDC", "club": "Fin de carrière", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Amine Saïd", "age": 23, "pos": "AC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "RED", "name": "Red Star FC", "bg": "#007a3d", "fg": "#fff", "arr": [{"p": "Elyaz Zidane", "age": 20, "pos": "DC", "club": "Betis Deportivo", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Quentin Beunardeau", "age": 32, "pos": "GdB", "club": "AS Cannes", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Rayane Doucouré", "age": 25, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Vincent Kany", "age": 23, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "RAF", "name": "Rodez AF", "bg": "#ba0c2f", "fg": "#fff", "arr": [{"p": "Mathis Touho", "age": 21, "pos": "AiG", "club": "FC Villefranche", "type": "paid", "val": 0.2, "fs": "2026-07-31"}, {"p": "Damjan Pavlovic", "age": 25, "pos": "MDC", "club": "Kauno Zalgiris", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Antonin Cartillier", "age": 22, "pos": "MDC", "club": "FC Rouen 1899", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Taïryk Arconte", "age": 22, "pos": "AC", "club": "Millwall", "type": "paid", "val": 3.0, "fs": "2026-07-31"}, {"p": "Nolan Galves", "age": 23, "pos": "ArD", "club": "West Brom", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Alexis Trouillet", "age": 25, "pos": "MC", "club": "Standard Liège", "type": "paid", "val": 0.35, "fs": "2026-07-31"}, {"p": "Wilitty Younoussa", "age": 24, "pos": "MC", "club": "FC Nantes", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mohamed Achi", "age": 24, "pos": "MC", "club": "Cherno More", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Morgan Corredor", "age": 21, "pos": "MC", "club": "Tarbes Pyrénées", "type": "free", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "PAU", "name": "Pau FC", "bg": "#002654", "fg": "#f8b400", "arr": [{"p": "Babacar Leye", "age": 25, "pos": "AC", "club": "FC Villefranche", "type": "paid", "val": 0.2, "fs": "2026-07-31"}, {"p": "Jessy Benet", "age": 31, "pos": "MC", "club": "Grenoble", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Gaëtan Paquiez", "age": 32, "pos": "DC", "club": "Grenoble", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Quentin Daubin", "age": 31, "pos": "MC", "club": "Valenciennes FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Lorenzo Rajot", "age": 28, "pos": "MC", "club": "SM Caen", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Brice Maubleu", "age": 36, "pos": "GdB", "club": "Saint-Étienne", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Royce Openda", "age": 24, "pos": "AiD", "club": "G. Bordeaux", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Tom Saettel", "age": 21, "pos": "AiG", "club": "FR Haguenau", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mathys Tourraine", "age": 25, "pos": "ArD", "club": "Paris FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alexis Lefebvre", "age": 23, "pos": "AiD", "club": "RFC Liège", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Abdoulaye Mbaye", "age": 20, "pos": "AC", "club": "Génération Foot", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Axel Dodote", "age": 19, "pos": "DC", "club": "Saint-Étienne", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Axel Bamba", "age": 26, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Rayan Touzghar", "age": 22, "pos": "MC", "club": "Standard Liège", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Neil Glossoa", "age": 21, "pos": "ArD", "club": "Slavia Prague", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Jean Ruiz", "age": 28, "pos": "DC", "club": "FC Metz", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Julien Anziani", "age": 27, "pos": "MC", "club": "Manisa FK", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Setigui Karamoko", "age": 26, "pos": "DC", "club": "Sepsi OSK", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Daylam Meddah", "age": 23, "pos": "DC", "club": "Montpellier", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Noah Raveyre", "age": 21, "pos": "GdB", "club": "Alverca", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Steeve Beusnard", "age": 34, "pos": "MC", "club": "Turan Tovuz", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Salif Lebouath", "age": 24, "pos": "ArD", "club": "Valenciennes FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Antonin Bobichon", "age": 30, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Ousmane Kanté", "age": 36, "pos": "DC", "club": "Fin de carrière", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "USLD", "name": "USL Dunkerque", "bg": "#001e50", "fg": "#e2001a", "arr": [{"p": "Jordan Morel", "age": 23, "pos": "MC", "club": "US Orléans", "type": "paid", "val": 0.125, "fs": "2026-07-31"}, {"p": "Egor Prutsev", "age": 23, "pos": "MO", "club": "Étoile Rouge", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Lenny Vallier", "age": 27, "pos": "ArG", "club": "Nacional", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Adrien Lebeau", "age": 26, "pos": "MO", "club": "Hansa Rostock", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Enzo Mayilla", "age": 20, "pos": "AC", "club": "Saint-Étienne", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Steven Nzonzi", "age": 37, "pos": "MDC", "club": "Stoke City", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Maxence Prévot", "age": 29, "pos": "GdB", "club": "OH Leuven", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Souleymane Keita", "age": 20, "pos": "AiG", "club": "US Boulogne", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Moha Ramos", "age": 26, "pos": "GdB", "club": "CD Marino", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Franck Atoen", "age": 19, "pos": "MDC", "club": "Samsunspor", "type": "loan", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Enzo Bardeli", "age": 25, "pos": "MC", "club": "UD Levante", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alec Georgen", "age": 27, "pos": "ArD", "club": "FC Lorient", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Marco Essimi", "age": 27, "pos": "AiD", "club": "Alverca", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Abou Kanté", "age": 31, "pos": "AC", "club": "Stade Lavallois", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Eddy Sylvestre", "age": 26, "pos": "MO", "club": "FCV Farul", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Marcos Lavín", "age": 29, "pos": "GdB", "club": "Académico Viseu", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Vincent Sasso", "age": 35, "pos": "DC", "club": "Le Havre AC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Felipe Abner", "age": 30, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Iñigo Eguaras", "age": 34, "pos": "MDC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Malick Diop", "age": 20, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "GF38", "name": "Grenoble Foot 38", "bg": "#e2001a", "fg": "#002654", "arr": [{"p": "Yohann Magnin", "age": 29, "pos": "MDC", "club": "CSKA 1948", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Zé Leite", "age": 26, "pos": "AiD", "club": "Penafiel", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Sakhalou Niakaté", "age": 20, "pos": "ArD", "club": "Valenciennes FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Dillon Hoogewerf", "age": 23, "pos": "AiG", "club": "Vitesse", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Farouq Limouri", "age": 23, "pos": "DC", "club": "FC Eindhoven", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alexandre Olliero", "age": 30, "pos": "GdB", "club": "Stade de Reims", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mael Corboz", "age": 31, "pos": "MC", "club": "Arm. Bielefeld", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Mamadou Diop", "age": 26, "pos": "GdB", "club": "AJ Auxerre", "type": "paid", "val": 2.0, "fs": "2026-07-31"}, {"p": "Jessy Benet", "age": 31, "pos": "MC", "club": "Pau FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Gaëtan Paquiez", "age": 32, "pos": "DC", "club": "Pau FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Maxime Pattier", "age": 30, "pos": "GdB", "club": "US Saint-Malo", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Shaquil Delos", "age": 27, "pos": "ArD", "club": "La Louvière", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Stone Mambo", "age": 27, "pos": "DC", "club": "FC Noah", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alan Kerouedan", "age": 26, "pos": "AiD", "club": "AS Cannes", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "EAG", "name": "EA Guingamp", "bg": "#e2001a", "fg": "#000", "arr": [{"p": "Teddy Averlant", "age": 26, "pos": "MD", "club": "Amiens SC", "type": "paid", "val": 0.2, "fs": "2026-07-31"}, {"p": "Samir Ben Brahim", "age": 23, "pos": "MD", "club": "FC Versailles", "type": "paid", "val": 0.1, "fs": "2026-07-31"}, {"p": "Florent Sanchez", "age": 23, "pos": "MC", "club": "US Orléans", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Jasser Chamakh", "age": 22, "pos": "MG", "club": "AS Saint-Priest", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Tom Ducrocq", "age": 26, "pos": "MDC", "club": "SC Bastia", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Jeovanni Dianganga", "age": 26, "pos": "DC", "club": "KSC Lokeren", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Sohaib Naïr", "age": 24, "pos": "DC", "club": "Saint-Étienne", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Kalidou Sidibé", "age": 27, "pos": "MDC", "club": "Akhmat Grozny", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Amadou Sagna", "age": 27, "pos": "AiD", "club": "Kiryat Shmona", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Louis Mafouta", "age": 32, "pos": "AC", "club": "Le Mans FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Eden Gassama", "age": 20, "pos": "DC", "club": "VFC La Roche", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alpha Sissoko", "age": 29, "pos": "ArD", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Youssef Njoya", "age": 22, "pos": "AiG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "NANCY", "name": "AS Nancy-Lorraine", "bg": "#d0021b", "fg": "#fff", "arr": [{"p": "Issam Bouaoune", "age": 23, "pos": "MC", "club": "LB Châteauroux", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Kouroufia Kébé", "age": 20, "pos": "MDC", "club": "US Orléans", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mamadou Fofana", "age": 25, "pos": "MC", "club": "FC Aarau", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Logan Ndenbe", "age": 26, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Teddy Bouriaud", "age": 29, "pos": "MDC", "club": "Stade Lavallois", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Maxence Carlier", "age": 29, "pos": "MDC", "club": "Ararat-Armenia", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Jimmy Evans", "age": 27, "pos": "AiD", "club": "Uni. Católica", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Cazim Suljic", "age": 29, "pos": "MC", "club": "Amiens SC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Adrien Julloux", "age": 29, "pos": "DC", "club": "Amiens SC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Martin Sourzac", "age": 34, "pos": "GdB", "club": "Imperia", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Bakari Camara", "age": 32, "pos": "MDC", "club": "FC Rouen 1899", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Patrick Ouotro", "age": 20, "pos": "AC", "club": "Vit. Guimarães", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mattheo Guendez", "age": 20, "pos": "AiG", "club": "Paris 13 Atl.", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Youssouf Tandia", "age": 20, "pos": "MO", "club": "SAS Épinal", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Faitout Maouassa", "age": 27, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Martin Expérience", "age": 27, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Oumar Sidibé", "age": 25, "pos": "AiD", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Geoffrey Lembet", "age": 37, "pos": "GdB", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "ANNECY", "name": "FC Annecy", "bg": "#cc0000", "fg": "#fff", "arr": [{"p": "Pascal Mozie", "age": 18, "pos": "MDC", "club": "Legia Varsovie", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Alan Mondesir", "age": 22, "pos": "AiG", "club": "Montlouis", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Esteban Marre", "age": 22, "pos": "ArD", "club": "Istres FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Sacha Lima", "age": 21, "pos": "DC", "club": "UF Touraine", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Emmanuel Louisir", "age": 20, "pos": "DC", "club": "Racing CFF", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Valentin Jacob", "age": 32, "pos": "MO", "club": "GFA Rumilly Val", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Aymerick Nedelec", "age": 19, "pos": "GdB", "club": "Chambéry SF", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Abdel Hbouch", "age": 27, "pos": "MO", "club": "US Boulogne", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Cédric Makutungu", "age": 28, "pos": "ArG", "club": "AS Cannes", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Ranjan Neelakandan", "age": 21, "pos": "AC", "club": "FC Vaduz", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Vincent Pajot", "age": 35, "pos": "MDC", "club": "Fin de carrière", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Fabrice N'Sakala", "age": 35, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Wael Debbiche", "age": 21, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "LAVAL", "name": "Stade Lavallois", "bg": "#002f6c", "fg": "#000", "arr": [{"p": "Francis Coquelin", "age": 35, "pos": "MDC", "club": "FC Nantes", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Teddy Bouriaud", "age": 29, "pos": "MDC", "club": "AS Nancy", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Esteban Mouton", "age": 22, "pos": "ArD", "club": "US Orléans", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Corentin Fatou", "age": 27, "pos": "AC", "club": "US Boulogne", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Abou Kanté", "age": 31, "pos": "AC", "club": "USL Dunkerque", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Hermann Esmel", "age": 26, "pos": "MDC", "club": "Le Puy FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Chafik Gourichy", "age": 25, "pos": "MO", "club": "Thionville Lus.", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Aboubacar Lô", "age": 26, "pos": "DC", "club": "Amiens SC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Jules Gaudin", "age": 26, "pos": "ArG", "club": "R Charleroi SC", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Mamadou Camara", "age": 25, "pos": "AC", "club": "Montpellier", "type": "paid", "val": 0.4, "fs": "2026-07-31"}, {"p": "Peter Ouaneh", "age": 28, "pos": "DC", "club": "UTA Arad", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Titouan Thomas", "age": 24, "pos": "MC", "club": "FC Fleury 91", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Malik Tchokounté", "age": 37, "pos": "AC", "club": "FC Rouen 1899", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Enzo Montet", "age": 23, "pos": "MDC", "club": "Thionville Lus.", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Loïs Martins", "age": 22, "pos": "MC", "club": "US Avranches", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Thibaut Vargas", "age": 26, "pos": "ArD", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "William Benard", "age": 23, "pos": "MC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Moïse Adilehou", "age": 30, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Yohan Tavares", "age": 38, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "BOUL", "name": "US Boulogne", "bg": "#002458", "fg": "#e2001a", "arr": [{"p": "Aymane Nassiri", "age": 21, "pos": "AiD", "club": "Istres FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Oscar Lenne", "age": 19, "pos": "ArG", "club": "RC Lens Espoir", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Abdel Hbouch", "age": 27, "pos": "MO", "club": "FC Annecy", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Benjamin Bešić", "age": 24, "pos": "AC", "club": "Bourg-en-Bresse", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Théo Brusco", "age": 26, "pos": "DC", "club": "Differdange 03", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Siad Gourville", "age": 26, "pos": "DC", "club": "La Louvière", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Nathan Zohoré", "age": 25, "pos": "DC", "club": "Ferencváros", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Amine El Farissi", "age": 27, "pos": "MO", "club": "MAS Fès", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Corentin Fatou", "age": 27, "pos": "AC", "club": "Stade Lavallois", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Souleymane Keita", "age": 20, "pos": "AiG", "club": "USL Dunkerque", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Emmanuel Kouassi", "age": 23, "pos": "ArD", "club": "Le Puy FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Hervé Touré", "age": 26, "pos": "MDC", "club": "OFK Beograd", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Lilian Raillot", "age": 22, "pos": "MDC", "club": "US Orléans", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Luka Boiteau", "age": 20, "pos": "MO", "club": "Valenciennes FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Exaucé Mpembele Boula", "age": 24, "pos": "AiG", "club": "Bourg-en-Bresse", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Christian Kitenge", "age": 24, "pos": "AiD", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "SOCH", "name": "FC Sochaux-Montbéliard", "bg": "#ffd100", "fg": "#002f6c", "arr": [{"p": "Victor Lobry", "age": 31, "pos": "MO", "club": "Amiens SC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Saad Agouzoul", "age": 28, "pos": "DC", "club": "AJ Auxerre", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Landry Nomel", "age": 28, "pos": "AiG", "club": "StadeLO", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Mathis Clairicia", "age": 23, "pos": "AC", "club": "VfL Bochum", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Samy Baghdadi", "age": 28, "pos": "DA", "club": "Valenciennes FC", "type": "none", "val": 0.0, "fs": "2026-07-31"}, {"p": "Ethan Cortes", "age": 19, "pos": "AC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Aymen Boutoutaou", "age": 25, "pos": "AiD", "club": "FCSB", "type": "paid", "val": 1.0, "fs": "2026-07-31"}, {"p": "Elson Mendes", "age": 20, "pos": "MDC", "club": "Kasimpasa", "type": "paid", "val": 0.9, "fs": "2026-07-31"}, {"p": "Abderrezzek Saidi", "age": 20, "pos": "ArD", "club": "Unionistas CF", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Lamine Touré", "age": 23, "pos": "DC", "club": "FC UNA Strassen", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Aboubacar Sidibé", "age": 20, "pos": "AC", "club": "Paris 13 Atl.", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Enzo-Noël Dodé", "age": 19, "pos": "ArG", "club": "Paris 13 Atl.", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Prince Mendy", "age": 31, "pos": "DC", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}, {"code": "DFCO", "name": "Dijon FCO", "bg": "#ffffff", "fg": "#e2001a", "arr": [{"p": "Moussa Faty", "age": 25, "pos": "ArG", "club": "Le Puy FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Ismaïl Bouleghcha", "age": 23, "pos": "ArD", "club": "Le Puy FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Axel Bargain", "age": 20, "pos": "DC", "club": "GOAL FC", "type": "free", "val": 0.0, "fs": "2026-07-31"}], "dep": [{"p": "Ismaïl Diallo", "age": 22, "pos": "ArD", "club": "Toulouse", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Jules Meyer", "age": 25, "pos": "MO", "club": "CSKA 1948", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Lenny Montfort", "age": 24, "pos": "GdB", "club": "Bourg-en-Bresse", "type": "free", "val": 0.0, "fs": "2026-07-31"}, {"p": "Loris Dupont", "age": 20, "pos": "MC", "club": "Châteaubriant", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Brayan Djadja", "age": 19, "pos": "DC", "club": "G. Bordeaux", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Brayan Djadja", "age": 19, "pos": "DC", "club": "Istres FC", "type": "loan", "val": 0.0, "fs": "2026-07-31"}, {"p": "Fady Khatir", "age": 29, "pos": "ArG", "club": "Sans club", "type": "none", "val": 0.0, "fs": "2026-07-31"}]}];
+const LATEST=[{"p": "Lorenzo Rajot", "age": 28, "pos": "MC", "club": "SM Caen", "type": "free", "val": 0.0, "club_code": "PAU", "club_name": "Pau FC", "bg": "#002654", "fg": "#f8b400", "fs": "2026-07-31"}, {"p": "Steven Nzonzi", "age": 37, "pos": "MDC", "club": "Stoke City", "type": "free", "val": 0.0, "club_code": "USLD", "club_name": "USL Dunkerque", "bg": "#001e50", "fg": "#e2001a", "fs": "2026-07-31"}, {"p": "Tom Ducrocq", "age": 26, "pos": "MDC", "club": "SC Bastia", "type": "none", "val": 0.0, "club_code": "EAG", "club_name": "EA Guingamp", "bg": "#e2001a", "fg": "#000", "fs": "2026-07-31"}, {"p": "Mathys Tourraine", "age": 25, "pos": "ArD", "club": "Paris FC", "type": "none", "val": 0.0, "club_code": "PAU", "club_name": "Pau FC", "bg": "#002654", "fg": "#f8b400", "fs": "2026-07-31"}, {"p": "Lucas Lavallée", "age": 23, "pos": "GdB", "club": "LB Châteauroux", "type": "free", "val": 0.0, "club_code": "ASSE", "club_name": "AS Saint-Étienne", "bg": "#2fac66", "fg": "#fff", "fs": "2026-07-31"}, {"p": "Jeovanni Dianganga", "age": 26, "pos": "DC", "club": "KSC Lokeren", "type": "none", "val": 0.0, "club_code": "EAG", "club_name": "EA Guingamp", "bg": "#e2001a", "fg": "#000", "fs": "2026-07-31"}, {"p": "Mamadou Fofana", "age": 25, "pos": "MC", "club": "FC Aarau", "type": "none", "val": 0.0, "club_code": "NANCY", "club_name": "AS Nancy-Lorraine", "bg": "#d0021b", "fg": "#fff", "fs": "2026-07-31"}, {"p": "Idris Mohamed", "age": 22, "pos": "DC", "club": "Le Puy FC", "type": "paid", "val": 0.3, "club_code": "FCM", "club_name": "FC Metz", "bg": "#7a1f2b", "fg": "#fff", "fs": "2026-07-31"}, {"p": "Aleksandr Guboglo", "age": 19, "pos": "ArD", "club": "Montréal", "type": "loan", "val": 0.0, "club_code": "REIMS", "club_name": "Stade de Reims", "bg": "#e2001a", "fg": "#fff", "fs": "2026-07-31"}];
+const LOGO_CODES=[];
+
+function money(v){
+  if(v<1)return Math.round(v*1000)+' K€';
+  const s=Number.isInteger(v)?String(v):(Math.round(v*10)/10).toString().replace('.',',');
+  return s+' M€';
+}
+function feeText(t){
+  if(t.type==='paid')return money(t.val);
+  if(t.type==='loan')return t.val>0?money(t.val)+' · prêt':'Prêt';
+  if(t.type==='free')return 'Libre';
+  return '—';
+}
+const POS={GdB:'p-gk',ArD:'p-def',ArG:'p-def',DC:'p-def',MDC:'p-mid',MC:'p-mid',MO:'p-mid',MD:'p-mid',MG:'p-mid',AiD:'p-att',AiG:'p-att',AC:'p-att',SA:'p-att'};
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+function crest(c,cls){
+  const code=c.code||c.club_code||'';
+  const has=LOGO_CODES.indexOf(code)>=0;
+  const style=has?'':`background:${c.bg};color:${c.fg}`;
+  return `<span class="crest ${cls||''}${has?' has-logo l-'+code:''}" style="${style}">${esc(code).slice(0,4)}</span>`;
+}
+function whenTxt(fs){
+  if(!fs)return '';
+  const t=new Date();t.setHours(0,0,0,0);
+  const d0=new Date(fs+'T00:00:00');
+  const d=Math.round((t-d0)/86400000);
+  if(d<=0)return "Aujourd'hui"; if(d===1)return 'Hier'; if(d<7)return 'il y a '+d+' j';
+  return d0.toLocaleDateString('fr-FR',{day:'2-digit',month:'short'});
+}
+
+/* ----- dernières arrivées ----- */
+(function(){
+  const el=document.getElementById('latest');
+  if(!LATEST.length){el.style.display='none';return;}
+  const cards=LATEST.map(t=>`
+    <div class="lcard">
+      <div class="lc-top">${crest(t)}<span class="lc-club">${esc(t.club_name)}</span><span class="lc-when">${whenTxt(t.fs)}</span></div>
+      <div class="lc-name">${esc(t.p)}</div>
+      <div class="lc-meta"><span class="lc-from">← ${esc(t.club)}</span><span class="lc-fee ${t.type}">${feeText(t)}</span></div>
+    </div>`).join('');
+  el.innerHTML=`<div class="latest-h"><span class="pulse"></span><span class="t">Dernières arrivées</span><span class="badge">du + récent au + ancien</span></div>
+    <div class="carousel">
+      <button class="navbtn prev" id="lprev" aria-label="Précédent">‹</button>
+      <div class="latest-grid" id="lgrid">${cards}</div>
+      <button class="navbtn next" id="lnext" aria-label="Suivant">›</button>
+    </div>`;
+  wireScroller('lgrid','lprev','lnext',232);
+})();
+
+/* défilement par boutons — animation maison (smooth natif pas garanti partout) */
+function wireScroller(gridId,prevId,nextId,fallbackStep){
+  const g=document.getElementById(gridId),p=document.getElementById(prevId),n=document.getElementById(nextId);
+  if(!g||!p||!n)return;
+  const upd=()=>{p.disabled=g.scrollLeft<=2;n.disabled=g.scrollLeft>=g.scrollWidth-g.clientWidth-2;};
+  function measuredStep(){
+    const first=g.firstElementChild;
+    if(!first)return fallbackStep||g.clientWidth*0.85;
+    const gap=parseFloat(getComputedStyle(g).columnGap)||12;
+    return first.getBoundingClientRect().width+gap;
+  }
+  const by=d=>{const s=measuredStep(),max=g.scrollWidth-g.clientWidth;
+    g.scrollLeft=Math.max(0,Math.min(max,g.scrollLeft+d*s));upd();};
+  p.onclick=()=>by(-1);n.onclick=()=>by(1);
+  g.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+}
+
+/* ----- totaux (par club) ----- */
+function sideTotal(list){let s=0;list.forEach(t=>{if(t.type==='paid'||t.type==='loan')s+=t.val;});return {sum:s,n:list.length};}
+
+/* ----- nav ----- */
+document.getElementById('jump').innerHTML=CLUBS.map((c,i)=>
+  `<a class="chip" href="#c${i}">${crest(c)}<span class="cn">${esc(c.name)}</span></a>`).join('');
+wireScroller('jump','jprev','jnext',260);
+
+/* ----- clubs ----- */
+function rowHtml(t,dir){
+  const arrow=dir==='in'?'←':'→';
+  return `<div class="row">
+    <span class="pos ${POS[t.pos]||'p-mid'}">${esc(t.pos)}</span>
+    <span class="who"><span class="nm">${esc(t.p)}<span class="age">${t.age} ans</span></span>
+      <span class="cl"><span class="arrow">${arrow}</span>${esc(t.club)}</span></span>
+    <span class="fee ${t.type}">${feeText(t)}</span></div>`;
+}
+document.getElementById('clubs').innerHTML=CLUBS.map((c,i)=>{
+  const a=sideTotal(c.arr),d=sideTotal(c.dep);
+  const bal=d.sum-a.sum;
+  const cls=bal>0.001?'pos':(bal<-0.001?'neg':'zero');
+  const txt=(bal>=0?'+':'−')+money(Math.abs(bal));
+  const inR=c.arr.length?c.arr.map(t=>rowHtml(t,'in')).join(''):'<div class="empty">Aucune arrivée (hors prêts terminés / promus B)</div>';
+  const outR=c.dep.length?c.dep.map(t=>rowHtml(t,'out')).join(''):'<div class="empty">Aucun départ (hors prêts terminés)</div>';
+  return `<section class="club" id="c${i}">
+    <div class="club-head">
+      <a class="club-link" href="equipe.html?c=${esc(c.code)}" title="Effectif & compo">${crest(c,'')}<span class="club-name">${esc(c.name)}</span></a>
+      <a class="squad-btn" href="equipe.html?c=${esc(c.code)}">Effectif &amp; compo →</a>
+      <span class="club-bal"><div class="bl">Solde</div><div class="bv ${cls}">${txt}</div></span></div>
+    <div class="cols">
+      <div class="col in"><div class="col-head">Arrivées <span class="meta"><b>${a.n}</b> · ${money(a.sum)}</span></div>${inR}</div>
+      <div class="col out"><div class="col-head">Départs <span class="meta"><b>${d.n}</b> · ${money(d.sum)}</span></div>${outR}</div>
+    </div></section>`;
+}).join('');
+</script>
+</body>
+</html>
