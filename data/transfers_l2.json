@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-01T00:31:29",
- "sig": "a29f8107921be1d425c24c76b8d31a0a",
+ "updated": "2026-08-01T14:06:32",
+ "sig": "60c3a6b06ebb76345481c3dfae4d366e",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -144,6 +144,7 @@
   "USLD|out|Eddy Sylvestre|FCV Farul": "2026-07-31",
   "USLD|out|Marcos Lavín|Académico Viseu": "2026-07-31",
   "USLD|out|Vincent Sasso|Le Havre AC": "2026-07-31",
+  "USLD|out|Antoine Sekongo|Samsunspor": "2026-08-01",
   "USLD|out|Felipe Abner|Sans club": "2026-07-31",
   "USLD|out|Iñigo Eguaras|Sans club": "2026-07-31",
   "USLD|out|Malick Diop|Sans club": "2026-07-31",
@@ -1640,6 +1641,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Antoine Sekongo",
+     "age": 22,
+     "pos": "MC",
+     "club": "Samsunspor",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-01"
     },
     {
      "p": "Felipe Abner",
@@ -4718,14 +4728,6 @@
     "grp": "MID",
     "age": 20,
     "val": 0.0
-   },
-   {
-    "n": "8",
-    "p": "Antoine Sekongo",
-    "pos": "MC",
-    "grp": "MID",
-    "age": 22,
-    "val": 4.0
    },
    {
     "n": "28",
