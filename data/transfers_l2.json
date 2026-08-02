@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-01T14:06:32",
- "sig": "60c3a6b06ebb76345481c3dfae4d366e",
+ "updated": "2026-08-03T00:31:33",
+ "sig": "b3074153ecf8d2e9c4e928561bfe4ad1",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -14,6 +14,7 @@
   "ASSE|out|Enzo Mayilla|USL Dunkerque": "2026-07-31",
   "ASSE|out|Brice Maubleu|Pau FC": "2026-07-31",
   "ASSE|out|Karim Cissé|Aubagne Air Bel": "2026-07-31",
+  "ASSE|out|Jebryl Sahraoui|Aubagne Air Bel": "2026-08-03",
   "ASSE|out|Axel Dodote|Pau FC": "2026-07-31",
   "FCN|in|Killian Corredor|Darmstadt 98": "2026-07-31",
   "FCN|in|Lucas Perrin|Sporting Gijón": "2026-07-31",
@@ -27,9 +28,9 @@
   "FCN|out|Francis Coquelin|Stade Lavallois": "2026-07-31",
   "FCN|out|Mathieu Acapandié|Hajduk Split": "2026-07-31",
   "FCN|out|Uros Radakovic|Buriram Utd.": "2026-07-31",
+  "FCN|out|Youssef El Arabi|Marko": "2026-08-03",
   "FCN|out|Deiver Machado|Sans club": "2026-07-31",
   "FCN|out|Patrik Carlgren|Sans club": "2026-07-31",
-  "FCN|out|Youssef El Arabi|Sans club": "2026-07-31",
   "REIMS|in|Samuel Kotto|La Gantoise": "2026-07-31",
   "REIMS|in|Tom Ritzy Hülsmann|TSV Hartberg": "2026-07-31",
   "REIMS|in|Youssef El Kachati|NEC Nijmegen": "2026-07-31",
@@ -73,6 +74,7 @@
   "MHSC|in|Florian Tardieu|Saint-Étienne": "2026-07-31",
   "MHSC|in|Grégory Ayem|Racing CFF": "2026-07-31",
   "MHSC|in|Daylam Meddah|Pau FC": "2026-07-31",
+  "MHSC|in|Nordan Mukiele|Stade Rennais": "2026-08-03",
   "MHSC|in|Daryll Benlahlou|Ol. Lyonnais": "2026-07-31",
   "MHSC|out|Modibo Sagnan|C. Rizespor": "2026-07-31",
   "MHSC|out|Alexandre Mendy|Al-Faisaly": "2026-07-31",
@@ -153,9 +155,11 @@
   "GF38|in|Sakhalou Niakaté|Valenciennes FC": "2026-07-31",
   "GF38|in|Dillon Hoogewerf|Vitesse": "2026-07-31",
   "GF38|in|Farouq Limouri|FC Eindhoven": "2026-07-31",
+  "GF38|in|Théo Borne|C. Budejovice": "2026-08-03",
   "GF38|in|Alexandre Olliero|Stade de Reims": "2026-07-31",
   "GF38|in|Mael Corboz|Arm. Bielefeld": "2026-07-31",
   "GF38|out|Mamadou Diop|AJ Auxerre": "2026-07-31",
+  "GF38|out|Loris Mouyokolo|Baltika": "2026-08-03",
   "GF38|out|Jessy Benet|Pau FC": "2026-07-31",
   "GF38|out|Gaëtan Paquiez|Pau FC": "2026-07-31",
   "GF38|out|Maxime Pattier|US Saint-Malo": "2026-07-31",
@@ -192,7 +196,6 @@
   "NANCY|out|Faitout Maouassa|Sans club": "2026-07-31",
   "NANCY|out|Martin Expérience|Sans club": "2026-07-31",
   "NANCY|out|Oumar Sidibé|Sans club": "2026-07-31",
-  "NANCY|out|Geoffrey Lembet|Sans club": "2026-07-31",
   "ANNECY|in|Pascal Mozie|Legia Varsovie": "2026-07-31",
   "ANNECY|in|Alan Mondesir|Montlouis": "2026-07-31",
   "ANNECY|in|Esteban Marre|Istres FC": "2026-07-31",
@@ -383,6 +386,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Jebryl Sahraoui",
+     "age": 21,
+     "pos": "MC",
+     "club": "Aubagne Air Bel",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-03"
+    },
+    {
      "p": "Axel Dodote",
      "age": 19,
      "pos": "DC",
@@ -510,6 +522,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Youssef El Arabi",
+     "age": 39,
+     "pos": "AC",
+     "club": "Marko",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-03"
+    },
+    {
      "p": "Deiver Machado",
      "age": 32,
      "pos": "ArG",
@@ -522,15 +543,6 @@
      "p": "Patrik Carlgren",
      "age": 34,
      "pos": "GdB",
-     "club": "Sans club",
-     "type": "none",
-     "val": 0.0,
-     "fs": "2026-07-31"
-    },
-    {
-     "p": "Youssef El Arabi",
-     "age": 39,
-     "pos": "AC",
      "club": "Sans club",
      "type": "none",
      "val": 0.0,
@@ -950,6 +962,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Nordan Mukiele",
+     "age": 20,
+     "pos": "AiD",
+     "club": "Stade Rennais",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-03"
     },
     {
      "p": "Daryll Benlahlou",
@@ -1732,6 +1753,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Théo Borne",
+     "age": 24,
+     "pos": "GdB",
+     "club": "C. Budejovice",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-03"
+    },
+    {
      "p": "Alexandre Olliero",
      "age": 30,
      "pos": "GdB",
@@ -1759,6 +1789,15 @@
      "type": "paid",
      "val": 2.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Loris Mouyokolo",
+     "age": 25,
+     "pos": "DC",
+     "club": "Baltika",
+     "type": "paid",
+     "val": 1.0,
+     "fs": "2026-08-03"
     },
     {
      "p": "Jessy Benet",
@@ -2099,15 +2138,6 @@
      "p": "Oumar Sidibé",
      "age": 25,
      "pos": "AiD",
-     "club": "Sans club",
-     "type": "none",
-     "val": 0.0,
-     "fs": "2026-07-31"
-    },
-    {
-     "p": "Geoffrey Lembet",
-     "age": 37,
-     "pos": "GdB",
      "club": "Sans club",
      "type": "none",
      "val": 0.0,
@@ -2860,7 +2890,7 @@
     "p": "Julien Le Cardinal",
     "pos": "DC",
     "grp": "DEF",
-    "age": 28,
+    "age": 29,
     "val": 1.8
    },
    {
@@ -3872,6 +3902,14 @@
     "val": 2.0
    },
    {
+    "n": "",
+    "p": "Nordan Mukiele",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 20,
+    "val": 1.0
+   },
+   {
     "n": "22",
     "p": "Axel Guéguin",
     "pos": "AiD",
@@ -3894,6 +3932,14 @@
     "grp": "ATT",
     "age": 21,
     "val": 0.4
+   },
+   {
+    "n": "9",
+    "p": "Lacine Megnan-Pave",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 16,
+    "val": 0.0
    },
    {
     "n": "23",
@@ -4698,7 +4744,7 @@
     "val": 0.6
    },
    {
-    "n": "24",
+    "n": "21",
     "p": "Lenny Dziki Loussilaho",
     "pos": "ArD",
     "grp": "DEF",
@@ -4762,7 +4808,7 @@
     "val": 0.35
    },
    {
-    "n": "7",
+    "n": "93",
     "p": "Alex Daho",
     "pos": "AiG",
     "grp": "ATT",
@@ -4813,6 +4859,14 @@
   "GF38": [
    {
     "n": "",
+    "p": "Théo Borne",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 24,
+    "val": 0.15
+   },
+   {
+    "n": "",
     "p": "Alexandre Olliero",
     "pos": "GdB",
     "grp": "GK",
@@ -4826,14 +4880,6 @@
     "grp": "GK",
     "age": 34,
     "val": 0.1
-   },
-   {
-    "n": "24",
-    "p": "Loris Mouyokolo",
-    "pos": "DC",
-    "grp": "DEF",
-    "age": 25,
-    "val": 1.2
    },
    {
     "n": "5",
@@ -5206,6 +5252,14 @@
     "val": 0.4
    },
    {
+    "n": "",
+    "p": "Zayon Chtaï-Telamio",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 19,
+    "val": 0.0
+   },
+   {
     "n": "27",
     "p": "Stanislas Kielt",
     "pos": "AC",
@@ -5232,7 +5286,15 @@
     "val": 0.1
    },
    {
-    "n": "",
+    "n": "30",
+    "p": "Geoffrey Lembet",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 37,
+    "val": 0.05
+   },
+   {
+    "n": "40",
     "p": "Yanis Kouini",
     "pos": "GdB",
     "grp": "GK",
@@ -5364,7 +5426,7 @@
     "p": "Walid Bouabdeli",
     "pos": "MO",
     "grp": "MID",
-    "age": 25,
+    "age": 26,
     "val": 0.7
    },
    {
