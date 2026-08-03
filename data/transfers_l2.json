@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-03T17:40:20",
- "sig": "b3074153ecf8d2e9c4e928561bfe4ad1",
+ "updated": "2026-08-03T18:31:51",
+ "sig": "45b149d449db469df25622ca6654bbf8",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -210,13 +210,13 @@
   "ANNECY|out|Fabrice N'Sakala|Sans club": "2026-07-31",
   "ANNECY|out|Wael Debbiche|Sans club": "2026-07-31",
   "LAVAL|in|Francis Coquelin|FC Nantes": "2026-07-31",
+  "LAVAL|in|Aboubacar Lô|Amiens SC": "2026-07-31",
   "LAVAL|in|Teddy Bouriaud|AS Nancy": "2026-07-31",
   "LAVAL|in|Esteban Mouton|US Orléans": "2026-07-31",
   "LAVAL|in|Corentin Fatou|US Boulogne": "2026-07-31",
   "LAVAL|in|Abou Kanté|USL Dunkerque": "2026-07-31",
   "LAVAL|in|Hermann Esmel|Le Puy FC": "2026-07-31",
   "LAVAL|in|Chafik Gourichy|Thionville Lus.": "2026-07-31",
-  "LAVAL|in|Aboubacar Lô|Amiens SC": "2026-07-31",
   "LAVAL|in|Jules Gaudin|R Charleroi SC": "2026-07-31",
   "LAVAL|out|Mamadou Camara|Montpellier": "2026-07-31",
   "LAVAL|out|Peter Ouaneh|UTA Arad": "2026-07-31",
@@ -1867,7 +1867,7 @@
      "pos": "MD",
      "club": "Amiens SC",
      "type": "paid",
-     "val": 0.2,
+     "val": 0.5,
      "fs": "2026-07-31"
     },
     {
@@ -2288,6 +2288,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Aboubacar Lô",
+     "age": 26,
+     "pos": "DC",
+     "club": "Amiens SC",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-07-31"
+    },
+    {
      "p": "Teddy Bouriaud",
      "age": 29,
      "pos": "MDC",
@@ -2338,15 +2347,6 @@
      "pos": "MO",
      "club": "Thionville Lus.",
      "type": "free",
-     "val": 0.0,
-     "fs": "2026-07-31"
-    },
-    {
-     "p": "Aboubacar Lô",
-     "age": 26,
-     "pos": "DC",
-     "club": "Amiens SC",
-     "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
     },
