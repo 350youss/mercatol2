@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-03T18:31:51",
- "sig": "45b149d449db469df25622ca6654bbf8",
+ "updated": "2026-08-03T21:31:50",
+ "sig": "2767ba6fee317cbad609ebd44ff47203",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -157,14 +157,15 @@
   "GF38|in|Farouq Limouri|FC Eindhoven": "2026-07-31",
   "GF38|in|Théo Borne|C. Budejovice": "2026-08-03",
   "GF38|in|Alexandre Olliero|Stade de Reims": "2026-07-31",
+  "GF38|in|Leonardo Cerri|Juve Next Gen": "2026-08-03",
   "GF38|in|Mael Corboz|Arm. Bielefeld": "2026-07-31",
   "GF38|out|Mamadou Diop|AJ Auxerre": "2026-07-31",
   "GF38|out|Loris Mouyokolo|Baltika": "2026-08-03",
   "GF38|out|Jessy Benet|Pau FC": "2026-07-31",
   "GF38|out|Gaëtan Paquiez|Pau FC": "2026-07-31",
   "GF38|out|Maxime Pattier|US Saint-Malo": "2026-07-31",
-  "GF38|out|Shaquil Delos|La Louvière": "2026-07-31",
   "GF38|out|Stone Mambo|FC Noah": "2026-07-31",
+  "GF38|out|Shaquil Delos|La Louvière": "2026-07-31",
   "GF38|out|Alan Kerouedan|AS Cannes": "2026-07-31",
   "EAG|in|Teddy Averlant|Amiens SC": "2026-07-31",
   "EAG|in|Samir Ben Brahim|FC Versailles": "2026-07-31",
@@ -1771,6 +1772,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Leonardo Cerri",
+     "age": 23,
+     "pos": "AC",
+     "club": "Juve Next Gen",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-03"
+    },
+    {
      "p": "Mael Corboz",
      "age": 31,
      "pos": "MC",
@@ -1827,19 +1837,19 @@
      "fs": "2026-07-31"
     },
     {
-     "p": "Shaquil Delos",
+     "p": "Stone Mambo",
      "age": 27,
-     "pos": "ArD",
-     "club": "La Louvière",
+     "pos": "DC",
+     "club": "FC Noah",
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
     },
     {
-     "p": "Stone Mambo",
+     "p": "Shaquil Delos",
      "age": 27,
-     "pos": "DC",
-     "club": "FC Noah",
+     "pos": "ArD",
+     "club": "La Louvière",
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
@@ -5032,6 +5042,14 @@
     "grp": "ATT",
     "age": 25,
     "val": 1.2
+   },
+   {
+    "n": "",
+    "p": "Leonardo Cerri",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 23,
+    "val": 0.5
    },
    {
     "n": "2",
