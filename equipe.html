@@ -328,9 +328,27 @@ function setFormation(f,keep){
   formation=f;
   slots=FORMATIONS[f].map(([role,x,y],idx)=>({role,x,y,starter:prevStarters[idx]||null,sub:prevSubs[idx]||null}));
 }
+function compoKey(code){return 'compo:'+code;}
+function saveCompo(){
+  if(!club)return;
+  try{localStorage.setItem(compoKey(club),JSON.stringify({formation,slots,recruits,departures,recId}));}catch(e){}
+}
+function loadCompo(code){
+  try{const raw=localStorage.getItem(compoKey(code));return raw?JSON.parse(raw):null;}catch(e){return null;}
+}
 function loadClub(code){
-  club=code; recruits=[]; departures={}; active=null; recId=1;
-  setFormation(formation,false);
+  club=code; active=null;
+  const saved=loadCompo(code);
+  if(saved){
+    formation=saved.formation||formation;
+    slots=saved.slots||[];
+    recruits=saved.recruits||[];
+    departures=saved.departures||{};
+    recId=saved.recId||1;
+  } else {
+    recruits=[]; departures={}; recId=1;
+    setFormation(formation,false);
+  }
   const m=CLUBMETA[code];
   document.documentElement.style.setProperty('--club',m.bg);
   document.getElementById('topcrestbox').innerHTML=crest(code);
@@ -631,7 +649,7 @@ function departPlayer(k){
 }
 
 /* ---------- rendu ---------- */
-function renderAll(){renderSquad();renderRecruits();renderDeparts();renderPitch();updateHint();}
+function renderAll(){renderSquad();renderRecruits();renderDeparts();renderPitch();updateHint();saveCompo();}
 
 function renderSquad(){
   const sq=(SQUADS[club]||[]).filter(p=>!departures[pkey(p)]);
