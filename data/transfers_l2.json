@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-04T21:35:30",
- "sig": "5ece066ce4d88f881045e9546506fa40",
+ "updated": "2026-08-05T00:35:00",
+ "sig": "0b7f0691ee71141f506f5bc48e716642",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -61,6 +61,7 @@
   "FCM|out|Sadibou Sané|Monaco": "2026-07-31",
   "FCM|out|Idrissa Gueye|Udinese": "2026-07-31",
   "FCM|out|Terry Yegbe|Lech Poznan": "2026-07-31",
+  "FCM|out|Gauthier Hein|OGC Nice": "2026-08-05",
   "FCM|out|Koffi Kouao|Neftchi": "2026-08-04",
   "FCM|out|Jean-Philippe Gbamin|CSKA Sofia": "2026-07-31",
   "FCM|out|Giorgi Kvilitaia|Holstein Kiel": "2026-07-31",
@@ -840,6 +841,15 @@
      "type": "paid",
      "val": 3.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Gauthier Hein",
+     "age": 29,
+     "pos": "AiD",
+     "club": "OGC Nice",
+     "type": "paid",
+     "val": 1.7,
+     "fs": "2026-08-05"
     },
     {
      "p": "Koffi Kouao",
@@ -3730,14 +3740,6 @@
     "val": 0.1
    },
    {
-    "n": "10",
-    "p": "Gauthier Hein",
-    "pos": "AiD",
-    "grp": "ATT",
-    "age": 29,
-    "val": 5.0
-   },
-   {
     "n": "22",
     "p": "Nathan Mbala",
     "pos": "AC",
@@ -4782,7 +4784,7 @@
     "val": 0.1
    },
    {
-    "n": "",
+    "n": "15",
     "p": "Steven Nzonzi",
     "pos": "MDC",
     "grp": "MID",
@@ -5460,16 +5462,16 @@
     "val": 0.05
    },
    {
-    "n": "",
-    "p": "Joël-Emmanuel Coulibaly",
+    "n": "24",
+    "p": "Yanis Delaveau",
     "pos": "MC",
     "grp": "MID",
     "age": 19,
     "val": 0.0
    },
    {
-    "n": "24",
-    "p": "Yanis Delaveau",
+    "n": "88",
+    "p": "Joël-Emmanuel Coulibaly",
     "pos": "MC",
     "grp": "MID",
     "age": 19,
@@ -5500,7 +5502,7 @@
     "val": 0.5
    },
    {
-    "n": "",
+    "n": "11",
     "p": "Sidi Cissé",
     "pos": "AiD",
     "grp": "ATT",
@@ -5614,7 +5616,7 @@
     "val": 0.0
    },
    {
-    "n": "",
+    "n": "4",
     "p": "Sacha Lima",
     "pos": "DC",
     "grp": "DEF",
@@ -5622,7 +5624,7 @@
     "val": 0.0
    },
    {
-    "n": "",
+    "n": "21",
     "p": "Esteban Marre",
     "pos": "ArD",
     "grp": "DEF",
@@ -5630,7 +5632,7 @@
     "val": 0.0
    },
    {
-    "n": "",
+    "n": "15",
     "p": "Pascal Mozie",
     "pos": "MDC",
     "grp": "MID",
@@ -5654,7 +5656,7 @@
     "val": 0.6
    },
    {
-    "n": "29",
+    "n": "8",
     "p": "Alexis Casadei",
     "pos": "MC",
     "grp": "MID",
@@ -5662,7 +5664,7 @@
     "val": 0.4
    },
    {
-    "n": "",
+    "n": "14",
     "p": "Mohamed Koné",
     "pos": "MC",
     "grp": "MID",
@@ -5694,7 +5696,7 @@
     "val": 0.1
    },
    {
-    "n": "",
+    "n": "12",
     "p": "Kadan Young",
     "pos": "AiG",
     "grp": "ATT",
@@ -5702,7 +5704,7 @@
     "val": 0.2
    },
    {
-    "n": "",
+    "n": "7",
     "p": "Alan Mondesir",
     "pos": "AiG",
     "grp": "ATT",
@@ -5726,20 +5728,12 @@
     "val": 0.9
    },
    {
-    "n": "71",
+    "n": "11",
     "p": "Ben Hamed Touré",
     "pos": "AC",
     "grp": "ATT",
     "age": 22,
     "val": 0.6
-   },
-   {
-    "n": "",
-    "p": "Zépiqueno Redmond",
-    "pos": "AC",
-    "grp": "ATT",
-    "age": 20,
-    "val": 0.5
    },
    {
     "n": "9",
@@ -5750,7 +5744,15 @@
     "val": 0.5
    },
    {
-    "n": "",
+    "n": "17",
+    "p": "Zépiqueno Redmond",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 0.5
+   },
+   {
+    "n": "20",
     "p": "Adam Yahi",
     "pos": "AC",
     "grp": "ATT",
@@ -6144,14 +6146,6 @@
     "grp": "ATT",
     "age": 24,
     "val": 0.35
-   },
-   {
-    "n": "91",
-    "p": "Zanga Koné",
-    "pos": "AC",
-    "grp": "ATT",
-    "age": 21,
-    "val": 0.07
    }
   ],
   "SOCH": [
