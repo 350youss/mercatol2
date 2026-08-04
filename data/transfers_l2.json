@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-04T12:33:26",
- "sig": "db1ac73b28119dd004199b3d7ca58a14",
+ "updated": "2026-08-04T15:42:57",
+ "sig": "be068a7da9df3274bf5ea89e6e568fbd",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -61,13 +61,13 @@
   "FCM|out|Sadibou Sané|Monaco": "2026-07-31",
   "FCM|out|Idrissa Gueye|Udinese": "2026-07-31",
   "FCM|out|Terry Yegbe|Lech Poznan": "2026-07-31",
+  "FCM|out|Koffi Kouao|Neftchi": "2026-08-04",
   "FCM|out|Jean-Philippe Gbamin|CSKA Sofia": "2026-07-31",
   "FCM|out|Giorgi Kvilitaia|Holstein Kiel": "2026-07-31",
   "FCM|out|Kevin Van Den Kerkhof|R Charleroi SC": "2026-07-31",
   "FCM|out|Joseph Nduquidi|Farense": "2026-07-31",
   "FCM|out|Ismaël Guerti|Grazer AK": "2026-07-31",
   "FCM|out|Yannis Lawson|RFC Seraing": "2026-07-31",
-  "FCM|out|Koffi Kouao|Sans club": "2026-07-31",
   "FCM|out|Fodé Ballo-Touré|Sans club": "2026-07-31",
   "FCM|out|Benjamin Stambouli|Sans club": "2026-07-31",
   "MHSC|in|Mamadou Camara|Stade Lavallois": "2026-07-31",
@@ -841,6 +841,15 @@
      "fs": "2026-07-31"
     },
     {
+     "p": "Koffi Kouao",
+     "age": 28,
+     "pos": "ArD",
+     "club": "Neftchi",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-04"
+    },
+    {
      "p": "Jean-Philippe Gbamin",
      "age": 30,
      "pos": "DC",
@@ -891,15 +900,6 @@
      "pos": "ArG",
      "club": "RFC Seraing",
      "type": "loan",
-     "val": 0.0,
-     "fs": "2026-07-31"
-    },
-    {
-     "p": "Koffi Kouao",
-     "age": 28,
-     "pos": "ArD",
-     "club": "Sans club",
-     "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
     },
