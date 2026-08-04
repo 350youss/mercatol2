@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-03T21:31:50",
- "sig": "2767ba6fee317cbad609ebd44ff47203",
+ "updated": "2026-08-04T12:33:26",
+ "sig": "db1ac73b28119dd004199b3d7ca58a14",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -159,6 +159,7 @@
   "GF38|in|Alexandre Olliero|Stade de Reims": "2026-07-31",
   "GF38|in|Leonardo Cerri|Juve Next Gen": "2026-08-03",
   "GF38|in|Mael Corboz|Arm. Bielefeld": "2026-07-31",
+  "GF38|in|Jean-Guy Akpa Akpro|Pro Vercelli": "2026-08-04",
   "GF38|out|Mamadou Diop|AJ Auxerre": "2026-07-31",
   "GF38|out|Loris Mouyokolo|Baltika": "2026-08-03",
   "GF38|out|Jessy Benet|Pau FC": "2026-07-31",
@@ -1788,6 +1789,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Jean-Guy Akpa Akpro",
+     "age": 21,
+     "pos": "AiD",
+     "club": "Pro Vercelli",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-04"
     }
    ],
    "dep": [
@@ -3912,7 +3922,7 @@
     "val": 2.0
    },
    {
-    "n": "",
+    "n": "19",
     "p": "Nordan Mukiele",
     "pos": "AiD",
     "grp": "ATT",
@@ -5026,6 +5036,14 @@
     "grp": "ATT",
     "age": 25,
     "val": 0.35
+   },
+   {
+    "n": "",
+    "p": "Jean-Guy Akpa Akpro",
+    "pos": "AiD",
+    "grp": "ATT",
+    "age": 21,
+    "val": 0.28
    },
    {
     "n": "9",
