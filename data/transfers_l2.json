@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-05T00:35:00",
- "sig": "0b7f0691ee71141f506f5bc48e716642",
+ "updated": "2026-08-05T03:34:10",
+ "sig": "694c9c36f9211e41f3039824cb4667f8",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -243,6 +243,7 @@
   "BOUL|out|Corentin Fatou|Stade Lavallois": "2026-07-31",
   "BOUL|out|Souleymane Keita|USL Dunkerque": "2026-07-31",
   "BOUL|out|Emmanuel Kouassi|Le Puy FC": "2026-07-31",
+  "BOUL|out|Zanga Koné|Canet Rous.": "2026-08-05",
   "BOUL|out|Hervé Touré|OFK Beograd": "2026-07-31",
   "BOUL|out|Lilian Raillot|US Orléans": "2026-07-31",
   "BOUL|out|Luka Boiteau|Valenciennes FC": "2026-07-31",
@@ -682,7 +683,7 @@
     {
      "p": "Thiemoko Diarra",
      "age": 23,
-     "pos": "AiD",
+     "pos": "AiG",
      "club": "Kasimpasa",
      "type": "paid",
      "val": 1.5,
@@ -2599,6 +2600,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Zanga Koné",
+     "age": 21,
+     "pos": "AC",
+     "club": "Canet Rous.",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-05"
     },
     {
      "p": "Hervé Touré",
