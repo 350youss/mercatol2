@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-05T12:32:36",
- "sig": "d420d2e6502338a48372b3e8896bfdff",
+ "updated": "2026-08-05T21:34:32",
+ "sig": "f4bf98d951dc422101d1ede8fb95d182",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -83,6 +83,7 @@
   "MHSC|out|Téji Savanier|Sans club": "2026-07-31",
   "MHSC|out|Christopher Jullien|Sans club": "2026-07-31",
   "CF63|in|Arthur Saintorens|Av. Bayonnais": "2026-07-31",
+  "CF63|in|Jean Grillot|G. Bordeaux": "2026-08-05",
   "CF63|out|İlhan Fakılı|Besiktas": "2026-07-31",
   "CF63|out|Habib Keïta|Kocaelispor": "2026-07-31",
   "CF63|out|Abdoul Kader Bamba|FC Granada": "2026-07-31",
@@ -1059,6 +1060,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-07-31"
+    },
+    {
+     "p": "Jean Grillot",
+     "age": 20,
+     "pos": "DC",
+     "club": "G. Bordeaux",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-05"
     }
    ],
    "dep": [
@@ -4050,6 +4060,14 @@
     "grp": "DEF",
     "age": 19,
     "val": 0.03
+   },
+   {
+    "n": "",
+    "p": "Jean Grillot",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 20,
+    "val": 0.0
    },
    {
     "n": "38",
