@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-05T03:34:10",
- "sig": "694c9c36f9211e41f3039824cb4667f8",
+ "updated": "2026-08-05T12:32:36",
+ "sig": "d420d2e6502338a48372b3e8896bfdff",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-07-31",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-07-31",
@@ -183,6 +183,7 @@
   "EAG|out|Eden Gassama|VFC La Roche": "2026-07-31",
   "EAG|out|Alpha Sissoko|Sans club": "2026-07-31",
   "EAG|out|Youssef Njoya|Sans club": "2026-07-31",
+  "NANCY|in|Thierno Baldé|Troyes": "2026-08-05",
   "NANCY|in|Issam Bouaoune|LB Châteauroux": "2026-07-31",
   "NANCY|in|Kouroufia Kébé|US Orléans": "2026-07-31",
   "NANCY|in|Mamadou Fofana|FC Aarau": "2026-07-31",
@@ -190,8 +191,8 @@
   "NANCY|out|Teddy Bouriaud|Stade Lavallois": "2026-07-31",
   "NANCY|out|Maxence Carlier|Ararat-Armenia": "2026-07-31",
   "NANCY|out|Jimmy Evans|Uni. Católica": "2026-07-31",
-  "NANCY|out|Cazim Suljic|Amiens SC": "2026-07-31",
   "NANCY|out|Adrien Julloux|Amiens SC": "2026-07-31",
+  "NANCY|out|Cazim Suljic|Amiens SC": "2026-07-31",
   "NANCY|out|Martin Sourzac|Imperia": "2026-07-31",
   "NANCY|out|Bakari Camara|FC Rouen 1899": "2026-07-31",
   "NANCY|out|Patrick Ouotro|Vit. Guimarães": "2026-07-31",
@@ -2030,6 +2031,15 @@
    "fg": "#fff",
    "arr": [
     {
+     "p": "Thierno Baldé",
+     "age": 24,
+     "pos": "ArD",
+     "club": "Troyes",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-05"
+    },
+    {
      "p": "Issam Bouaoune",
      "age": 23,
      "pos": "MC",
@@ -2095,18 +2105,18 @@
      "fs": "2026-07-31"
     },
     {
-     "p": "Cazim Suljic",
+     "p": "Adrien Julloux",
      "age": 29,
-     "pos": "MC",
+     "pos": "DC",
      "club": "Amiens SC",
      "type": "free",
      "val": 0.0,
      "fs": "2026-07-31"
     },
     {
-     "p": "Adrien Julloux",
+     "p": "Cazim Suljic",
      "age": 29,
-     "pos": "DC",
+     "pos": "MC",
      "club": "Amiens SC",
      "type": "free",
      "val": 0.0,
@@ -5422,6 +5432,14 @@
     "grp": "DEF",
     "age": 21,
     "val": 1.5
+   },
+   {
+    "n": "19",
+    "p": "Thierno Baldé",
+    "pos": "ArD",
+    "grp": "DEF",
+    "age": 24,
+    "val": 0.4
    },
    {
     "n": "25",
