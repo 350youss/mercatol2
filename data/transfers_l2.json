@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-09T00:32:01",
- "sig": "9b9b128c4c7c430bdbd93e66138e53ac",
+ "updated": "2026-08-09T03:31:08",
+ "sig": "60f106462c6246800f42b5066ce719eb",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-08-09",
@@ -116,6 +116,7 @@
   "PAU|in|Brice Maubleu|Saint-Étienne": "2026-08-09",
   "PAU|in|Royce Openda|G. Bordeaux": "2026-08-09",
   "PAU|in|Tom Saettel|FR Haguenau": "2026-08-09",
+  "PAU|in|Maxime Adam|SR Colmar": "2026-08-09",
   "PAU|in|Mathys Tourraine|Paris FC": "2026-08-09",
   "PAU|in|Hacène Benali|Red Star FC": "2026-08-09",
   "PAU|in|Alexis Lefebvre|RFC Liège": "2026-08-09",
@@ -1386,6 +1387,15 @@
      "age": 21,
      "pos": "AiG",
      "club": "FR Haguenau",
+     "type": "free",
+     "val": 0.0,
+     "fs": "2026-08-09"
+    },
+    {
+     "p": "Maxime Adam",
+     "age": 23,
+     "pos": "GdB",
+     "club": "SR Colmar",
      "type": "free",
      "val": 0.0,
      "fs": "2026-08-09"
@@ -3444,7 +3454,7 @@
     "val": 0.07
    },
    {
-    "n": "",
+    "n": "22",
     "p": "Samuel Kotto",
     "pos": "DC",
     "grp": "DEF",
@@ -3468,7 +3478,7 @@
     "val": 2.0
    },
    {
-    "n": "",
+    "n": "27",
     "p": "Daouda Guindo",
     "pos": "ArG",
     "grp": "DEF",
@@ -3484,7 +3494,7 @@
     "val": 4.0
    },
    {
-    "n": "20",
+    "n": "63",
     "p": "Armel Zohouri",
     "pos": "ArD",
     "grp": "DEF",
@@ -3508,7 +3518,7 @@
     "val": 4.0
    },
    {
-    "n": "",
+    "n": "5",
     "p": "John Otomewo",
     "pos": "MDC",
     "grp": "MID",
@@ -3636,7 +3646,7 @@
     "val": 1.0
    },
    {
-    "n": "",
+    "n": "10",
     "p": "Youssef El Kachati",
     "pos": "AC",
     "grp": "ATT",
@@ -3670,7 +3680,7 @@
     "val": 0.1
    },
    {
-    "n": "",
+    "n": "5",
     "p": "Jean Ruiz",
     "pos": "DC",
     "grp": "DEF",
@@ -3686,7 +3696,7 @@
     "val": 0.9
    },
    {
-    "n": "",
+    "n": "42",
     "p": "Cristian Devenish",
     "pos": "DC",
     "grp": "DEF",
@@ -3694,7 +3704,7 @@
     "val": 0.8
    },
    {
-    "n": "",
+    "n": "98",
     "p": "Idris Mohamed",
     "pos": "DC",
     "grp": "DEF",
@@ -3702,7 +3712,7 @@
     "val": 0.35
    },
    {
-    "n": "",
+    "n": "3",
     "p": "Florian Miguel",
     "pos": "ArG",
     "grp": "DEF",
@@ -3742,7 +3752,7 @@
     "val": 5.0
    },
    {
-    "n": "",
+    "n": "6",
     "p": "Nampalys Mendy",
     "pos": "MDC",
     "grp": "MID",
@@ -3750,7 +3760,7 @@
     "val": 0.7
    },
    {
-    "n": "33",
+    "n": "18",
     "p": "Believe Munongo",
     "pos": "MC",
     "grp": "MID",
@@ -3758,7 +3768,7 @@
     "val": 10.0
    },
    {
-    "n": "20",
+    "n": "8",
     "p": "Jessy Deminguet",
     "pos": "MC",
     "grp": "MID",
@@ -3766,7 +3776,7 @@
     "val": 2.0
    },
    {
-    "n": "",
+    "n": "9",
     "p": "Giorgi Abuashvili",
     "pos": "AiG",
     "grp": "ATT",
@@ -3774,7 +3784,7 @@
     "val": 1.0
    },
    {
-    "n": "",
+    "n": "19",
     "p": "Morgan Bokele",
     "pos": "AiG",
     "grp": "ATT",
@@ -3806,7 +3816,7 @@
     "val": 4.5
    },
    {
-    "n": "30",
+    "n": "20",
     "p": "Habib Diallo",
     "pos": "AC",
     "grp": "ATT",
@@ -3814,7 +3824,7 @@
     "val": 4.0
    },
    {
-    "n": "",
+    "n": "11",
     "p": "Pape Moussa Fall",
     "pos": "AC",
     "grp": "ATT",
@@ -3822,7 +3832,7 @@
     "val": 3.5
    },
    {
-    "n": "",
+    "n": "7",
     "p": "Ibou Sané",
     "pos": "AC",
     "grp": "ATT",
@@ -4600,12 +4610,20 @@
     "val": 0.2
    },
    {
-    "n": "",
+    "n": "1",
     "p": "Brice Maubleu",
     "pos": "GdB",
     "grp": "GK",
     "age": 36,
     "val": 0.15
+   },
+   {
+    "n": "16",
+    "p": "Maxime Adam",
+    "pos": "GdB",
+    "grp": "GK",
+    "age": 23,
+    "val": 0.0
    },
    {
     "n": "88",
@@ -4640,7 +4658,7 @@
     "val": 0.3
    },
    {
-    "n": "",
+    "n": "4",
     "p": "Axel Dodote",
     "pos": "DC",
     "grp": "DEF",
@@ -4672,7 +4690,7 @@
     "val": 1.2
    },
    {
-    "n": "",
+    "n": "39",
     "p": "Mathys Tourraine",
     "pos": "ArD",
     "grp": "DEF",
@@ -4680,7 +4698,7 @@
     "val": 0.6
    },
    {
-    "n": "",
+    "n": "21",
     "p": "Jessy Benet",
     "pos": "MC",
     "grp": "MID",
@@ -4720,7 +4738,7 @@
     "val": 0.15
    },
    {
-    "n": "",
+    "n": "19",
     "p": "Tom Saettel",
     "pos": "AiG",
     "grp": "ATT",
@@ -5238,7 +5256,7 @@
     "val": 0.6
    },
    {
-    "n": "",
+    "n": "24",
     "p": "Jeovanni Dianganga",
     "pos": "DC",
     "grp": "DEF",
@@ -5262,7 +5280,7 @@
     "val": 0.6
    },
    {
-    "n": "",
+    "n": "39",
     "p": "Vimoj Muntu Wa Mungu",
     "pos": "ArG",
     "grp": "DEF",
@@ -5294,7 +5312,7 @@
     "val": 0.9
    },
    {
-    "n": "",
+    "n": "25",
     "p": "Tom Ducrocq",
     "pos": "MDC",
     "grp": "MID",
@@ -5302,7 +5320,7 @@
     "val": 0.8
    },
    {
-    "n": "39",
+    "n": "21",
     "p": "Tanguy Ahile",
     "pos": "MDC",
     "grp": "MID",
@@ -5310,7 +5328,7 @@
     "val": 0.4
    },
    {
-    "n": "",
+    "n": "8",
     "p": "Florent Sanchez",
     "pos": "MC",
     "grp": "MID",
@@ -5326,7 +5344,7 @@
     "val": 0.25
    },
    {
-    "n": "",
+    "n": "31",
     "p": "Joël Matondo",
     "pos": "MC",
     "grp": "MID",
@@ -5342,7 +5360,7 @@
     "val": 0.8
    },
    {
-    "n": "",
+    "n": "20",
     "p": "Samir Ben Brahim",
     "pos": "MD",
     "grp": "MID",
@@ -5350,7 +5368,7 @@
     "val": 0.4
    },
    {
-    "n": "",
+    "n": "23",
     "p": "Jasser Chamakh",
     "pos": "MG",
     "grp": "MID",
@@ -5390,7 +5408,7 @@
     "val": 0.0
    },
    {
-    "n": "27",
+    "n": "18",
     "p": "Stanislas Kielt",
     "pos": "AC",
     "grp": "ATT",
