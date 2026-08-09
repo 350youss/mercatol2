@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-09T15:36:39",
- "sig": "cfd9e5f13c4b8ded11c54eeecbf0f74b",
+ "updated": "2026-08-09T21:37:41",
+ "sig": "a399233a62b151eda7b6c7ee3bcb72f2",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-08-09",
@@ -187,6 +187,7 @@
   "EAG|out|Eden Gassama|VFC La Roche": "2026-08-09",
   "EAG|out|Alpha Sissoko|Sans club": "2026-08-09",
   "EAG|out|Youssef Njoya|Sans club": "2026-08-09",
+  "NANCY|in|Nordine Kandil|Amiens SC": "2026-08-09",
   "NANCY|in|Thierno Baldé|Troyes": "2026-08-09",
   "NANCY|in|Issam Bouaoune|LB Châteauroux": "2026-08-09",
   "NANCY|in|Kouroufia Kébé|US Orléans": "2026-08-09",
@@ -2070,6 +2071,15 @@
    "bg": "#d0021b",
    "fg": "#fff",
    "arr": [
+    {
+     "p": "Nordine Kandil",
+     "age": 24,
+     "pos": "AiG",
+     "club": "Amiens SC",
+     "type": "paid",
+     "val": 0.15,
+     "fs": "2026-08-09"
+    },
     {
      "p": "Thierno Baldé",
      "age": 24,
@@ -5584,6 +5594,14 @@
     "grp": "MID",
     "age": 26,
     "val": 0.7
+   },
+   {
+    "n": "",
+    "p": "Nordine Kandil",
+    "pos": "AiG",
+    "grp": "ATT",
+    "age": 24,
+    "val": 1.0
    },
    {
     "n": "7",
