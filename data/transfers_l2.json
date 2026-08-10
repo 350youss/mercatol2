@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10T12:41:10",
+ "updated": "2026-08-10T12:54:55",
  "sig": "a399233a62b151eda7b6c7ee3bcb72f2",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
@@ -5990,6 +5990,14 @@
     "grp": "MID",
     "age": 34,
     "val": 0.15
+   },
+   {
+    "n": "21",
+    "p": "Alessio Beaudouin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 21,
+    "val": 0.0
    },
    {
     "n": "28",
