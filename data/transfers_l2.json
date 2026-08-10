@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-10T14:37:14",
- "sig": "a399233a62b151eda7b6c7ee3bcb72f2",
+ "updated": "2026-08-10T15:31:09",
+ "sig": "a440e7c436c685ec456a3f8287c9373a",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
+  "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
   "ASSE|in|Jakob Breum|Go Ahead Eagles": "2026-08-09",
   "ASSE|in|Sohaib Naïr|EA Guingamp": "2026-08-09",
   "ASSE|in|Áron Csongvai|AIK": "2026-08-09",
@@ -294,6 +295,15 @@
      "type": "paid",
      "val": 2.65,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Tamar Svetlin",
+     "age": 25,
+     "pos": "MDC",
+     "club": "Korona Kielce",
+     "type": "paid",
+     "val": 2.5,
+     "fs": "2026-08-10"
     },
     {
      "p": "Jakob Breum",
@@ -3058,6 +3068,14 @@
     "grp": "DEF",
     "age": 19,
     "val": 0.7
+   },
+   {
+    "n": "",
+    "p": "Tamar Svetlin",
+    "pos": "MDC",
+    "grp": "MID",
+    "age": 25,
+    "val": 2.5
    },
    {
     "n": "",
@@ -5926,6 +5944,14 @@
     "grp": "DEF",
     "age": 24,
     "val": 0.5
+   },
+   {
+    "n": "29",
+    "p": "Mamadou Sidibé",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.0
    },
    {
     "n": "22",
