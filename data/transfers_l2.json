@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-10T18:31:10",
- "sig": "997f7b8e86ab2a572aceb9a91fd778eb",
+ "updated": "2026-08-11T00:34:18",
+ "sig": "57098109f81ec54efe19d7b2dd84265e",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -176,6 +176,7 @@
   "GF38|out|Maxime Pattier|US Saint-Malo": "2026-08-09",
   "GF38|out|Stone Mambo|FC Noah": "2026-08-09",
   "GF38|out|Shaquil Delos|La Louvière": "2026-08-09",
+  "GF38|out|Allan Tchaptchet|RE Virton": "2026-08-11",
   "GF38|out|Alan Kerouedan|AS Cannes": "2026-08-09",
   "EAG|in|Teddy Averlant|Amiens SC": "2026-08-09",
   "EAG|in|Samir Ben Brahim|FC Versailles": "2026-08-09",
@@ -1956,6 +1957,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Allan Tchaptchet",
+     "age": 24,
+     "pos": "DC",
+     "club": "RE Virton",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-11"
     },
     {
      "p": "Alan Kerouedan",
@@ -5094,14 +5104,6 @@
     "val": 0.3
    },
    {
-    "n": "21",
-    "p": "Allan Tchaptchet",
-    "pos": "DC",
-    "grp": "DEF",
-    "age": 24,
-    "val": 0.3
-   },
-   {
     "n": "33",
     "p": "Efe Sarıkaya",
     "pos": "DC",
@@ -5792,7 +5794,7 @@
     "p": "Sacha Lima",
     "pos": "DC",
     "grp": "DEF",
-    "age": 21,
+    "age": 22,
     "val": 0.0
    },
    {
@@ -6122,7 +6124,7 @@
     "p": "Abou Kanté",
     "pos": "AC",
     "grp": "ATT",
-    "age": 31,
+    "age": 32,
     "val": 0.25
    },
    {
