@@ -346,30 +346,44 @@ const ROLE_POS={
   BU:['AC','SA']
 };
 const ROLE_GRP={GB:'GK',DG:'DEF',DD:'DEF',DC:'DEF',MDC:'MID',MC:'MID',MO:'MID',MG:'MID',MD:'MID',AIG:'ATT',AID:'ATT',BU:'ATT'};
-function autoDefaultXI(){
-  const sq=(SQUADS[club]||[]).filter(p=>p.p);
-  if(!sq.length)return;
-  const byMin=[...sq].sort((a,b)=>(b.min||0)-(a.min||0));
-  const byVal=[...sq].sort((a,b)=>(b.val||0)-(a.val||0));
-  const rank={};
-  sq.forEach(p=>rank[pkey(p)]={});
-  byMin.forEach((p,i)=>{rank[pkey(p)].m=i;});
-  byVal.forEach((p,i)=>{rank[pkey(p)].v=i;});
+function buildTrialXI(formationName,rank,sq){
   const score=p=>{const r=rank[pkey(p)];return r.m*0.55+r.v*0.45;};
+  const trial=FORMATIONS[formationName].map(([role,x,y])=>({role,x,y,starter:null,sub:null}));
   const used=new Set();
-  slots.forEach(sl=>{
-    let pick=null;
-    for(const pos of (ROLE_POS[sl.role]||[])){
-      const cands=sq.filter(p=>p.pos===pos&&!used.has(pkey(p)));
-      if(cands.length){cands.sort((a,b)=>score(a)-score(b));pick=cands[0];break;}
+  let exact=0,total=0;
+  trial.forEach(sl=>{
+    let pick=null,isExact=false;
+    const prefs=ROLE_POS[sl.role]||[];
+    for(let i=0;i<prefs.length;i++){
+      const cands=sq.filter(p=>p.pos===prefs[i]&&!used.has(pkey(p)));
+      if(cands.length){cands.sort((a,b)=>score(a)-score(b));pick=cands[0];isExact=(i===0);break;}
     }
     if(!pick){
       const grp=ROLE_GRP[sl.role]||'MID';
       const cands=sq.filter(p=>p.grp===grp&&!used.has(pkey(p)));
       if(cands.length){cands.sort((a,b)=>score(a)-score(b));pick=cands[0];}
     }
-    if(pick){sl.starter=pkey(pick);used.add(pkey(pick));}
+    if(pick){sl.starter=pkey(pick);used.add(pkey(pick));total+=score(pick);if(isExact)exact++;}
+    else total+=999;
   });
+  return {slots:trial,exact,total};
+}
+function autoDefaultFormationAndXI(){
+  const sq=(SQUADS[club]||[]).filter(p=>p.p);
+  if(!sq.length){setFormation(formation,false);return;}
+  const byMin=[...sq].sort((a,b)=>(b.min||0)-(a.min||0));
+  const byVal=[...sq].sort((a,b)=>(b.val||0)-(a.val||0));
+  const rank={};
+  sq.forEach(p=>rank[pkey(p)]={});
+  byMin.forEach((p,i)=>{rank[pkey(p)].m=i;});
+  byVal.forEach((p,i)=>{rank[pkey(p)].v=i;});
+  let best=null;
+  Object.keys(FORMATIONS).forEach(f=>{
+    const r=buildTrialXI(f,rank,sq);
+    if(!best||r.exact>best.exact||(r.exact===best.exact&&r.total<best.total))best={f,...r};
+  });
+  formation=best.f;
+  slots=best.slots;
 }
 function loadClub(code){
   club=code; active=null;
@@ -382,8 +396,7 @@ function loadClub(code){
     recId=saved.recId||1;
   } else {
     recruits=[]; departures={}; recId=1;
-    setFormation(formation,false);
-    autoDefaultXI();
+    autoDefaultFormationAndXI();
   }
   const m=CLUBMETA[code];
   document.documentElement.style.setProperty('--club',m.bg);
