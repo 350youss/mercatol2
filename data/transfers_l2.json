@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-11T18:31:37",
- "sig": "a47d0d4d5e5ed8785780054d0e0805b4",
+ "updated": "2026-08-11T21:33:49",
+ "sig": "ec5c4c708e7b3fa87db6063cde7a9edf",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -31,6 +31,7 @@
   "FCN|out|Mathieu Acapandié|Hajduk Split": "2026-08-09",
   "FCN|out|Uros Radakovic|Buriram Utd.": "2026-08-09",
   "FCN|out|Youssef El Arabi|Marko": "2026-08-09",
+  "FCN|out|Jean-Kévin Duverne|Omonia Nicosie": "2026-08-11",
   "FCN|out|Deiver Machado|Sans club": "2026-08-09",
   "FCN|out|Patrik Carlgren|Sans club": "2026-08-09",
   "REIMS|in|Samuel Kotto|La Gantoise": "2026-08-09",
@@ -71,6 +72,7 @@
   "FCM|out|Jean-Philippe Gbamin|CSKA Sofia": "2026-08-09",
   "FCM|out|Giorgi Kvilitaia|Holstein Kiel": "2026-08-09",
   "FCM|out|Kevin Van Den Kerkhof|R Charleroi SC": "2026-08-09",
+  "FCM|out|Joel Asoro|Apol. Limassol": "2026-08-11",
   "FCM|out|Joseph Nduquidi|Farense": "2026-08-09",
   "FCM|out|Ismaël Guerti|Grazer AK": "2026-08-09",
   "FCM|out|Yannis Lawson|RFC Seraing": "2026-08-09",
@@ -566,6 +568,15 @@
      "fs": "2026-08-09"
     },
     {
+     "p": "Jean-Kévin Duverne",
+     "age": 29,
+     "pos": "DC",
+     "club": "Omonia Nicosie",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-11"
+    },
+    {
      "p": "Deiver Machado",
      "age": 32,
      "pos": "ArG",
@@ -944,6 +955,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Joel Asoro",
+     "age": 27,
+     "pos": "AiD",
+     "club": "Apol. Limassol",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-11"
     },
     {
      "p": "Joseph Nduquidi",
@@ -3311,14 +3331,6 @@
     "pos": "DC",
     "grp": "DEF",
     "age": 27,
-    "val": 2.0
-   },
-   {
-    "n": "93",
-    "p": "Jean-Kévin Duverne",
-    "pos": "DC",
-    "grp": "DEF",
-    "age": 29,
     "val": 2.0
    },
    {
