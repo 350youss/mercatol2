@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-12T15:31:40",
- "sig": "bb2e95e5337a5a7a08c5bbaf92e7c23d",
+ "updated": "2026-08-12T18:31:10",
+ "sig": "519873babe39627d07186a564a7f6d9e",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -15,6 +15,7 @@
   "ASSE|out|Enzo Mayilla|USL Dunkerque": "2026-08-09",
   "ASSE|out|Brice Maubleu|Pau FC": "2026-08-09",
   "ASSE|out|Karim Cissé|Aubagne Air Bel": "2026-08-09",
+  "ASSE|out|Luan Gadegbeku|Pau FC": "2026-08-12",
   "ASSE|out|Jebryl Sahraoui|Aubagne Air Bel": "2026-08-09",
   "ASSE|out|Axel Dodote|Pau FC": "2026-08-09",
   "FCN|in|Killian Corredor|Darmstadt 98": "2026-08-09",
@@ -129,6 +130,7 @@
   "PAU|in|Hacène Benali|Red Star FC": "2026-08-09",
   "PAU|in|Alexis Lefebvre|RFC Liège": "2026-08-09",
   "PAU|in|Abdoulaye Mbaye|Génération Foot": "2026-08-09",
+  "PAU|in|Luan Gadegbeku|Saint-Étienne": "2026-08-12",
   "PAU|in|Axel Dodote|Saint-Étienne": "2026-08-09",
   "PAU|in|Axel Bamba|Sans club": "2026-08-09",
   "PAU|out|Rayan Touzghar|Standard Liège": "2026-08-09",
@@ -415,6 +417,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Luan Gadegbeku",
+     "age": 19,
+     "pos": "MC",
+     "club": "Pau FC",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-12"
     },
     {
      "p": "Jebryl Sahraoui",
@@ -1519,6 +1530,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Luan Gadegbeku",
+     "age": 19,
+     "pos": "MC",
+     "club": "Saint-Étienne",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-12"
     },
     {
      "p": "Axel Dodote",
@@ -3210,14 +3230,6 @@
     "val": 2.0
    },
    {
-    "n": "35",
-    "p": "Luan Gadegbeku",
-    "pos": "MC",
-    "grp": "MID",
-    "age": 19,
-    "val": 0.8
-   },
-   {
     "n": "36",
     "p": "Paul Eymard",
     "pos": "MC",
@@ -4848,6 +4860,14 @@
     "grp": "MID",
     "age": 31,
     "val": 1.0
+   },
+   {
+    "n": "",
+    "p": "Luan Gadegbeku",
+    "pos": "MC",
+    "grp": "MID",
+    "age": 19,
+    "val": 0.8
    },
    {
     "n": "6",
