@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-12T09:31:24",
- "sig": "cf2675b3a8e686adcbc372cad4bd0cb2",
+ "updated": "2026-08-12T15:31:40",
+ "sig": "bb2e95e5337a5a7a08c5bbaf92e7c23d",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -76,6 +76,7 @@
   "FCM|out|Joseph Nduquidi|Farense": "2026-08-09",
   "FCM|out|Ismaël Guerti|Grazer AK": "2026-08-09",
   "FCM|out|Yannis Lawson|RFC Seraing": "2026-08-09",
+  "FCM|out|Cléo Mélières|SC Bastia": "2026-08-12",
   "FCM|out|Fodé Ballo-Touré|Sans club": "2026-08-09",
   "FCM|out|Benjamin Stambouli|Sans club": "2026-08-09",
   "MHSC|in|Mamadou Camara|Stade Lavallois": "2026-08-09",
@@ -163,6 +164,7 @@
   "USLD|out|Felipe Abner|Sans club": "2026-08-09",
   "USLD|out|Iñigo Eguaras|Sans club": "2026-08-09",
   "USLD|out|Malick Diop|Sans club": "2026-08-09",
+  "GF38|in|Jean-Guy Akpa Akpro|Pro Vercelli": "2026-08-09",
   "GF38|in|Yohann Magnin|CSKA 1948": "2026-08-09",
   "GF38|in|Zé Leite|Penafiel": "2026-08-09",
   "GF38|in|Sakhalou Niakaté|Valenciennes FC": "2026-08-09",
@@ -172,7 +174,6 @@
   "GF38|in|Alexandre Olliero|Stade de Reims": "2026-08-09",
   "GF38|in|Leonardo Cerri|Juve Next Gen": "2026-08-09",
   "GF38|in|Mael Corboz|Arm. Bielefeld": "2026-08-09",
-  "GF38|in|Jean-Guy Akpa Akpro|Pro Vercelli": "2026-08-09",
   "GF38|out|Mamadou Diop|AJ Auxerre": "2026-08-09",
   "GF38|out|Loris Mouyokolo|Baltika": "2026-08-09",
   "GF38|out|Jessy Benet|Pau FC": "2026-08-09",
@@ -200,9 +201,10 @@
   "NANCY|in|Issam Bouaoune|LB Châteauroux": "2026-08-09",
   "NANCY|in|Kouroufia Kébé|US Orléans": "2026-08-09",
   "NANCY|in|Mamadou Fofana|FC Aarau": "2026-08-09",
+  "NANCY|in|Noam Obougou|Le Havre AC": "2026-08-12",
   "NANCY|in|Logan Ndenbe|Sans club": "2026-08-09",
-  "NANCY|out|Teddy Bouriaud|Stade Lavallois": "2026-08-09",
   "NANCY|out|Maxence Carlier|Ararat-Armenia": "2026-08-09",
+  "NANCY|out|Teddy Bouriaud|Stade Lavallois": "2026-08-09",
   "NANCY|out|Jimmy Evans|Uni. Católica": "2026-08-09",
   "NANCY|out|Adrien Julloux|Amiens SC": "2026-08-09",
   "NANCY|out|Cazim Suljic|Amiens SC": "2026-08-09",
@@ -992,6 +994,15 @@
      "type": "loan",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Cléo Mélières",
+     "age": 21,
+     "pos": "ArD",
+     "club": "SC Bastia",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-12"
     },
     {
      "p": "Fodé Ballo-Touré",
@@ -1845,6 +1856,15 @@
    "fg": "#002654",
    "arr": [
     {
+     "p": "Jean-Guy Akpa Akpro",
+     "age": 21,
+     "pos": "AiD",
+     "club": "Pro Vercelli",
+     "type": "loan",
+     "val": 0.1,
+     "fs": "2026-08-09"
+    },
+    {
      "p": "Yohann Magnin",
      "age": 29,
      "pos": "MDC",
@@ -1922,15 +1942,6 @@
      "pos": "MC",
      "club": "Arm. Bielefeld",
      "type": "none",
-     "val": 0.0,
-     "fs": "2026-08-09"
-    },
-    {
-     "p": "Jean-Guy Akpa Akpro",
-     "age": 21,
-     "pos": "AiD",
-     "club": "Pro Vercelli",
-     "type": "loan",
      "val": 0.0,
      "fs": "2026-08-09"
     }
@@ -2198,6 +2209,15 @@
      "fs": "2026-08-09"
     },
     {
+     "p": "Noam Obougou",
+     "age": 20,
+     "pos": "AC",
+     "club": "Le Havre AC",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-12"
+    },
+    {
      "p": "Logan Ndenbe",
      "age": 26,
      "pos": "ArG",
@@ -2209,19 +2229,19 @@
    ],
    "dep": [
     {
-     "p": "Teddy Bouriaud",
+     "p": "Maxence Carlier",
      "age": 29,
      "pos": "MDC",
-     "club": "Stade Lavallois",
+     "club": "Ararat-Armenia",
      "type": "free",
      "val": 0.0,
      "fs": "2026-08-09"
     },
     {
-     "p": "Maxence Carlier",
+     "p": "Teddy Bouriaud",
      "age": 29,
      "pos": "MDC",
-     "club": "Ararat-Armenia",
+     "club": "Stade Lavallois",
      "type": "free",
      "val": 0.0,
      "fs": "2026-08-09"
@@ -3834,14 +3854,6 @@
     "grp": "DEF",
     "age": 34,
     "val": 0.25
-   },
-   {
-    "n": "25",
-    "p": "Cléo Mélières",
-    "pos": "ArD",
-    "grp": "DEF",
-    "age": 21,
-    "val": 0.2
    },
    {
     "n": "12",
@@ -5740,6 +5752,14 @@
     "grp": "ATT",
     "age": 23,
     "val": 0.15
+   },
+   {
+    "n": "",
+    "p": "Noam Obougou",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 20,
+    "val": 1.0
    },
    {
     "n": "9",
