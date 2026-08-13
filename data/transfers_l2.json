@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-13T15:31:04",
- "sig": "96b9aa5f6ae7eadb9291058195ab9e2d",
+ "updated": "2026-08-14T00:31:04",
+ "sig": "472c408815446e4ad6bb8ade53abf067",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -284,6 +284,7 @@
   "DFCO|in|Moussa Faty|Le Puy FC": "2026-08-09",
   "DFCO|in|Ismaïl Bouleghcha|Le Puy FC": "2026-08-09",
   "DFCO|in|Axel Bargain|GOAL FC": "2026-08-09",
+  "DFCO|out|Julien Domingues|Al-Kholood": "2026-08-14",
   "DFCO|out|Jules Meyer|CSKA 1948": "2026-08-09",
   "DFCO|out|Ismaïl Diallo|Toulouse": "2026-08-09",
   "DFCO|out|Lenny Montfort|Bourg-en-Bresse": "2026-08-09",
@@ -3009,6 +3010,15 @@
     }
    ],
    "dep": [
+    {
+     "p": "Julien Domingues",
+     "age": 30,
+     "pos": "AC",
+     "club": "Al-Kholood",
+     "type": "paid",
+     "val": 0.25,
+     "fs": "2026-08-14"
+    },
     {
      "p": "Jules Meyer",
      "age": 25,
@@ -6781,14 +6791,6 @@
     "pos": "DA",
     "grp": "MID",
     "age": 28,
-    "val": 0.4
-   },
-   {
-    "n": "22",
-    "p": "Julien Domingues",
-    "pos": "AC",
-    "grp": "ATT",
-    "age": 30,
     "val": 0.4
    },
    {
