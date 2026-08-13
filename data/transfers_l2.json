@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-12T21:32:45",
- "sig": "5152ed493661d9b7f53521b4bab3fd5e",
+ "updated": "2026-08-13T15:31:04",
+ "sig": "96b9aa5f6ae7eadb9291058195ab9e2d",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -155,6 +155,7 @@
   "USLD|in|Moha Ramos|CD Marino": "2026-08-09",
   "USLD|in|Khalil Ayari|PSG": "2026-08-09",
   "USLD|in|Franck Atoen|Samsunspor": "2026-08-09",
+  "USLD|out|Antoine Sekongo|Samsunspor": "2026-08-09",
   "USLD|out|Enzo Bardeli|UD Levante": "2026-08-09",
   "USLD|out|Alec Georgen|FC Lorient": "2026-08-09",
   "USLD|out|Marco Essimi|Alverca": "2026-08-09",
@@ -162,7 +163,6 @@
   "USLD|out|Eddy Sylvestre|FCV Farul": "2026-08-09",
   "USLD|out|Marcos Lavín|Académico Viseu": "2026-08-09",
   "USLD|out|Vincent Sasso|Le Havre AC": "2026-08-09",
-  "USLD|out|Antoine Sekongo|Samsunspor": "2026-08-09",
   "USLD|out|Felipe Abner|Sans club": "2026-08-09",
   "USLD|out|Iñigo Eguaras|Sans club": "2026-08-09",
   "USLD|out|Malick Diop|Sans club": "2026-08-09",
@@ -1769,6 +1769,15 @@
    ],
    "dep": [
     {
+     "p": "Antoine Sekongo",
+     "age": 22,
+     "pos": "MC",
+     "club": "Samsunspor",
+     "type": "paid",
+     "val": 2.2,
+     "fs": "2026-08-09"
+    },
+    {
      "p": "Enzo Bardeli",
      "age": 25,
      "pos": "MC",
@@ -1828,15 +1837,6 @@
      "pos": "DC",
      "club": "Le Havre AC",
      "type": "free",
-     "val": 0.0,
-     "fs": "2026-08-09"
-    },
-    {
-     "p": "Antoine Sekongo",
-     "age": 22,
-     "pos": "MC",
-     "club": "Samsunspor",
-     "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
     },
@@ -3146,7 +3146,7 @@
     "p": "Ben Old",
     "pos": "ArG",
     "grp": "DEF",
-    "age": 23,
+    "age": 24,
     "val": 1.8
    },
    {
