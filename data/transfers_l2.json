@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-14T00:31:04",
- "sig": "472c408815446e4ad6bb8ade53abf067",
+ "updated": "2026-08-14T12:31:53",
+ "sig": "0c4200e3aa03ec096c0c4ae4f90aba69",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -106,6 +106,7 @@
   "RED|out|Rayane Doucouré|Aubagne Air Bel": "2026-08-09",
   "RED|out|Hacène Benali|Pau FC": "2026-08-09",
   "RED|out|Quentin Beunardeau|AS Cannes": "2026-08-09",
+  "RED|out|Abdelsamad Hachem|RE Virton": "2026-08-14",
   "RED|out|Vincent Kany|Sans club": "2026-08-09",
   "RAF|in|Mathis Touho|FC Villefranche": "2026-08-09",
   "RAF|in|Steven Luyambula|US Orléans": "2026-08-10",
@@ -1297,6 +1298,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Abdelsamad Hachem",
+     "age": 24,
+     "pos": "AC",
+     "club": "RE Virton",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-14"
     },
     {
      "p": "Vincent Kany",
@@ -4562,14 +4572,6 @@
     "grp": "ATT",
     "age": 27,
     "val": 1.0
-   },
-   {
-    "n": "21",
-    "p": "Abdelsamad Hachem",
-    "pos": "AC",
-    "grp": "ATT",
-    "age": 24,
-    "val": 0.3
    }
   ],
   "RAF": [
