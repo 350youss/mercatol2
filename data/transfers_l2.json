@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-17T18:31:41",
- "sig": "49c9cfc322c963088bc6195ee318bbf0",
+ "updated": "2026-08-17T21:31:01",
+ "sig": "2484b64def744ddc00b0f8f101dcdaf9",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -111,6 +111,7 @@
   "RAF|in|Mathis Touho|FC Villefranche": "2026-08-09",
   "RAF|in|Steven Luyambula|US Orléans": "2026-08-10",
   "RAF|in|Damjan Pavlovic|Kauno Zalgiris": "2026-08-09",
+  "RAF|in|Nachon Nsingi|La Louvière": "2026-08-17",
   "RAF|in|Antonin Cartillier|FC Rouen 1899": "2026-08-09",
   "RAF|out|Taïryk Arconte|Millwall": "2026-08-09",
   "RAF|out|Nolan Galves|West Brom": "2026-08-09",
@@ -156,6 +157,7 @@
   "USLD|in|Souleymane Keita|US Boulogne": "2026-08-09",
   "USLD|in|Moha Ramos|CD Marino": "2026-08-09",
   "USLD|in|Khalil Ayari|PSG": "2026-08-09",
+  "USLD|in|Ousmane Touré|LOSC Lille": "2026-08-17",
   "USLD|in|Franck Atoen|Samsunspor": "2026-08-09",
   "USLD|out|Antoine Sekongo|Samsunspor": "2026-08-09",
   "USLD|out|Enzo Bardeli|UD Levante": "2026-08-09",
@@ -1354,6 +1356,15 @@
      "fs": "2026-08-09"
     },
     {
+     "p": "Nachon Nsingi",
+     "age": 25,
+     "pos": "AC",
+     "club": "La Louvière",
+     "type": "none",
+     "val": 0.0,
+     "fs": "2026-08-17"
+    },
+    {
      "p": "Antonin Cartillier",
      "age": 22,
      "pos": "MDC",
@@ -1777,6 +1788,15 @@
      "type": "loan",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Ousmane Touré",
+     "age": 21,
+     "pos": "DC",
+     "club": "LOSC Lille",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-17"
     },
     {
      "p": "Franck Atoen",
@@ -4762,6 +4782,14 @@
     "val": 0.6
    },
    {
+    "n": "",
+    "p": "Nachon Nsingi",
+    "pos": "AC",
+    "grp": "ATT",
+    "age": 25,
+    "val": 0.3
+   },
+   {
     "n": "10",
     "p": "Mehdi Baaloudj",
     "pos": "AC",
@@ -5020,6 +5048,14 @@
     "grp": "DEF",
     "age": 22,
     "val": 0.6
+   },
+   {
+    "n": "",
+    "p": "Ousmane Touré",
+    "pos": "DC",
+    "grp": "DEF",
+    "age": 21,
+    "val": 0.5
    },
    {
     "n": "26",
