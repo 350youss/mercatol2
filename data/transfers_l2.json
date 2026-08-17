@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-14T12:31:53",
- "sig": "0c4200e3aa03ec096c0c4ae4f90aba69",
+ "updated": "2026-08-17T18:31:41",
+ "sig": "49c9cfc322c963088bc6195ee318bbf0",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -37,8 +37,8 @@
   "FCN|out|Patrik Carlgren|Sans club": "2026-08-09",
   "REIMS|in|Samuel Kotto|La Gantoise": "2026-08-09",
   "REIMS|in|Tom Ritzy Hülsmann|TSV Hartberg": "2026-08-09",
-  "REIMS|in|Youssef El Kachati|NEC Nijmegen": "2026-08-09",
   "REIMS|in|John Otomewo|H. Jerusalem": "2026-08-09",
+  "REIMS|in|Youssef El Kachati|NEC Nijmegen": "2026-08-09",
   "REIMS|in|Edin Omeragic|Neuchâtel Xamax": "2026-08-09",
   "REIMS|in|Daouda Guindo|Stade Brestois": "2026-08-09",
   "REIMS|in|Sambou Soumano|FC Lorient": "2026-08-09",
@@ -143,6 +143,7 @@
   "PAU|out|Noah Raveyre|Alverca": "2026-08-09",
   "PAU|out|Steeve Beusnard|Turan Tovuz": "2026-08-09",
   "PAU|out|Salif Lebouath|Valenciennes FC": "2026-08-09",
+  "PAU|out|Tom Gomes|Bourg-en-Bresse": "2026-08-17",
   "PAU|out|Antonin Bobichon|Sans club": "2026-08-09",
   "PAU|out|Ousmane Kanté|Fin de carrière": "2026-08-09",
   "USLD|in|Jordan Morel|US Orléans": "2026-08-09",
@@ -637,19 +638,19 @@
      "fs": "2026-08-09"
     },
     {
-     "p": "Youssef El Kachati",
-     "age": 26,
-     "pos": "AC",
-     "club": "NEC Nijmegen",
-     "type": "paid",
-     "val": 2.0,
-     "fs": "2026-08-09"
-    },
-    {
      "p": "John Otomewo",
      "age": 19,
      "pos": "MDC",
      "club": "H. Jerusalem",
+     "type": "paid",
+     "val": 1.6,
+     "fs": "2026-08-09"
+    },
+    {
+     "p": "Youssef El Kachati",
+     "age": 26,
+     "pos": "AC",
+     "club": "NEC Nijmegen",
      "type": "paid",
      "val": 1.6,
      "fs": "2026-08-09"
@@ -1651,6 +1652,15 @@
      "type": "none",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Tom Gomes",
+     "age": 22,
+     "pos": "MC",
+     "club": "Bourg-en-Bresse",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-17"
     },
     {
      "p": "Antonin Bobichon",
@@ -5020,7 +5030,7 @@
     "val": 0.2
    },
    {
-    "n": "14",
+    "n": "24",
     "p": "Lenny Vallier",
     "pos": "ArG",
     "grp": "DEF",
@@ -5040,7 +5050,7 @@
     "p": "Allan Linguet",
     "pos": "ArD",
     "grp": "DEF",
-    "age": 26,
+    "age": 27,
     "val": 0.6
    },
    {
@@ -6190,7 +6200,7 @@
     "val": 0.9
    },
    {
-    "n": "",
+    "n": "7",
     "p": "Chafik Gourichy",
     "pos": "MO",
     "grp": "MID",
