@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-17T21:31:01",
- "sig": "2484b64def744ddc00b0f8f101dcdaf9",
+ "updated": "2026-08-18T15:31:22",
+ "sig": "deccc202487d3af27be6f30cdf13c427",
  "seen": {
   "ASSE|in|Thierno Ballo|Wolfsberger AC": "2026-08-09",
   "ASSE|in|Tamar Svetlin|Korona Kielce": "2026-08-10",
@@ -15,6 +15,7 @@
   "ASSE|out|Enzo Mayilla|USL Dunkerque": "2026-08-09",
   "ASSE|out|Brice Maubleu|Pau FC": "2026-08-09",
   "ASSE|out|Karim Cissé|Aubagne Air Bel": "2026-08-09",
+  "ASSE|out|Igor Miladinovic|Partizan": "2026-08-18",
   "ASSE|out|Luan Gadegbeku|Pau FC": "2026-08-12",
   "ASSE|out|Jebryl Sahraoui|Aubagne Air Bel": "2026-08-09",
   "ASSE|out|Axel Dodote|Pau FC": "2026-08-09",
@@ -422,6 +423,15 @@
      "type": "free",
      "val": 0.0,
      "fs": "2026-08-09"
+    },
+    {
+     "p": "Igor Miladinovic",
+     "age": 23,
+     "pos": "MO",
+     "club": "Partizan",
+     "type": "loan",
+     "val": 0.0,
+     "fs": "2026-08-18"
     },
     {
      "p": "Luan Gadegbeku",
@@ -3304,14 +3314,6 @@
     "val": 5.0
    },
    {
-    "n": "28",
-    "p": "Igor Miladinovic",
-    "pos": "MO",
-    "grp": "MID",
-    "age": 23,
-    "val": 2.5
-   },
-   {
     "n": "31",
     "p": "Nadir El Jamali",
     "pos": "MO",
@@ -4782,7 +4784,7 @@
     "val": 0.6
    },
    {
-    "n": "",
+    "n": "9",
     "p": "Nachon Nsingi",
     "pos": "AC",
     "grp": "ATT",
@@ -5050,7 +5052,7 @@
     "val": 0.6
    },
    {
-    "n": "",
+    "n": "2",
     "p": "Ousmane Touré",
     "pos": "DC",
     "grp": "DEF",
@@ -5190,7 +5192,7 @@
     "p": "Thomas Robinet",
     "pos": "AC",
     "grp": "ATT",
-    "age": 29,
+    "age": 30,
     "val": 0.8
    },
    {
@@ -5490,7 +5492,7 @@
     "p": "Akim Abdallah",
     "pos": "ArG",
     "grp": "DEF",
-    "age": 28,
+    "age": 29,
     "val": 0.6
    },
    {
@@ -6022,7 +6024,7 @@
     "p": "Kilyan Jusseron-Veniere",
     "pos": "MO",
     "grp": "MID",
-    "age": 19,
+    "age": 20,
     "val": 0.1
    },
    {
